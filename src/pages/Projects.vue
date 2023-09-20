@@ -16,7 +16,7 @@
         </div>
       </div>
       <div class="flex flex-col justify-between p-4 bg-[#31313f] rounded shadow grow gap-2">
-        <img class="rounded-sm w-full" src="../../public/Rectangle 21.png" alt="">
+        <img class="rounded-sm w-full" src="../../public/projectImg.png" alt="">
         <h3 class="text-primaryColor font-poppins text-[1.5rem] font-semibold">Em breve</h3>
         <p class="text-white text-[1.125rem] font-poppins font-medium w-[18rem]">Descrição do projeto</p>
         <div class="flex flex-row gap-4 mt-4">
@@ -29,7 +29,7 @@
         </div>
       </div>
       <div class="flex flex-col justify-between p-4 bg-[#31313f] rounded shadow grow gap-2">
-        <img class="rounded-sm w-full" src="../../public/Rectangle 21.png" alt="">
+        <img class="rounded-sm w-full" src="../../public/projectImg.png" alt="">
         <h3 class="text-primaryColor font-poppins text-[1.5rem] font-semibold">Em breve</h3>
         <p class="text-white text-[1.125rem] font-poppins font-medium w-[18rem]">Descrição do projeto</p>
         <div class="flex flex-row gap-4 mt-4">
@@ -42,7 +42,7 @@
         </div>
       </div>
       <div class="flex flex-col justify-between p-4 bg-[#31313f] rounded shadow grow gap-2">
-        <img class="rounded-sm w-full" src="../../public/Rectangle 21.png" alt="">
+        <img class="rounded-sm w-full" src="../../public/projectImg.png" alt="">
         <h3 class="text-primaryColor font-poppins text-[1.5rem] font-semibold">Em breve</h3>
         <p class="text-white text-[1.125rem] font-poppins font-medium w-[18rem]">Descrição do projeto</p>
         <div class="flex flex-row gap-4 mt-4">
