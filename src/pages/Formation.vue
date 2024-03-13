@@ -1,110 +1,57 @@
+<script setup>
+import FormationCard from "../components/formationCard.vue";
+import ExperienceCard from "../components/experienceCard.vue";
+</script>
+
 <template>
-  <section class="px-[8rem] py-[3.44rem]">
-    <div class="flex flex-row flex-wrap justify-between">
-      <div class="flex flex-col gap-4">
-        <h2 class="text-primaryColor font-poppins font-semibold text-[2rem]">
-          Formação:
-        </h2>
-        <div class="flex flex-row gap-10 flex-wrap">
-          <div class="bg-[#31313f] relative p-4 rounded-md w-[380px]">
-            <div
-              class="bg-primaryColor w-[10px] h-[50px] absolute left-[-5px] top-[10%]"
-            ></div>
-            <div class="flex flex-row items-center gap-4">
-              <img
-                class="w-[5rem] h-[7rem]"
-                src="../../public/ifspLogo.png"
-                alt=""
-              />
-              <div class="flex flex-col justify-between gap-2">
-                <div>
-                  <p class="text-[#c1c1c1] font-poppins text-[14px] font-bold">
-                    TÉCNICO
-                  </p>
-                  <p class="text-white text-[1.5rem] font-bold">
-                    Informática Integrado
-                  </p>
-                </div>
-                <div>
-                  <p class="text-[#c1c1c1] font-poppins text-[14px] font-bold">
-                    INSTITUIÇÃO
-                  </p>
-                  <p class="text-white font-poppins text-[1.5rem] font-bold">
-                    Instituto Federal
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="bg-[#31313f] relative p-4 rounded-md w-[380px]">
-            <div
-              class="bg-primaryColor w-[10px] h-[50px] absolute left-[-5px] top-[10%]"
-            ></div>
-            <div class="flex flex-row items-center gap-4">
-              <img
-                class="w-[5rem] h-[7rem]"
-                src="../../public/ifspLogo.png"
-                alt=""
-              />
-              <div class="flex flex-col justify-between gap-2">
-                <div>
-                  <p class="text-[#c1c1c1] font-poppins text-[14px] font-bold">
-                    TÉCNOLOGO
-                  </p>
-                  <p class="text-white text-[1.5rem] font-bold">
-                    Análise de Sistemas
-                  </p>
-                </div>
-                <div>
-                  <p class="text-[#c1c1c1] font-poppins text-[14px] font-bold">
-                    INSTITUIÇÃO
-                  </p>
-                  <p class="text-white font-poppins text-[1.5rem] font-bold">
-                    Instituto Federal
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-col gap-4">
-        <h2 class="text-primaryColor font-poppins font-semibold text-[2rem]">
-          Experiencias:
-        </h2>
-        <div class="bg-[#31313f] relative p-4 rounded-md w-[380px]">
-          <div
-            class="bg-primaryColor w-[10px] h-[50px] absolute left-[-5px] top-[10%]"
-          ></div>
-          <div class="flex flex-row items-center gap-4">
-            <img
-              class="w-[6rem] h-[6rem]"
-              src="../../public/isasoftLogo.png"
-              alt=""
-            />
-            <div class="flex flex-col justify-between gap-2">
-              <div>
-                <p class="text-[#c1c1c1] font-poppins text-[14px] font-bold">
-                  ESTÁGIO - 1 ANO
-                </p>
-                <p class="text-white text-[1.5rem] font-bold">
-                  Análista de Suporte
-                </p>
-              </div>
-              <div>
-                <p class="text-[#c1c1c1] font-poppins text-[14px] font-bold">
-                  EMPRESA
-                </p>
-                <p class="text-white font-poppins text-[1.5rem] font-bold">
-                  Isasoft Softwares
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+  <div class="flex flex-row gap-8 flex-wrap justify-between">
+    <div class="flex flex-col flex-wrap gap-8">
+      <h2 class="text-primaryColor font-poppins font-semibold text-[2rem]">
+        Formação:
+      </h2>
+      <div class="flex flex-row gap-4 flex-wrap">
+        <FormationCard
+          titleCourse="técnico"
+          course="Informática Integrado"
+          institutionTitle="instituição"
+          institution="Instituto Federal"
+          image="../../public/ifspLogo.png"
+          description=""
+        />
+        <FormationCard
+          titleCourse="técnologo"
+          course="Análise de Sistemas"
+          institutionTitle="instituição"
+          institution="Instituto Federal"
+          image="../../public/ifspLogo.png"
+          description=""
+        />
       </div>
     </div>
-
-
-  </section>
+    <div id="experiencias" class="flex flex-col gap-8">
+      <h2 class="text-primaryColor font-poppins font-semibold text-[2rem]">
+        Experiências:
+      </h2>
+      <div class="flex flex-row gap-6 flex-wrap">
+        <ExperienceCard
+          titleCourse="estagio - 1 ano"
+          course="ánalista de suporte"
+          institutionTitle="empresa"
+          institution="isasoft softwares"
+          image="../../public/isasoftLogo.png"
+          description="Prestei suporte aos clientes, forneci orientação e treinamento, colaborei com a equipe de desenvolvimento com base no feedback dos clientes, realizei testes detalhados do sistema e gerenciei bancos de dados para identificar bugs. Contribuí para a melhoria da qualidade dos produtos e da experiência do cliente."
+          tecnologie="html5, css3, javascript, vuejs"
+        />
+        <ExperienceCard
+          titleCourse="Freelance - atual"
+          course="Dev. Front-end Jr."
+          institutionTitle="empresa"
+          institution="Bitcode Soluções"
+          image="../../public/bitcodeLogo.png"
+          description="Desenvolvimento de páginas web. Responsável pela criação de interfaces atraentes e intuitivas para o usuário, utilizando das tecnologias HTML, CSS, JavaScript, VueJs e TailwindCss. Além disso, participação ativa na concepção e design das interfaces através do Figma, garantindo uma experiência visualmente agradável e funcional para os usuários."
+          tecnologie="html5, css3, javascript, vuejs, tailwind-css, figma"
+        />
+      </div>
+    </div>
+  </div>
 </template>

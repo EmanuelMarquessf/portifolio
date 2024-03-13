@@ -1,6 +1,6 @@
 <template>
-  <section class="px-[8rem] py-[3.44rem] flex flex-row justify-between gap-40">
-    <div class="flex flex-col flex-wrap gap-4">
+  <section class="mt-10 flex flex-row justify-between gap-40">
+    <div class="flex flex-col flex-wrap gap-8">
       <h2 class="text-primaryColor font-poppins font-semibold text-[2rem]">
         Sobre:
       </h2>
