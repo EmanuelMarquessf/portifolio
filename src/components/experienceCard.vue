@@ -18,7 +18,7 @@ let viewCard = ref(false);
 
 <template>
   <div
-    class="bg-[#31313f] relative p-4 rounded-md w-[380px] h-[150px]"
+    class="bg-[#31313f] relative p-4 rounded-md w-full md:w-[380px] md:h-[150px] cursor-pointer"
     v-if="!viewCard"
     @click="viewCard = !viewCard"
   >
@@ -30,7 +30,7 @@ let viewCard = ref(false);
       <div class="flex flex-col justify-between gap-2">
         <div>
           <p
-            class="text-[#c1c1c1] font-poppins text-[16px] font-bold uppercase"
+            class="text-[#c1c1c1] font-poppins text-[14px] font-bold uppercase"
           >
             {{ props.titleCourse }}
           </p>
@@ -53,42 +53,47 @@ let viewCard = ref(false);
   </div>
 
   <div
-    class="bg-[#31313f] relative p-4 rounded-md w-[380px]"
+    class="bg-[#31313f] relative p-4 rounded-md w-full md:w-[380px] cursor-pointer"
     v-else
     @click="viewCard = !viewCard"
   >
     <div
       class="bg-primaryColor w-[10px] h-[50px] absolute left-[-5px] top-[15px]"
     ></div>
-    <div class="flex flex-col gap-4">
-      <div class="flex flex-row gap-2">
-        <img class="w-[1.5rem] h-[1.5rem]" :src="props.image" alt="" />
-        <span class="text-white font-poppins text-[14px] font-bold uppercase">
-          {{ props.course }} - {{ props.institution }}
-        </span>
+    <div class="flex flex-col justify-between gap-4 h-full">
+      <div class="flex flex-row gap-4 items-center">
+        <img class="w-[2rem] h-[2rem]" :src="props.image" alt="" />
+        <div class="flex flex-col">
+          <span
+            class="text-[#c1c1c1] font-poppins text-[10px] font-bold uppercase"
+          >
+            {{ props.institution }}
+          </span>
+          <span class="text-white font-poppins text-[16px] font-bold uppercase">
+            {{ props.course }}
+          </span>
+        </div>
       </div>
       <div class="flex flex-col justify-between gap-4">
-        <span class="text-[#f2f2f2] text-[12px] text-justify">
+        <span class="text-[#f2f2f2] text-[14px] text-justify">
           {{ props.description }}
         </span>
-        <div class="flex flex-row justify-center gap-2">
-          <div
-            class="flex items-center bg-[#121214] rounded-full p-2"
-            v-for="tecnologie in arrayTechnologies"
-          >
-            <box-icon
-              type="logo"
-              :name="tecnologie"
-              class="w-[2rem] h-[2rem]"
-              color="#7562e0"
-            ></box-icon>
-          </div>
+      </div>
+      <div class="flex flex-row justify-between gap-2">
+        <div
+          class="flex items-center bg-[#121214] rounded-full p-2"
+          v-if="arrayTechnologies[0] != ''"
+          v-for="tecnologie in arrayTechnologies"
+          :title="tecnologie.charAt(0).toUpperCase() + tecnologie.slice(1)"
+        >
+          <box-icon
+            type="logo"
+            :name="tecnologie"
+            class="w-[2rem] h-[2rem]"
+            color="#7562e0"
+          ></box-icon>
         </div>
       </div>
     </div>
-
-    <!-- <div v-if="viewCard" class="bg-[#31313f] text-[#c1c1c1] w-full text-justify ">
-      {{ props.description }}
-    </div> -->
   </div>
 </template>

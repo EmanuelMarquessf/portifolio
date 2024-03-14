@@ -36,9 +36,9 @@
         </button>
       </div>
     </div>
-    <div class="relative bottom-[-50px] flex items-center justify-center">
-      <div class="bg-primaryColor rounded-[250px] w-[28rem] h-[28rem]">
-        <img class="w-[24rem] relative scale-[125%] left-[30px] bottom-[30px]" src="../../public/fotoPerfil5.png" />
+    <div class="relative bottom-[-60px] flex items-center justify-center">
+      <div class="bg-primaryColor rounded-[250px] w-[27.5rem] h-[27.5rem]">
+        <img class="w-[24rem] relative scale-[125%] left-[30px] bottom-[30px]" src="../../public/fotoPerfil6.png" />
       </div>
     </div>
   </main>

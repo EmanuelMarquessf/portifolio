@@ -40,7 +40,7 @@ import ExperienceCard from "../components/experienceCard.vue";
           institution="isasoft softwares"
           image="../../public/isasoftLogo.png"
           description="Prestei suporte aos clientes, forneci orientação e treinamento, colaborei com a equipe de desenvolvimento com base no feedback dos clientes, realizei testes detalhados do sistema e gerenciei bancos de dados para identificar bugs. Contribuí para a melhoria da qualidade dos produtos e da experiência do cliente."
-          tecnologie="html5, css3, javascript, vuejs"
+          tecnologie="html5, css3, javascript, postgresql"
         />
         <ExperienceCard
           titleCourse="Freelance - atual"
