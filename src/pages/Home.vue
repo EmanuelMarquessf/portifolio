@@ -1,9 +1,9 @@
 <template>
-  <main class="flex flex-col pt-[6rem] md:pt-[7rem] lg:pt-[10rem] xl:pt-[15.5rem]">
+  <main class="flex flex-col pt-[6rem] md:pt-[9rem] lg:pt-[10rem] xl:pt-[12rem] 2xl:pt-[15.5rem]">
     <div
-      class="flex flex-col gap-4 md:gap-8 lg:gap-12 xl:gap-20 lg:flex-row lg:justify-between items-center mx-10 z-0 md:mx-12 lg:mx-14 xl:mx-40 2xl:mx-64"
+      class="flex flex-col gap-4 md:gap-8 lg:gap-12 xl:gap-28 2xl:gap-36 lg:flex-row lg:justify-between items-center mx-10 z-0 md:mx-12 lg:mx-14 xl:mx-40 2xl:mx-48"
     >
-      <div class="flex flex-col lg:gap-10">
+      <div class="flex flex-col my-0 md:my-4 lg:my-0 gap-8 lg:gap-10">
         <div class="flex flex-col">
           <span
             class="md:hidden lg:block text-white font-poppins font-semibold text-[1.3rem] md:text-[1.5rem] lg:text-[2rem] 2xl:text-[3rem]"
@@ -32,7 +32,7 @@
             </p>
           </div>
         </div>
-        <div class="flex flex-row justify-between my-6 lg:mt-[1.81rem] lg:mb-[3rem]">
+        <div class="flex flex-row justify-between mb-16 lg:mt-[1.81rem] lg:mb-[3rem]">
           <button
             class="bg-primaryColor py-[12px] px-[25px] rounded-lg flex items-center gap-[0.38rem]"
           >
@@ -55,7 +55,7 @@
         </div>
       </div>
       <div
-        class="md:w-full md:justify-around flex flex-col md:flex-row md:items-center lg:relative lg:bottom-[-132px] 2xl:bottom-[-126px] order-first lg:order-last"
+        class="md:w-full md:justify-around flex flex-col md:flex-row md:items-center lg:relative lg:bottom-[-130px] 2xl:bottom-[-126px] order-first lg:order-last"
       >
         <div
           class="bg-primaryColor rounded-full lg:w-[27rem] lg:h-[27rem] xl:w-[30.5rem] xl:h-[30.5rem] 2xl:w-[33.5rem] 2xl:h-[33.5rem]"
@@ -84,6 +84,6 @@
         </div>
       </div>
     </div>
-    <div class="bg-darkColor h-[6rem] md:h-[8rem] w-full relative z-50"></div>
+    <div class="bg-darkColor h-[6.1rem] md:h-[8rem] w-full relative z-40"></div>
   </main>
 </template>

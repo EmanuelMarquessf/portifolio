@@ -17,7 +17,7 @@ let viewCard = ref(false);
 
 <template>
   <div
-    class="bg-[#31313f] relative p-4 rounded-md w-full md:w-[380px]"
+    class="bg-[#31313f] relative p-4 rounded-md w-full md:w-[340px] md:h-[150px] "
     v-if="!viewCard"
     @click="viewCard = !viewCard"
   >
@@ -33,7 +33,7 @@ let viewCard = ref(false);
           >
             {{ props.titleCourse }}
           </p>
-          <p class="text-white text-[1.4rem] font-bold capitalize">
+          <p class="text-white text-[1.4rem] md:text-[1.25rem] font-bold capitalize">
             {{ props.course }}
           </p>
         </div>
@@ -54,10 +54,10 @@ let viewCard = ref(false);
   <div
     v-else
     @click="viewCard = !viewCard"
-    class="bg-[#31313f] relative p-4 rounded-md w-full w-[380px]"
+    class="bg-[#31313f] relative p-4 rounded-md w-full md:w-[340px] md:h-[320px] "
   >
     <div
-      class="bg-primaryColor w-[10px] h-[50px] absolute left-[-5px] top-[15px]"
+      class="bg-primaryColor w-[10px] h-[50px] absolute left-[-5px] top-[35px]"
     ></div>
     <div class="flex flex-col justify-between gap-4 h-full">
       <div class="flex flex-row gap-4 items-center">
@@ -94,5 +94,6 @@ let viewCard = ref(false);
         </div>
       </div>
     </div>
+    
   </div>
 </template>

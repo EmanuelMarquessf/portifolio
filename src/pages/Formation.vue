@@ -9,7 +9,7 @@ import ExperienceCard from "../components/experienceCard.vue";
       <h2 class="text-primaryColor font-poppins font-semibold text-[2rem]">
         Formação:
       </h2>
-      <div class="flex flex-row gap-4 flex-wrap">
+      <div class="flex flex-row gap-4 flex-wrap md:flex-nowrap lg:flex-wrap">
         <FormationCard
           titleCourse="técnico"
           course="Informática Integrado"
@@ -32,7 +32,7 @@ import ExperienceCard from "../components/experienceCard.vue";
       <h2 class="text-primaryColor font-poppins font-semibold text-[2rem]">
         Experiências:
       </h2>
-      <div class="flex flex-row gap-6 flex-wrap">
+      <div class="flex flex-row gap-4 flex-wrap md:flex-nowrap lg:flex-wrap">
         <ExperienceCard
           titleCourse="estagio - 1 ano"
           course="ánalista de suporte"

@@ -18,7 +18,7 @@ let viewCard = ref(false);
 
 <template>
   <div
-    class="bg-[#31313f] relative p-4 rounded-md w-full md:w-[380px] md:h-[150px] cursor-pointer"
+    class="bg-[#31313f] relative p-4 rounded-md w-full md:w-[340px] md:h-[150px] cursor-pointer items-center"
     v-if="!viewCard"
     @click="viewCard = !viewCard"
   >
@@ -34,7 +34,9 @@ let viewCard = ref(false);
           >
             {{ props.titleCourse }}
           </p>
-          <p class="text-white text-[1.5rem] font-bold capitalize">
+          <p
+            class="text-white text-[1.2rem] md:text-[1.25rem] font-bold capitalize"
+          >
             {{ props.course }}
           </p>
         </div>
@@ -44,7 +46,9 @@ let viewCard = ref(false);
           >
             {{ props.institutionTitle }}
           </p>
-          <p class="text-white font-poppins text-[1.5rem] font-bold capitalize">
+          <p
+            class="text-white font-poppins text-[1.4rem] md:text-[1.3rem] lg:text-[1.4rem] font-bold capitalize"
+          >
             {{ props.institution }}
           </p>
         </div>
@@ -53,7 +57,7 @@ let viewCard = ref(false);
   </div>
 
   <div
-    class="bg-[#31313f] relative p-4 rounded-md w-full md:w-[380px] cursor-pointer"
+    class="bg-[#31313f] relative p-4 rounded-md w-full md:max-w-none md:w-[340px] md:h-[320px] cursor-pointer"
     v-else
     @click="viewCard = !viewCard"
   >

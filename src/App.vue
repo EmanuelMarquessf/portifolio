@@ -1,5 +1,5 @@
 <script setup>
-import Header from "./pages/Header.vue";
+import Header from "./components/Header.vue";
 import Home from "./pages/Home.vue";
 // import About from './pages/About.vue';
 import Formation from "./pages/Formation.vue";
@@ -16,7 +16,7 @@ import Contact from "./pages/Contact.vue";
     <div class="flex flex-col gap-24 mx-6 md:mx-12 xl:mx-40 2xl:mx-48">
       <About id="about"></About>
       <Formation id="experience"></Formation>
-      <Tecno id="tecno"></Tecno>
+      <Tecno id="tecnologie"></Tecno>
       <Projects id="projects"></Projects>
       <!-- <Contact id="contact"></Contact> -->
     </div>

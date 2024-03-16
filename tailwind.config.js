@@ -3,6 +3,8 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
+    'node_modules/flowbite-vue/**/*.{js,jsx,ts,tsx,vue}',
+    'node_modules/flowbite/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
     extend: {
@@ -14,8 +16,13 @@ export default {
         lowPrioriry: '#BDBDBD',
         secondaryText: '#708C88'
       },
+      fontFamily: {
+        'cherry': ['Sua Fonte Personalizada', 'sans-serif'],
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }
 
