@@ -4,5 +4,8 @@ import App from './App.vue'
 import 'boxicons'
 import '../node_modules/flowbite-vue/dist/index.css'
 
+const app = createApp(App);
 
-createApp(App).mount('#app')
+app.config.globalProperties.language = 'pt-br'
+
+app.mount("#app")

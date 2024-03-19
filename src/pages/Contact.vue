@@ -9,7 +9,7 @@
         <a href=""><box-icon class="w-[35px] h-[35px]" name='envelope' type='solid' color='#7562E0' ></box-icon></a>
       </div>
     </div>
-    <form action="" class="w-[50%] flex flex-col gap-4">
+    <!-- <form action="" class="w-[50%] flex flex-col gap-4">
       <h3 class=" text-white font-poppins font-semibold text-[23px]">Contact me, let’s make magic together</h3>
       <input class="flex shrink-0 p-4 bg-[#31313f] rounded grow" type="text" placeholder="Nome:">
       <input class="flex shrink-0 p-4 bg-[#31313f] rounded grow" type="text" placeholder="Email:">
@@ -18,6 +18,6 @@
       <button class="bg-primaryColor py-[12px] rounded-lg flex items-center grow justify-center">
         <span class="text-white font-poppins font-semibold text-[1rem]"><input type="submit"></span>
       </button>
-    </form>
+    </form> -->
   </section>
 </template>

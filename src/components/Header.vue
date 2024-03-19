@@ -1,17 +1,55 @@
+<script setup>
+import { ref, onMounted, defineProps, defineEmits } from "vue";
+import { initFlowbite } from "flowbite";
+
+const emit = defineEmits(['languageSelect'])
+
+onMounted(() => {
+  initFlowbite();
+});
+
+const props = defineProps(['language'])
+
+const languageRef = ref(props.language.value)
+
+function langSelect(){
+  languageRef.value = !languageRef
+  emit('languageSelect', languageRef.value)
+}
+</script>
+
 <template>
-  <nav
-    id="header"
-    class="border-gray-200 bg-[#121214] z-50 fixed w-full"
-  >
+  <nav id="header" class="border-gray-200 bg-[#121214] z-50 fixed w-full">
     <div
       class="max-w-screen-3xl flex flex-wrap items-center justify-between md:mx-4 p-4"
     >
       <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img
-          src="../../public/EMLogo.png"
-          class="w-10 bg-"
-          alt="Flowbite Logo"
-        />
+        <div class="flex flex-row gap-1">
+          <a href=""><box-icon class="w-7 h-7" name='instagram' type='logo' color='#7562E0' ></box-icon></a>
+          <a href=""><box-icon class="w-7 h-7" name='linkedin-square' type='logo' color='#7562E0' ></box-icon></a>
+          <a href=""><box-icon class="w-7 h-7" name='envelope' type='solid' color='#7562E0' ></box-icon></a>
+        </div>
+        <label
+          class="my-2 mx-4 z-50 inline-flex items-center cursor-pointer"
+        >
+          <input
+            type="checkbox"
+            value=""
+            class="sr-only peer"
+            v-model="languageRef"
+            @click="langSelect"
+          />
+          <div
+            :class="languageRef ? 'bg-image' : ''"
+            class="relative px-1 w-14 h-7 bg-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primaryColor dark:peer-focus:primaryColor rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[4px] after:bg-primaryColor after:border-primaryColor after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-primaryColor"
+          >
+            <span v-if="languageRef" class="text-white font-bold">EN</span>
+            <span v-else class="text-primaryColor px-6 font-bold">PT</span>
+      
+          </div>
+          <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"></span
+          >
+        </label>
         <!-- <span class="self-center text-2xl whitespace-nowrap text-[#7562e0] font-[cherry] font-[700]">Em</span> -->
       </a>
       <button
@@ -55,15 +93,15 @@
               href="#experience"
               class="block py-2 px-3 md:p-0 text-[#b2b2b2] rounded hover:text-[#fffff0] md:bg-transparent md:text-xl capitalize"
               aria-current="page"
-              >Experience</a
-            >
+              >{{ languageRef ? "Experiences" : "Experiências" }}
+            </a>
           </li>
           <li>
             <a
               href="#tecnologie"
               class="block py-2 px-3 md:p-0 text-[#b2b2b2] rounded hover:text-[#fffff0] md:bg-transparent md:text-xl capitalize"
               aria-current="page"
-              >Tecnologias</a
+              >{{ languageRef ? "Technologies" : "Tecnologias" }}</a
             >
           </li>
           <li>
@@ -71,7 +109,7 @@
               href="#clientes"
               class="block py-2 px-3 md:p-0 text-[#b2b2b2] rounded hover:text-[#fffff0] md:bg-transparent md:text-xl capitalize"
               aria-current="page"
-              >projects</a
+              >{{ languageRef ? "Projects" : "Projetos" }}</a
             >
           </li>
           <li>
@@ -79,7 +117,7 @@
               href="#contato"
               class="block py-2 px-3 md:p-0 text-[#b2b2b2] rounded hover:text-[#fffff0] md:bg-transparent md:text-xl capitalize"
               aria-current="page"
-              >Contato</a
+              >{{ languageRef ? "Contact" : "Contato" }}</a
             >
           </li>
         </ul>
@@ -87,13 +125,3 @@
     </div>
   </nav>
 </template>
-
-<script setup>
-import { onMounted } from "vue";
-import { initFlowbite } from "flowbite";
-
-// initialize components based on data attribute selectors
-onMounted(() => {
-  initFlowbite();
-});
-</script>

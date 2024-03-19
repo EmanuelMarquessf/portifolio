@@ -2,22 +2,16 @@
 import { defineProps, ref } from "vue";
 
 const props = defineProps({
-  titleCourse: String,
-  course: String,
-  institutionTitle: String,
-  institution: String,
-  image: String,
-  description: String,
-  tecnologie: String,
+  formation: Array,
 });
 
-let arrayTechnologies = (props.tecnologie || "").split(", ");
+let arrayTechnologies = (props.formation.tecnologie || "").split(", ");
 let viewCard = ref(false);
 </script>
 
 <template>
   <div
-    class="bg-[#31313f] relative p-4 rounded-md w-full md:w-[340px] md:h-[150px] "
+    class="bg-[#31313f] relative p-4 rounded-md w-full md:w-[340px] md:h-[150px] cursor-pointer items-center opacity-80 hover:opacity-100 hover:scale-105 transition-all duration-500 ease-in-out"
     v-if="!viewCard"
     @click="viewCard = !viewCard"
   >
@@ -25,26 +19,28 @@ let viewCard = ref(false);
       class="bg-primaryColor w-[10px] h-[50px] absolute left-[-5px] top-[10%]"
     ></div>
     <div class="flex flex-row items-center gap-4">
-      <img class="w-[5rem] h-[7rem]" :src="props.image" alt="" />
+      <img class="w-[5rem] h-[7rem]" :src="props.formation.image" alt="" />
       <div class="flex flex-col justify-between gap-2">
         <div>
           <p
             class="text-[#c1c1c1] font-poppins text-[14px] font-bold uppercase"
           >
-            {{ props.titleCourse }}
+            {{ props.formation.courseType }}
           </p>
-          <p class="text-white text-[1.4rem] md:text-[1.25rem] font-bold capitalize">
-            {{ props.course }}
+          <p
+            class="text-white text-[1.4rem] md:text-[1.25rem] font-bold capitalize"
+          >
+            {{ props.formation.courseName }}
           </p>
         </div>
         <div>
           <p
             class="text-[#c1c1c1] font-poppins text-[14px] font-bold uppercase"
           >
-            {{ props.institutionTitle }}
+            {{ props.formation.institutionTitle }}
           </p>
           <p class="text-white font-poppins text-[1.5rem] font-bold capitalize">
-            {{ props.institution }}
+            {{ props.formation.institution }}
           </p>
         </div>
       </div>
@@ -54,28 +50,28 @@ let viewCard = ref(false);
   <div
     v-else
     @click="viewCard = !viewCard"
-    class="bg-[#31313f] relative p-4 rounded-md w-full md:w-[340px] md:h-[320px] "
+    class="bg-[#31313f] relative p-4 rounded-md w-full md:w-[340px] md:h-[320px] cursor-pointer"
   >
     <div
       class="bg-primaryColor w-[10px] h-[50px] absolute left-[-5px] top-[35px]"
     ></div>
     <div class="flex flex-col justify-between gap-4 h-full">
       <div class="flex flex-row gap-4 items-center">
-        <img class="w-[1.5rem] h-[2rem]" :src="props.image" alt="" />
+        <img class="w-[1.5rem] h-[2rem]" :src="props.formation.image" alt="" />
         <div class="flex flex-col">
           <span
             class="text-[#c1c1c1] font-poppins text-[10px] font-bold uppercase"
           >
-            {{ props.institution }}
+            {{ props.formation.institution }}
           </span>
           <span class="text-white font-poppins text-[16px] font-bold uppercase">
-            {{ props.course }}
+            {{ props.formation.courseName }}
           </span>
         </div>
       </div>
       <div class="flex flex-col justify-between gap-4">
         <span class="text-[#f2f2f2] text-[14px] text-justify">
-          {{ props.description }}
+          {{ props.formation.description }}
         </span>
       </div>
       <div class="flex flex-row justify-between gap-2">
@@ -94,6 +90,5 @@ let viewCard = ref(false);
         </div>
       </div>
     </div>
-    
   </div>
 </template>
