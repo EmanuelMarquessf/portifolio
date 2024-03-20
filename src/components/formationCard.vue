@@ -11,7 +11,7 @@ let viewCard = ref(false);
 
 <template>
   <div
-    class="bg-[#31313f] relative p-4 rounded-md w-full md:w-[340px] md:h-[150px] cursor-pointer items-center opacity-80 hover:opacity-100 hover:scale-105 transition-all duration-500 ease-in-out"
+    class="bg-[#31313f] relative p-4 rounded-md w-full md:w-[340px] md:h-[150px] cursor-pointer items-center opacity-60 hover:opacity-100 hover:scale-105 transition-all duration-500 ease-in-out"
     v-if="!viewCard"
     @click="viewCard = !viewCard"
   >

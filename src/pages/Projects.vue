@@ -12,7 +12,7 @@ watchEffect(() => {
   projectsArray.value = [
     {
       name: "Bitcode Soluções",
-      description: props.language ? "Project still under development" : "Elaboração do Ui/Ux da página, alem de seu desenvovliemtno front-ent",
+      description: props.language ? "Project still under development" : "Elaboração do Ui/Ux da página, alem de seu desenvolvimento front-ent",
       cover: "../../public/projectImg.png",
       url: "https://bitcodesolucoes.com.br/",
       repositoryUrl: "",

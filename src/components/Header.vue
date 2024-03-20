@@ -2,19 +2,19 @@
 import { ref, onMounted, defineProps, defineEmits } from "vue";
 import { initFlowbite } from "flowbite";
 
-const emit = defineEmits(['languageSelect'])
+const emit = defineEmits(["languageSelect"]);
 
 onMounted(() => {
   initFlowbite();
 });
 
-const props = defineProps(['language'])
+const props = defineProps(["language"]);
 
-const languageRef = ref(props.language.value)
+const languageRef = ref(props.language);
 
-function langSelect(){
-  languageRef.value = !languageRef
-  emit('languageSelect', languageRef.value)
+function langSelect() {
+  languageRef.value = !languageRef.value;
+  emit("languageSelect", languageRef.value);
 }
 </script>
 
@@ -23,19 +23,12 @@ function langSelect(){
     <div
       class="max-w-screen-3xl flex flex-wrap items-center justify-between md:mx-4 p-4"
     >
-      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <div class="flex flex-row gap-1">
-          <a href=""><box-icon class="w-7 h-7" name='instagram' type='logo' color='#7562E0' ></box-icon></a>
-          <a href=""><box-icon class="w-7 h-7" name='linkedin-square' type='logo' color='#7562E0' ></box-icon></a>
-          <a href=""><box-icon class="w-7 h-7" name='envelope' type='solid' color='#7562E0' ></box-icon></a>
-        </div>
-        <label
-          class="my-2 mx-4 z-50 inline-flex items-center cursor-pointer"
-        >
+      <div class="flex flex-row items-center gap-12 md:gap-4">
+        <label class="mx-4 z-50 inline-flex items-center cursor-pointer opacity-50 hover:opacity-100 hover:scale-105 transition-all duration-500 ease-in-out">
           <input
             type="checkbox"
             value=""
-            class="sr-only peer"
+            class="sr-only peer "
             v-model="languageRef"
             @click="langSelect"
           />
@@ -45,13 +38,67 @@ function langSelect(){
           >
             <span v-if="languageRef" class="text-white font-bold">EN</span>
             <span v-else class="text-primaryColor px-6 font-bold">PT</span>
-      
           </div>
-          <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"></span
-          >
+          <span
+            class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+          ></span>
         </label>
-        <!-- <span class="self-center text-2xl whitespace-nowrap text-[#7562e0] font-[cherry] font-[700]">Em</span> -->
-      </a>
+        <div class="flex flex-row items-center gap-1">
+          <a
+            class="flex items-center"
+            href="https://wa.me/5512996360065"
+            target="_blank"
+            title="+55 (12) 99636-0065"
+          >
+            <box-icon
+              class="w-8 h-8 opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-500 ease-in-out"
+              name="whatsapp"
+              type="logo"
+              color="#7562E0"
+            ></box-icon>
+          </a>
+          <a
+            class="flex items-center"
+            href="https://www.linkedin.com/in/emanuel-fonseca-dev/"
+            target="_blank"
+            title="https://www.linkedin.com/in/emanuel-fonseca-dev/"
+          >
+            <box-icon
+              class="w-8 h-8 opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-500 ease-in-out"
+              name="linkedin-square"
+              type="logo"
+              color="#7562E0"
+            ></box-icon>
+          </a>
+          <a
+            class="flex items-center"
+            href="mailto:emanuel.marquessf@gmail.com"
+            target="_blank"
+            title="emanuel.marquessf@gmail.com"
+          >
+            <box-icon
+              class="w-8 h-8 opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-500 ease-in-out"
+              name="envelope"
+              type="solid"
+              color="#7562E0"
+            ></box-icon>
+          </a>
+          <a
+            class="flex items-center"
+            href="https://github.com/EmanuelMarquessf"
+            target="_blank"
+            title="@EmanuelMarquessf"
+          >
+            <box-icon
+              class="w-8 h-8 opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-500 ease-in-out"
+              name="github"
+              type="logo"
+              color="#7562E0"
+            ></box-icon>
+          </a>
+        </div>
+      </div>
+      <!-- <span class="self-center text-2xl whitespace-nowrap text-[#7562e0] font-[cherry] font-[700]">Em</span> -->
       <button
         data-collapse-toggle="navbar-solid-bg"
         type="button"
@@ -106,20 +153,20 @@ function langSelect(){
           </li>
           <li>
             <a
-              href="#clientes"
+              href="#projects"
               class="block py-2 px-3 md:p-0 text-[#b2b2b2] rounded hover:text-[#fffff0] md:bg-transparent md:text-xl capitalize"
               aria-current="page"
               >{{ languageRef ? "Projects" : "Projetos" }}</a
             >
           </li>
-          <li>
+          <!-- <li>
             <a
               href="#contato"
               class="block py-2 px-3 md:p-0 text-[#b2b2b2] rounded hover:text-[#fffff0] md:bg-transparent md:text-xl capitalize"
               aria-current="page"
               >{{ languageRef ? "Contact" : "Contato" }}</a
             >
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>

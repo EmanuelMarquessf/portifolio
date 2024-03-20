@@ -57,14 +57,15 @@ const props = defineProps({
               name="user"
             ></box-icon>
           </button> -->
-          
-          <button
-            class="bg-transparent py-[12px] px-[25px] rounded-lg border-solid border-2 border-primaryColor text-white flex items-center gap-[0.38rem]"
-          >
-            <span class="text-white font-poppins font-semibold text-[1rem]"
-              >{{ props.language ? "Projects" : "Projetos" }}</span
-            ><box-icon name="code-alt" color="#ffffff"></box-icon>
-          </button>
+          <a href="#projects">
+            <button
+              class="bg-transparent py-[12px] px-[25px] rounded-lg border-solid border-2 border-primaryColor text-white flex items-center gap-[0.38rem]"
+            >
+              <span class="text-white font-poppins font-semibold text-[1rem]"
+                >{{ props.language ? "Projects" : "Projetos" }}</span
+              ><box-icon name="code-alt" color="#ffffff"></box-icon>
+            </button>
+          </a>
         </div>
       </div>
       <div
