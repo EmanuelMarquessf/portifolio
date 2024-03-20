@@ -76,7 +76,7 @@ const props = defineProps({
         >
           <img
             class="w-[14rem] lg:w-[24rem] rounded-full lg:rounded-none lg:relative md:scale-[100%] lg:scale-[130%] xl:scale-[140%] 2xl:scale-[160%] lg:left-[40px] xl:left-[60px] lg:bottom-[105px] xl:bottom-[90px] 2xl:bottom-[100px]"
-            src="../../public/fotoPerfil6.png"
+            src="../../public/fotoPerfil7.png"
           />
         </div>
         <div class="md:flex md:flex-col hidden lg:hidden">
