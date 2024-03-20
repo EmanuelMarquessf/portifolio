@@ -5,8 +5,6 @@ import Home from "./pages/Home.vue";
 import Formation from "./pages/Formation.vue";
 import Tecno from "./pages/Tecno.vue";
 import Projects from "./pages/Projects.vue";
-import Contact from "./pages/Contact.vue";
-import Footer from "./components/Footer.vue";
 
 import { ref } from "vue";
 
