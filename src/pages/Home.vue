@@ -18,7 +18,7 @@ const props = defineProps({
           <span
             class="md:hidden lg:block text-white font-poppins font-semibold text-[1.3rem] md:text-[1.5rem] lg:text-[2rem] 2xl:text-[3rem]"
           >
-          {{ props.language ? "Hello I'm" : "Olá, eu sou" }}
+            {{ props.language ? "Hello I'm" : "Olá, eu sou" }}
           </span>
           <span
             class="md:hidden lg:block text-white font-poppins font-semibold text-[2rem] md:text-[2.8rem] lg:text-[3.25rem] xl:text-[4rem]"
@@ -29,16 +29,20 @@ const props = defineProps({
             <span
               class="md:hidden lg:block text-white font-poppins font-medium text-[1.05rem] lg:text-[1.2rem] xl:text-[1.3rem] md:w-[27rem]"
             >
-            {{ props.language ? "Front-end Developer & Ui/Ux Designer" : "Desenvolvedor Front-end & Designer Ui/Ux" }}
+              {{
+                props.language
+                  ? "Front-end Developer & Ui/Ux Designer"
+                  : "Desenvolvedor Front-end & Designer Ui/Ux"
+              }}
             </span>
             <p
               class="text-white font-poppins font-normal md:font-medium text-left md:text-justify text-[1rem] md:text-[1rem] lg:w-[400px] xl:w-[550px] 2xl:w-[700px]"
             >
-              {{ props.language ? 
-                "Hello, my name is Emanuel and I am a Frontend web developer from Campos do Jordão, São Paulo. I like programing and my goal is to create awesome websites and applications that solve real world problems while looking beautiful on every device. I'm currently looking for my first working with frontend developer." 
-                : 
-                "Olá, eu sou Emanuel Marques, tenho 23 anos e sou graduado em Análise e Desenvolvimento de Sistemas pelo IFSP Campus Campos do Jordão. No momento, estou dedicando meu tempo aos estudos na área de desenvolvimento web, com um foco específico no front-end. Estou focado em encontrar minha primeira oportunidade como programador." }}
-
+              {{
+                props.language
+                  ? "Hello, my name is Emanuel and I am a Frontend web developer from Campos do Jordão, São Paulo. I like programing and my goal is to create awesome websites and applications that solve real world problems while looking beautiful on every device. I'm currently looking for my first working with frontend developer."
+                  : "Olá, eu sou Emanuel Marques, tenho 23 anos e sou graduado em Análise e Desenvolvimento de Sistemas pelo IFSP Campus Campos do Jordão. No momento, estou dedicando meu tempo aos estudos na área de desenvolvimento web, com um foco específico no front-end. Estou focado em encontrar minha primeira oportunidade como programador."
+              }}
             </p>
           </div>
         </div>
@@ -61,8 +65,9 @@ const props = defineProps({
             <button
               class="bg-transparent py-[12px] px-[25px] rounded-lg border-solid border-2 border-primaryColor text-white flex items-center gap-[0.38rem]"
             >
-              <span class="text-white font-poppins font-semibold text-[1rem]"
-                >{{ props.language ? "Projects" : "Projetos" }}</span
+              <span class="text-white font-poppins font-semibold text-[1rem]">{{
+                props.language ? "Projects" : "Projetos"
+              }}</span
               ><box-icon name="code-alt" color="#ffffff"></box-icon>
             </button>
           </a>
@@ -75,15 +80,15 @@ const props = defineProps({
           class="bg-primaryColor rounded-full lg:w-[27rem] lg:h-[27rem] xl:w-[30.5rem] xl:h-[30.5rem] 2xl:w-[33.5rem] 2xl:h-[33.5rem]"
         >
           <img
-            class="w-[14rem] lg:w-[24rem] rounded-full lg:rounded-none lg:relative md:scale-[100%] lg:scale-[130%] xl:scale-[140%] 2xl:scale-[160%] lg:left-[40px] xl:left-[60px] lg:bottom-[105px] xl:bottom-[90px] 2xl:bottom-[100px]"
-            src="../../public/fotoPerfil7.png"
+            class="bg-transparent w-[14rem] lg:w-[24rem] rounded-full lg:rounded-none lg:relative md:scale-[100%] lg:scale-[130%] xl:scale-[140%] 2xl:scale-[160%] lg:left-[40px] xl:left-[60px] lg:bottom-[105px] xl:bottom-[90px] 2xl:bottom-[100px]"
+            src="https://i.ibb.co/Rh2KByL/fotoperfil6.png"
           />
         </div>
         <div class="md:flex md:flex-col hidden lg:hidden">
           <span
             class="text-white font-poppins font-semibold md:text-[1.5rem] lg:text-[2rem] 2xl:text-[3rem]"
           >
-          {{ props.language ? "Hello I'm" : "Olá, eu sou" }}
+            {{ props.language ? "Hello I'm" : "Olá, eu sou" }}
           </span>
           <span
             class="text-white font-poppins font-semibold md:text-[2.8rem] lg:text-[3.25rem] xl:text-[4rem]"
@@ -91,7 +96,11 @@ const props = defineProps({
             Emanuel Marques
           </span>
           <span class="text-white font-poppins font-medium md:text-[1.1rem]">
-            {{ props.language ? "Front-end Developer & Ui/Ux Designer" : "Desenvolvedor Front-end & Designer Ui/Ux" }}
+            {{
+              props.language
+                ? "Front-end Developer & Ui/Ux Designer"
+                : "Desenvolvedor Front-end & Designer Ui/Ux"
+            }}
           </span>
         </div>
       </div>
