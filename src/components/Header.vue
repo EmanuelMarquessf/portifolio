@@ -23,7 +23,7 @@ function langSelect() {
     <div
       class="max-w-screen-3xl flex flex-wrap items-center justify-between md:mx-4 p-4"
     >
-      <div class="flex flex-row items-center gap-12 md:gap-4">
+      <div class="flex flex-row items-center gap-2 md:gap-4">
         <label class="mx-4 z-50 inline-flex items-center cursor-pointer opacity-50 hover:opacity-100 hover:scale-105 transition-all duration-500 ease-in-out">
           <input
             type="checkbox"
