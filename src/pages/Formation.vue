@@ -56,7 +56,7 @@ watchEffect(() => {
       expName: "Dev. Front-end Jr.",
       instTitle: props.language ? "company" : "empresa",
       institution: "Bitcode Soluções",
-      image: "../../public/bitcodeLogo.png",
+      image: "https://i.ibb.co/7G2tpcm/bitcode-Logo.png",
       description: props.language
         ? ""
         : "Desenvolvimento de páginas web. Responsável pela criação de interfaces atraentes e intuitivas para o usuário, utilizando das tecnologias HTML, CSS, JavaScript, VueJs e TailwindCss. Além disso, participação ativa na concepção e design das interfaces através do Figma, garantindo uma experiência visualmente agradável e funcional para os usuários.",
