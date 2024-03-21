@@ -20,7 +20,7 @@ watchEffect(() => {
         : "Informática Integrado",
       institutionTitle: props.language ? "institution" : "instituição",
       institution: "Instituto Federal",
-      image: "../../public/ifspLogo.png",
+      image: "https://i.ibb.co/w4pBwgm/ifspLogo.png",
       description: props.language
         ? ""
         : "Prestei suporte aos clientes, forneci orientação e treinamento, colaborei com a equipe de desenvolvimento com base no feedback dos clientes, realizei testes detalhados do sistema e gerenciei bancos de dados para identificar bugs. Contribuí para a melhoria da qualidade dos produtos e da experiência do cliente.",
@@ -31,7 +31,7 @@ watchEffect(() => {
       courseName: props.language ? "systems analysis" : "Análise de Sistemas",
       institutionTitle: props.language ? "institution" : "instituição",
       institution: "Instituto Federal",
-      image: "../../public/ifspLogo.png",
+      image: "https://i.ibb.co/w4pBwgm/ifspLogo.png",
       description: props.language
         ? ""
         : "Prestei suporte aos clientes, forneci orientação e treinamento, colaborei com a equipe de desenvolvimento com base no feedback dos clientes, realizei testes detalhados do sistema e gerenciei bancos de dados para identificar bugs. Contribuí para a melhoria da qualidade dos produtos e da experiência do cliente.",
@@ -45,7 +45,7 @@ watchEffect(() => {
       expName: props.language ? "support analyst" : "ánalista de suporte",
       instTitle: props.language ? "company" : "empresa",
       institution: "Isasoft Softwares",
-      image: "../../public/isasoftLogo.png",
+      image: "https://i.ibb.co/5WkD9m4/isasoft-Logo.png",
       description: props.language
         ? ""
         : "Prestei suporte aos clientes, forneci orientação e treinamento, colaborei com a equipe de desenvolvimento com base no feedback dos clientes, realizei testes detalhados do sistema e gerenciei bancos de dados para identificar bugs. Contribuí para a melhoria da qualidade dos produtos e da experiência do cliente.",
