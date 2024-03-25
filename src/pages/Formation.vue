@@ -22,9 +22,10 @@ watchEffect(() => {
       institution: "Instituto Federal",
       image: "https://i.ibb.co/w4pBwgm/ifspLogo.png",
       description: props.language
-        ? ""
-        : "Prestei suporte aos clientes, forneci orientação e treinamento, colaborei com a equipe de desenvolvimento com base no feedback dos clientes, realizei testes detalhados do sistema e gerenciei bancos de dados para identificar bugs. Contribuí para a melhoria da qualidade dos produtos e da experiência do cliente.",
-      technologies: "html5",
+        ? "I studied in the High School integrated with a Technical course in Informatics, where I took my first steps in programming. As a final project, I developed an e-commerce platform for selling games, integrated with PagSeguro. "
+        : "No Ensino Médio integrado ao Técnico em Informática, foi onde dei meus primeiros passos na programação. Como projeto final, desenvolvi uma plataforma de e-commerce para venda de jogos, integrada ao PagSeguro.",
+      technologies: "html5, css3, javascript",
+      period: "(2016 - 2019)"
     },
     {
       courseType: props.language ? "technology" : "técnologo",
@@ -33,9 +34,10 @@ watchEffect(() => {
       institution: "Instituto Federal",
       image: "https://i.ibb.co/w4pBwgm/ifspLogo.png",
       description: props.language
-        ? ""
-        : "Prestei suporte aos clientes, forneci orientação e treinamento, colaborei com a equipe de desenvolvimento com base no feedback dos clientes, realizei testes detalhados do sistema e gerenciei bancos de dados para identificar bugs. Contribuí para a melhoria da qualidade dos produtos e da experiência do cliente.",
-      technologies: "",
+        ? "I consolidated my studies in computer science by developing a management system for a bookstore as my final project, featuring sales functions, inventory control, and report generation."
+        : "Consolidei meus estudos na computação, como projeto final, desenvolvi um sistema de gerenciamento para uma livraria com funções de venda, controle de estoque e emissão de relatórios.",
+      technologies: "c-plus-plus, html5, css3, javascript",
+      period: "(2019 - 2023)"
     },
   ];
 
@@ -50,6 +52,7 @@ watchEffect(() => {
         ? ""
         : "Prestei suporte aos clientes, forneci orientação e treinamento, colaborei com a equipe de desenvolvimento com base no feedback dos clientes, realizei testes detalhados do sistema e gerenciei bancos de dados para identificar bugs. Contribuí para a melhoria da qualidade dos produtos e da experiência do cliente.",
       technologies: "html5, css3, javascript, postgresql",
+      period: "(2021 - 2022)",
     },
     {
       expTitle: props.language ? "Freelance - current" : "Freelance - atual",
@@ -61,6 +64,7 @@ watchEffect(() => {
         ? ""
         : "Desenvolvimento de páginas web. Responsável pela criação de interfaces atraentes e intuitivas para o usuário, utilizando das tecnologias HTML, CSS, JavaScript, VueJs e TailwindCss. Além disso, participação ativa na concepção e design das interfaces através do Figma, garantindo uma experiência visualmente agradável e funcional para os usuários.",
       technologies: "html5, css3, javascript, vuejs, tailwind-css, figma",
+      period: "(2023 - atual)",
     },
   ];
 });
@@ -80,7 +84,7 @@ watchEffect(() => {
     </div>
     <div id="experiencias" class="flex flex-col gap-8">
       <h2 class="text-primaryColor font-poppins font-semibold text-[2rem]">
-        {{ props.language ? "Experience" : "Expepiências" }}
+        {{ props.language ? "Experience" : "Experiências" }}
       </h2>
       <div class="flex flex-row gap-6 flex-wrap md:flex-nowrap lg:flex-wrap">
         <ExperienceCard

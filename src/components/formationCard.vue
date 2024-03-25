@@ -5,7 +5,7 @@ const props = defineProps({
   formation: Array,
 });
 
-let arrayTechnologies = (props.formation.tecnologie || "").split(", ");
+let arrayTechnologies = (props.formation.technologies || "").split(", ");
 let viewCard = ref(false);
 </script>
 
@@ -50,12 +50,12 @@ let viewCard = ref(false);
   <div
     v-else
     @click="viewCard = !viewCard"
-    class="bg-[#31313f] relative p-4 rounded-md w-full md:w-[340px] md:h-[320px] cursor-pointer"
+    class="bg-[#31313f] relative p-4 rounded-md w-full md:w-[340px] md:h-[300px] cursor-pointer"
   >
     <div
       class="bg-primaryColor w-[10px] h-[50px] absolute left-[-5px] top-[35px]"
     ></div>
-    <div class="flex flex-col justify-between gap-4 h-full">
+    <div class="flex flex-col gap-8 h-full">
       <div class="flex flex-row gap-4 items-center">
         <img class="w-[1.5rem] h-[2rem]" :src="props.formation.image" alt="" />
         <div class="flex flex-col">
@@ -67,9 +67,13 @@ let viewCard = ref(false);
           <span class="text-white font-poppins text-[16px] font-bold uppercase">
             {{ props.formation.courseName }}
           </span>
+          <span class="text-white font-poppins text-[12px] font-light uppercase">
+            {{ props.formation.period }}
+          </span>
         </div>
       </div>
       <div class="flex flex-col justify-between gap-4">
+
         <span class="text-[#f2f2f2] text-[14px] text-justify">
           {{ props.formation.description }}
         </span>
@@ -78,12 +82,12 @@ let viewCard = ref(false);
         <div
           class="flex items-center bg-[#121214] rounded-full p-2"
           v-if="arrayTechnologies[0] != ''"
-          v-for="tecnologie in arrayTechnologies"
-          :title="tecnologie.charAt(0).toUpperCase() + tecnologie.slice(1)"
+          v-for="technologies in arrayTechnologies"
+          :title="technologies.charAt(0).toUpperCase() + technologies.slice(1)"
         >
           <box-icon
             type="logo"
-            :name="tecnologie"
+            :name="technologies"
             class="w-[2rem] h-[2rem]"
             color="#7562e0"
           ></box-icon>

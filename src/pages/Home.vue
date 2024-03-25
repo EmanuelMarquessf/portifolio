@@ -16,12 +16,12 @@ const props = defineProps({
       <div class="flex flex-col my-0 md:my-4 lg:my-0 gap-8 lg:gap-10">
         <div class="flex flex-col">
           <span
-            class="md:hidden lg:block text-white font-poppins font-semibold text-[1.3rem] md:text-[1.5rem] lg:text-[2rem] 2xl:text-[3rem]"
+            class="md:hidden lg:block text-white font-poppins font-semibold text-[1.3rem] md:text-[1.5rem] lg:text-[2rem] 2xl:text-[2.5rem]"
           >
             {{ props.language ? "Hello I'm" : "Olá, eu sou" }}
           </span>
           <span
-            class="md:hidden lg:block text-white font-poppins font-semibold text-[2rem] md:text-[2.8rem] lg:text-[3.25rem] xl:text-[4rem]"
+            class="md:hidden lg:block text-primaryColor font-poppins font-semibold text-[2rem] md:text-[2.8rem] lg:text-[3.25rem] xl:text-[4rem]"
           >
             Emanuel Marques
           </span>
@@ -41,7 +41,7 @@ const props = defineProps({
               {{
                 props.language
                   ? "Hello, my name is Emanuel and I am a Frontend web developer from Campos do Jordão, São Paulo. I like programing and my goal is to create awesome websites and applications that solve real world problems while looking beautiful on every device. I'm currently looking for my first working with frontend developer."
-                  : "Olá, eu sou Emanuel Marques, tenho 23 anos e sou graduado em Análise e Desenvolvimento de Sistemas pelo IFSP Campus Campos do Jordão. No momento, estou dedicando meu tempo aos estudos na área de desenvolvimento web, com um foco específico no front-end. Estou focado em encontrar minha primeira oportunidade como programador."
+                  : "Olá, eu sou o Emanuel, tenho 23 anos e sou graduado em Análise e Desenvolvimento de Sistemas pelo IFSP Campus Campos do Jordão. No momento, estou dedicando meu tempo aos estudos na área de desenvolvimento web, com um foco específico no front-end. Estou focado em encontrar minha primeira oportunidade como programador."
               }}
             </p>
           </div>
@@ -49,18 +49,6 @@ const props = defineProps({
         <div
           class="flex flex-row justify-between mb-16 items-center lg:mt-[1.81rem] lg:mb-[3rem]"
         >
-          <!-- <button
-            class="bg-primaryColor py-[12px] px-[25px] rounded-lg flex items-center gap-[0.38rem]"
-          >
-            <span class="text-white font-poppins font-semibold text-[1rem]"
-              >{{ props.language ? "About" : "Sobre" }}</span
-            ><box-icon
-              class="w-[1rem]"
-              color="#ffffff"
-              type="solid"
-              name="user"
-            ></box-icon>
-          </button> -->
           <a href="#projects">
             <button
               class="bg-transparent py-[12px] px-[25px] rounded-lg border-solid border-2 border-primaryColor text-white flex items-center gap-[0.38rem]"
