@@ -32,7 +32,7 @@ watchEffect(() => {
       courseName: props.language ? "systems analysis" : "Análise de Sistemas",
       institutionTitle: props.language ? "institution" : "instituição",
       institution: "Instituto Federal",
-      image: "https://i.ibb.co/w4pBwgm/ifspLogo.png",
+      image: "/ifspLogo.png",
       description: props.language
         ? "I consolidated my studies in computer science by developing a management system for a bookstore as my final project, featuring sales functions, inventory control, and report generation."
         : "Consolidei meus estudos na computação, como projeto final, desenvolvi um sistema de gerenciamento para uma livraria com funções de venda, controle de estoque e emissão de relatórios.",
@@ -47,7 +47,7 @@ watchEffect(() => {
       expName: props.language ? "support analyst" : "ánalista de suporte",
       instTitle: props.language ? "company" : "empresa",
       institution: "Isasoft Softwares",
-      image: "https://i.ibb.co/5WkD9m4/isasoft-Logo.png",
+      image: "/isasoftLogo.png",
       description: props.language
         ? ""
         : "Prestei suporte aos clientes, forneci orientação e treinamento, colaborei com a equipe de desenvolvimento com base no feedback dos clientes, realizei testes detalhados do sistema e gerenciei bancos de dados para identificar bugs. Contribuí para a melhoria da qualidade dos produtos e da experiência do cliente.",
@@ -59,7 +59,7 @@ watchEffect(() => {
       expName: "Dev. Front-end Jr.",
       instTitle: props.language ? "company" : "empresa",
       institution: "Bitcode Soluções",
-      image: "https://i.ibb.co/7G2tpcm/bitcode-Logo.png",
+      image: "/bitcodeLogo.png",
       description: props.language
         ? ""
         : "Desenvolvimento de páginas web. Responsável pela criação de interfaces atraentes e intuitivas para o usuário, utilizando das tecnologias HTML, CSS, JavaScript, VueJs e TailwindCss. Além disso, participação ativa na concepção e design das interfaces através do Figma, garantindo uma experiência visualmente agradável e funcional para os usuários.",
