@@ -33,8 +33,8 @@ watchEffect(() => {
       description: props.language ? "League of Legends character/skin viewer" : "Visualizador de personagens/skins do jogo League of Legends",
       tecs: ['figma', 'vuejs', 'tailwind-css'],
       cover: "../../public/LeagueViewer.png",
-      url: "",
-      repositoryUrl: "",
+      url: "https://emanuelmarquessf.github.io/lolSkinViewer/",
+      repositoryUrl: "https://github.com/EmanuelMarquessf/lolSkinViewer",
       status: props.language ? "In Progress" : "Em desenvolvimento",
     },
     {
