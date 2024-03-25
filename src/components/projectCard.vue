@@ -15,7 +15,7 @@ const props = defineProps({
       <h3 class="text-primaryColor font-poppins text-[1.5rem] font-semibold">
         {{ props.project.name }}
       </h3>
-      <h3 class="text-primaryColor font-poppins text-[0.9rem] font-semibold">
+      <h3 v-if="(props.project.status) != ''" class="text-primaryColor font-poppins text-[0.9rem] font-semibold">
         {{ props.project.status }}
       </h3>
     </div>

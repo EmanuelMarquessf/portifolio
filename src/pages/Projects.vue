@@ -44,7 +44,7 @@ watchEffect(() => {
       cover: "/projectImg.png",
       url: "",
       repositoryUrl: "",
-      status: props.language ? "In Progress" : "Em desenvolvimento",
+      status: props.language ? "" : "",
     },
   ];
 });
