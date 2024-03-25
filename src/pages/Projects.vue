@@ -41,7 +41,7 @@ watchEffect(() => {
       name: props.language ? "It's Comming" : "Em breve",
       description: props.language ? "Project still under development" : "Site consumindo a API",
       tecs: '',
-      cover: "https://i.ibb.co/6scR3Wn/project-Img.png",
+      cover: "/projectImg.png",
       url: "",
       repositoryUrl: "",
       status: props.language ? "In Progress" : "Em desenvolvimento",
