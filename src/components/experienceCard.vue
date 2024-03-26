@@ -77,7 +77,7 @@ let viewCard = ref(false);
           {{ props.experience.description }}
         </span>
       </div>
-      <div class="flex flex-row justify-between gap-2">
+      <div class="flex flex-row justify-between">
         <div
           class="flex items-center bg-[#121214] rounded-full p-2"
           v-if="arrayTechnologies[0] != ''"

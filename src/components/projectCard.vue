@@ -8,9 +8,21 @@ const props = defineProps({
 
 <template>
   <div
-    class="w-[272px]  md:w-[672px] lg:w-[456px] xl:w-[362px] flex flex-col justify-between p-4 bg-[#31313f] rounded shadow xl:grow gap-2 opacity-80 hover:scale-105 hover:opacity-100 transition-all duration-500 ease-in-out"
+    class="w-[272px] md:w-[672px] lg:w-[456px] xl:w-[362px] flex flex-col justify-between p-4 bg-[#31313f] rounded shadow xl:grow gap-2 opacity-70 hover:scale-105 hover:opacity-100 transition-all duration-500 ease-in-out"
   >
-    <img class="rounded-sm" :src="props.project.cover" alt="" />
+    <div class="bg-cover w-full h-[176px] flex flex-col justify-end items-end " :style="{ 'background-image': 'url(' + props.project.cover + ')' }">
+      <div v-if="props.project.tecs" class="flex flex-row justify-end bg-secondaryColor rounded-full m-1 p-1">
+        <box-icon
+          v-for="tec in props.project.tecs"
+          type="logo"
+          :name="tec"
+          :title="tec.charAt(0).toUpperCase() + tec.slice(1)"
+          class="w-[1.2rem] h-[1.2rem]"
+          color="#7562e0"
+        ></box-icon> 
+      </div>
+    </div>
+    <!-- <img class="rounded-sm" :src="props.project.cover" alt="" /> -->
     <div class="flex flex-row justify-between items-center">
       <h3 class="text-primaryColor font-poppins text-[1.5rem] font-semibold">
         {{ props.project.name }}
@@ -24,16 +36,17 @@ const props = defineProps({
     >
       {{ props.project.description }}
     </p>
-    <div class="flex flex-row gap-4 w-full">
+    <!-- <div class="flex flex-row justify-end gap-4 w-full">
       <box-icon
         v-for="tec in props.project.tecs"
         type="logo"
         :name="tec"
+        :title="tec.charAt(0).toUpperCase() + tec.slice(1)"
         class="w-[1.5rem] h-[1.5rem]"
         color="#7562e0"
       ></box-icon>
       
-    </div>
+    </div> -->
     <div class="flex flex-row gap-4 mt-4">
       <a
         v-if="props.project.url"

@@ -13,7 +13,7 @@ watchEffect(() => {
     {
       name: "Bitcode Soluções",
       description: props.language ? "Project still under development" : "Site institucional da empresa Bitcode Soluções",
-      tecs: ['figma', 'html5', 'css3', 'javascript', 'vuejs', 'tailwindcss'],
+      tecs: ['figma', 'vuejs', 'tailwind-css'],
       cover: "/bitcodeSite.png",
       url: "https://bitcodesolucoes.com.br/",
       repositoryUrl: "",
@@ -22,7 +22,7 @@ watchEffect(() => {
     {
       name: props.language ? "Pokedex" : "Pokedex",
       description: props.language ? "Pokedex consuming from the PokeApi API." : "Pokedex consumindo da API PokeApi.",
-      tecs: ['html5', 'css3', 'javascript', 'vuejs'],
+      tecs: ['vuejs'],
       cover: "/pokedex.png",
       url: "https://emanuelmarquessfpokedex.netlify.app/",
       repositoryUrl: "https://github.com/EmanuelMarquessf/Pokedex-Project-Vue.git",
@@ -39,7 +39,7 @@ watchEffect(() => {
     },
     {
       name: props.language ? "It's Comming" : "Em breve",
-      description: props.language ? "Project still under development" : "Site consumindo a API",
+      description: props.language ? "Project still under development" : "Projeto em desenvolvimento",
       tecs: '',
       cover: "/projectImg.png",
       url: "",
