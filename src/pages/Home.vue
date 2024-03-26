@@ -40,8 +40,8 @@ const props = defineProps({
             >
               {{
                 props.language
-                  ? "Hello, my name is Emanuel and I am a Frontend web developer from Campos do Jordão, São Paulo. I like programing and my goal is to create awesome websites and applications that solve real world problems while looking beautiful on every device. I'm currently looking for my first working with frontend developer."
-                  : "Olá, eu sou o Emanuel, tenho 23 anos e sou graduado em Análise e Desenvolvimento de Sistemas pelo IFSP Campus Campos do Jordão. No momento, estou dedicando meu tempo aos estudos na área de desenvolvimento web, com um foco específico no front-end. Estou focado em encontrar minha primeira oportunidade como programador."
+                  ? "Hello, I'm Emanuel, graduated in Systems Analysis and Development from IFSP Campus Campos do Jordão. At the moment, I'm dedicating my time to studying in the field of web development, with a specific focus on front-end. I'm focused on finding my first opportunity as a front-end developer."
+                  : "Olá, sou o Emanuel, graduado em Análise e Desenvolvimento de Sistemas pelo IFSP Campus Campos do Jordão. No momento, estou dedicando meu tempo aos estudos na área de desenvolvimento web, com um foco específico no front-end. Estou focado em encontrar minha primeira oportunidade como desenvolvedor front-end."
               }}
             </p>
           </div>
