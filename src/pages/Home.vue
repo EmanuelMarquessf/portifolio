@@ -40,8 +40,8 @@ const props = defineProps({
             >
               {{
                 props.language
-                  ? "Hello, I'm Emanuel, graduated in Systems Analysis and Development from IFSP Campus Campos do Jordão. At the moment, I'm dedicating my time to studying in the field of web development, with a specific focus on front-end. I'm focused on finding my first opportunity as a front-end developer."
-                  : "Olá, sou o Emanuel, graduado em Análise e Desenvolvimento de Sistemas pelo IFSP Campus Campos do Jordão. No momento, estou dedicando meu tempo aos estudos na área de desenvolvimento web, com um foco específico no front-end. Estou focado em encontrar minha primeira oportunidade como desenvolvedor front-end."
+                  ? "Hello, I'm Emanuel, graduated in Systems Analysis and Development from IFSP Campus Campos do Jordão. At the moment, I'm focused on studying web development, with a specific focus on front-end, so I intend to find my first opportunity in this area."
+                  : "Olá, sou o Emanuel, graduado em Análise e Desenvolvimento de Sistemas pelo IFSP Campus Campos do Jordão. No momento, estou focado nos estudos do desenvolvimento web, com um foco específico no front-end, assim pretendo encontrar a minha primeira oportunidade nesta área."
               }}
             </p>
           </div>
