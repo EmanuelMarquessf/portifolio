@@ -20,7 +20,7 @@ watchEffect(() => {
         : "Informática Integrado",
       institutionTitle: props.language ? "institution" : "instituição",
       institution: "Instituto Federal",
-      image: "https://i.ibb.co/w4pBwgm/ifspLogo.png",
+      image: "/ifspLogo.png",
       description: props.language
         ? "I studied in the High School integrated with a Technical course in Informatics, where I took my first steps in programming. As a final project, I developed an e-commerce platform for selling games, integrated with PagSeguro. "
         : "No Ensino Médio integrado ao Técnico em Informática, foi onde dei meus primeiros passos na programação. Como projeto final, desenvolvi uma plataforma de e-commerce para venda de jogos, integrada ao PagSeguro.",
