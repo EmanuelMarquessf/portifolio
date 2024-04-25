@@ -45,7 +45,7 @@ let props = defineProps({
         text="I design beautiful web iterfaces with Figma and Adove XD"
       />
       <tecnologieCard
-        icon="nuxt"
+        icon=""
         name="NuxtJs"
         text="I design beautiful web iterfaces with Figma and Adove XD"
       />
