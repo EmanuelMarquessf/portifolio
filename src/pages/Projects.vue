@@ -21,7 +21,7 @@ watchEffect(() => {
     },
     {
       name: props.language ? "Pokedex" : "Pokedex",
-      description: props.language ? "Pokedex consuming from the PokeApi API." : "Pokedex consumindo da API PokeApi.",
+      description: props.language ? "Pokedex consuming from the PokeApi API" : "Pokedex consumindo da API PokeApi",
       tecs: ['vuejs'],
       cover: "/pokedex.png",
       url: "https://emanuelmarquessfpokedex.netlify.app/",
@@ -38,14 +38,23 @@ watchEffect(() => {
       status: props.language ? "In Progress" : "Em desenvolvimento",
     },
     {
-      name: props.language ? "It's Comming" : "Em breve",
-      description: props.language ? "Project still under development" : "Projeto em desenvolvimento",
-      tecs: '',
-      cover: "/projectImg.png",
-      url: "",
-      repositoryUrl: "",
-      status: props.language ? "" : "",
+      name: props.language ? "Cambio Converter" : "Cambio Converter",
+      description: props.language ? "Global Currency Conversion using FreeCurrency API" : "Conversão de cambio globalmente utilizando da API FreeCurrency",
+      tecs: ['vuejs', 'sass'],
+      cover: "/cambioConverter.png",
+      url: "https://cambioconverter.netlify.app/",
+      repositoryUrl: "https://github.com/EmanuelMarquessf/CambioConverter",
+      status: props.language ? "Finished" : "Finalizado",
     },
+    // {
+    //   name: props.language ? "It's Comming" : "Em breve",
+    //   description: props.language ? "Project still under development" : "Projeto em desenvolvimento",
+    //   tecs: '',
+    //   cover: "/projectImg.png",
+    //   url: "",
+    //   repositoryUrl: "",
+    //   status: props.language ? "" : "",
+    // },
   ];
 });
 </script>
