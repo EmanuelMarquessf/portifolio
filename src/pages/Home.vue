@@ -93,6 +93,6 @@ const props = defineProps({
         </div>
       </div>
     </div>
-    <div class="bg-darkColor h-[6.1rem] md:h-[8rem] w-full relative z-40"></div>
+    <div class="bg-darkColor h-[6.1rem] md:h-[9rem] w-full relative z-40"></div>
   </main>
 </template>

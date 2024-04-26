@@ -13,7 +13,7 @@ watchEffect(() => {
     {
       name: "Bitcode Soluções",
       description: props.language ? "Project still under development" : "Site institucional da empresa Bitcode Soluções",
-      tecs: ['figma', 'vuejs', 'tailwind-css'],
+      tecs: [{type: 'logo', name:'figma', title:'Figma'}, {type: 'logo', name:'vuejs', title:'VueJS'}, {type: 'logo', name:'tailwind-css', title:'TailwindCss'}],
       cover: "/bitcodeSite.png",
       url: "https://bitcodesolucoes.com.br/",
       repositoryUrl: "",
@@ -22,7 +22,7 @@ watchEffect(() => {
     {
       name: props.language ? "Pokedex" : "Pokedex",
       description: props.language ? "Pokedex consuming from the PokeApi API" : "Pokedex consumindo da API PokeApi",
-      tecs: ['vuejs'],
+      tecs: [{type: 'logo', name:'vuejs', title:'VueJS'}],
       cover: "/pokedex.png",
       url: "https://emanuelmarquessfpokedex.netlify.app/",
       repositoryUrl: "https://github.com/EmanuelMarquessf/Pokedex-Project-Vue.git",
@@ -31,7 +31,7 @@ watchEffect(() => {
     {
       name: props.language ? "League Viewer" : "League Viewer",
       description: props.language ? "League of Legends character/skin viewer" : "Visualizador de personagens/skins do jogo League of Legends",
-      tecs: ['figma', 'vuejs', 'tailwind-css'],
+      tecs: [{type: 'logo', name:'figma', title:'Figma'}, {type: '', name:'landscape', title:'Nuxt', flip:'horizontal'}, {type: 'logo', name:'tailwind-css', title:'TailwindCss'}],
       cover: "/LeagueViewer.png",
       url: "https://emanuelmarquessf.github.io/lolSkinViewer/",
       repositoryUrl: "https://github.com/EmanuelMarquessf/lolSkinViewer",
@@ -40,7 +40,7 @@ watchEffect(() => {
     {
       name: props.language ? "Cambio Converter" : "Cambio Converter",
       description: props.language ? "Global Currency Conversion using FreeCurrency API" : "Conversão de cambio globalmente utilizando da API FreeCurrency",
-      tecs: ['vuejs', 'sass'],
+      tecs: [{type: 'logo', name:'vuejs', title:'VueJS'}, {type: 'logo', name:'sass', title:'SASS'}],
       cover: "/cambioConverter.png",
       url: "https://cambioconverter.netlify.app/",
       repositoryUrl: "https://github.com/EmanuelMarquessf/CambioConverter",
