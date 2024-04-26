@@ -15,51 +15,61 @@ let props = defineProps({
     </h2>
     <div class="flex flex-wrap gap-[1rem] justify-center">
       <tecnologieCard
+        type="logo"
         icon="figma"
         name="Figma"
         text="I design beautiful web iterfaces with Figma and Adove XD"
       />
       <tecnologieCard
+        type="logo"
         icon="html5"
         name="HTML5"
         text="I design beautiful web iterfaces with Figma and Adove XD"
       />
       <tecnologieCard
+        type="logo"
         icon="css3"
         name="CSS3"
         text="I design beautiful web iterfaces with Figma and Adove XD"
       />
       <tecnologieCard
+        type="logo"
         icon="javascript"
         name="JavaScript"
         text="I design beautiful web iterfaces with Figma and Adove XD"
       />
       <tecnologieCard
+        type="logo"
         icon="bootstrap"
         name="Bootstrap"
         text="I design beautiful web iterfaces with Figma and Adove XD"
       />
       <tecnologieCard
+        type="logo"
         icon="vuejs"
         name="VueJs"
         text="I design beautiful web iterfaces with Figma and Adove XD"
       />
       <tecnologieCard
+        type="landscape"
         icon=""
         name="NuxtJs"
         text="I design beautiful web iterfaces with Figma and Adove XD"
       />
       <tecnologieCard
+        type="logo"
         icon="react"
         name="React"
         text="I design beautiful web iterfaces with Figma and Adove XD"
       />
       <tecnologieCard
+        type="logo"
         icon="tailwind-css"
         name="TailwindCss"
         text="I design beautiful web iterfaces with Figma and Adove XD"
       />
       <tecnologieCard
+        type="logo"
         icon="sass"
         name="Sass"
         text="I design beautiful web iterfaces with Figma and Adove XD"

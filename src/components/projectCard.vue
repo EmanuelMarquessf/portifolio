@@ -14,9 +14,10 @@ const props = defineProps({
       <div v-if="props.project.tecs" class="flex flex-row justify-end bg-secondaryColor rounded-full m-1 p-1">
         <box-icon
           v-for="tec in props.project.tecs"
-          type="logo"
-          :name="tec"
-          :title="tec.charAt(0).toUpperCase() + tec.slice(1)"
+          :type="tec.type"
+          :name="tec.name"
+          :title="tec.title"
+          :flip="tec.flip"
           class="w-[1.2rem] h-[1.2rem]"
           color="#7562e0"
         ></box-icon> 
