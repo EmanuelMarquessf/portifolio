@@ -33,9 +33,9 @@ watchEffect(() => {
       description: props.language ? "League of Legends character/skin viewer" : "Visualizador de personagens/skins do jogo League of Legends",
       tecs: [{type: 'logo', name:'figma', title:'Figma'}, {type: '', name:'landscape', title:'Nuxt', flip:'horizontal'}, {type: 'logo', name:'tailwind-css', title:'TailwindCss'}],
       cover: "/LeagueViewer.png",
-      url: "https://emanuelmarquessf.github.io/lolSkinViewer/",
+      url: "https://lolchampionsviewer.netlify.app/",
       repositoryUrl: "https://github.com/EmanuelMarquessf/lolSkinViewer",
-      status: props.language ? "In Progress" : "Em desenvolvimento",
+      status: props.language ? "Finished" : "Finalizado",
     },
     {
       name: props.language ? "Cambio Converter" : "Cambio Converter",
