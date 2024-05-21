@@ -8,7 +8,7 @@ const props = defineProps({
 
 <template>
   <div
-    class="w-full md:w-[672px] lg:w-[456px] xl:w-[362px] flex flex-col justify-between p-4 bg-[#31313f] rounded shadow xl:grow gap-2 opacity-70 hover:scale-105 hover:opacity-100 transition-all duration-500 ease-in-out"
+    class=" w-full md:w-[672px] lg:w-[456px] xl:w-[362px] xl:flex-1 xl:basis-1/5 flex flex-col justify-between p-4 bg-[#31313f] rounded shadow xl:grow gap-2 opacity-70 hover:scale-105 hover:opacity-100 transition-all duration-500 ease-in-out"
   >
     <div class="bg-cover w-full h-[176px] flex flex-col justify-end items-end " :style="{ 'background-image': 'url(' + props.project.cover + ')' }">
       <div v-if="props.project.tecs" class="flex flex-row justify-end bg-secondaryColor rounded-full m-1 p-1">

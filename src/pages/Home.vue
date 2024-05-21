@@ -59,6 +59,15 @@ const props = defineProps({
               ><box-icon name="code-alt" color="#ffffff"></box-icon>
             </button>
           </a>
+          <a href="#projects">
+            <button
+              class="bg-primaryColor py-[12px] px-[25px] rounded-lg text-white flex items-center gap-[0.38rem]"
+            >
+              <span class="text-white font-poppins font-semibold text-[1rem]">
+                Download CV
+              </span>
+            </button>
+          </a>
         </div>
       </div>
       <div
