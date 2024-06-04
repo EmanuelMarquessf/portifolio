@@ -52,7 +52,7 @@ let props = defineProps({
       />
       <tecnologieCard
         type="landscape"
-        icon=""
+        icon="nuxtjs"
         name="NuxtJs"
         text="I design beautiful web iterfaces with Figma and Adove XD"
       />
@@ -60,6 +60,12 @@ let props = defineProps({
         type="logo"
         icon="react"
         name="React"
+        text="I design beautiful web iterfaces with Figma and Adove XD"
+      />
+      <tecnologieCard
+        type="landscape"
+        icon="nextjs"
+        name="NextJS"
         text="I design beautiful web iterfaces with Figma and Adove XD"
       />
       <tecnologieCard
