@@ -59,7 +59,7 @@ const props = defineProps({
               ><box-icon name="code-alt" color="#ffffff"></box-icon>
             </button>
           </a>
-          <a href="#projects">
+          <a href="https://drive.usercontent.google.com/download?id=1MRk3ikyFikFkr8tosFzFOxMVRSumWRjc&export=download&authuser=0">
             <button
               class="bg-primaryColor py-[12px] px-[25px] rounded-lg text-white flex items-center gap-[0.38rem]"
             >
