@@ -51,8 +51,8 @@ watchEffect(() => {
       description: props.language ? "Temperature and weather check for any place in the world" : "Consulta de temperatura e clima de qualquer lugar do mundo",
       tecs: [{type: '', name:'landscape', title:'Nuxt', flip:'horizontal'}, {type: 'logo', name:'sass', title:'SASS'}],
       cover: "/weatherNow.png",
-      url: "https://cambioconverter.netlify.app/",
-      repositoryUrl: "https://github.com/EmanuelMarquessf/CambioConverter",
+      url: "https://weeathernow.netlify.app",
+      repositoryUrl: "https://github.com/EmanuelMarquessf/weatherNow",
       status: props.language ? "Finished" : "Finalizado",
     },
     {
