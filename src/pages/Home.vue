@@ -8,26 +8,26 @@ const props = defineProps({
 
 <template>
   <main
-    class="flex flex-col pt-[6rem] md:pt-[9rem] lg:pt-[10rem] xl:pt-[12rem] 2xl:pt-[15.5rem]"
+    class="flex flex-col pt-[4rem]"
   >
     <div
-      class="flex flex-col gap-4 md:gap-8 lg:gap-12 xl:gap-28 2xl:gap-36 lg:flex-row lg:justify-between items-center mx-10 z-0 md:mx-12 lg:mx-14 xl:mx-40 2xl:mx-48"
+      class="flex flex-col xl:flex-row items-center mx-10 z-0 md:mx-12 lg:mx-14 xl:mx-40 2xl:mx-48 my-16 lg:my-24"
     >
       <div class="flex flex-col my-0 md:my-4 lg:my-0 gap-8 lg:gap-10">
-        <div class="flex flex-col">
-          <span
-            class="md:hidden lg:block text-white font-poppins font-semibold text-[1.3rem] md:text-[1.5rem] lg:text-[2rem] 2xl:text-[2.5rem]"
-          >
-            {{ props.language ? "Hello I'm" : "Olá, eu sou" }}
-          </span>
-          <span
-            class="md:hidden lg:block text-primaryColor font-poppins font-semibold text-[2rem] md:text-[2.8rem] lg:text-[3.25rem] xl:text-[4rem]"
-          >
-            Emanuel Marques
-          </span>
-          <div class="flex flex-col gap-8">
+        <div class="flex flex-col gap-5 md:gap-12">
+          <div class="flex flex-col leading-[40px] md:leading-[64px]">
             <span
-              class="md:hidden lg:block text-white font-poppins font-medium text-[1.05rem] lg:text-[1.2rem] xl:text-[1.3rem] md:w-[27rem]"
+              class="md:hidden xl:block text-white font-poppins font-semibold text-[1.5rem] lg:text-[2rem] 2xl:text-[2.5rem] whitespace-nowrap"
+            >
+              {{ props.language ? "Hello I'm" : "Olá, eu sou" }}
+            </span>
+            <span
+              class="md:hidden xl:block text-primaryColor font-poppins font-semibold text-[32px] md:text-[40px] lg:text-[48px] xl:text-[64px] whitespace-nowrap"
+            >
+              Emanuel Marques
+            </span>
+            <span
+              class="md:hidden xl:block text-white font-poppins font-medium text-[18px] md:text-[24px] whitespace-nowrap"
             >
               {{
                 props.language
@@ -35,8 +35,13 @@ const props = defineProps({
                   : "Desenvolvedor Front-end & Designer Ui/Ux"
               }}
             </span>
+          </div>
+          <div class="flex flex-col gap-5">
+            <div
+              class="w-[76px] border-[#999999] border-solid border-2"
+            ></div>
             <p
-              class="text-white font-poppins font-normal md:font-medium text-left md:text-justify text-[1rem] md:text-[1rem] lg:w-[400px] xl:w-[550px] 2xl:w-[700px]"
+              class="w-full xl:w-[80%] text-[#c1c1c1] font-poppins font-normal text-[18px] lg:text-[24px] md:leading-8 xl:leading-10 text-justify lg:text-left "
             >
               {{
                 props.language
@@ -47,52 +52,58 @@ const props = defineProps({
           </div>
         </div>
         <div
-          class="flex flex-row justify-between mb-16 items-center lg:mt-[1.81rem] lg:mb-[3rem]"
+          class="flex flex-row gap-8 items-center"
         >
-          <a href="#projects">
+          <a
+            href="https://drive.usercontent.google.com/download?id=1MRk3ikyFikFkr8tosFzFOxMVRSumWRjc&export=download&authuser=0"
+          >
             <button
-              class="bg-transparent py-[12px] px-[25px] rounded-lg border-solid border-2 border-primaryColor text-white flex items-center gap-[0.38rem]"
+              class="bg-primaryColor py-[12px] px-[24px] rounded-lg text-white flex items-center gap-[0.38rem] border-solid border-2 border-primaryColor"
             >
-              <span class="text-white font-poppins font-semibold text-[1rem]">{{
-                props.language ? "Projects" : "Projetos"
-              }}</span
-              ><box-icon name="code-alt" color="#ffffff"></box-icon>
-            </button>
-          </a>
-          <a href="https://drive.usercontent.google.com/download?id=1MRk3ikyFikFkr8tosFzFOxMVRSumWRjc&export=download&authuser=0">
-            <button
-              class="bg-primaryColor py-[12px] px-[25px] rounded-lg text-white flex items-center gap-[0.38rem]"
-            >
-              <span class="text-white font-poppins font-semibold text-[1rem]">
+              <span class="text-white font-poppins font-medium text-[16px] whitespace-nowrap">
                 Download CV
               </span>
+            </button>
+          </a>
+          <a href="#projects">
+            <button
+              class="bg-transparent py-[12px] px-[24px] rounded-lg border-solid border-2 border-primaryColor text-white flex items-center gap-[12px]"
+            >
+              <span class="text-white font-roboto font-medium text-[16px] whitespace-nowrap">{{
+                props.language ? "Projects" : "Projetos"
+              }}</span
+              ><box-icon
+                class="w-[20px]"
+                name="code-alt"
+                color="#ffffff"
+              ></box-icon>
             </button>
           </a>
         </div>
       </div>
       <div
-        class="md:w-full md:justify-around flex flex-col md:flex-row md:items-center lg:relative lg:bottom-[-130px] 2xl:bottom-[-126px] order-first lg:order-last"
+        class="md:w-full flex flex-col md:flex-row md:items-center order-first xl:order-last gap-10"
       >
-        <div
-          class="bg-primaryColor rounded-full lg:w-[27rem] lg:h-[27rem] xl:w-[30.5rem] xl:h-[30.5rem] 2xl:w-[33.5rem] 2xl:h-[33.5rem]"
-        >
+        <div class="bg-primaryColor rounded-full">
           <img
-            class="bg-transparent w-[14rem] lg:w-[24rem] rounded-full lg:rounded-none lg:relative md:scale-[100%] lg:scale-[130%] xl:scale-[140%] 2xl:scale-[160%] lg:left-[40px] xl:left-[60px] lg:bottom-[105px] xl:bottom-[90px] 2xl:bottom-[100px]"
+            class="bg-transparent w-[15rem] md:w-[20rem] xl:w-[50rem] rounded-full"
             src="/fotoperfil.png"
           />
         </div>
-        <div class="md:flex md:flex-col hidden lg:hidden">
+        <div class="md:flex md:flex-col hidden xl:hidden">
           <span
-            class="text-white font-poppins font-semibold md:text-[1.5rem] lg:text-[2rem] 2xl:text-[3rem]"
+            class="text-white font-poppins font-semibold md:text-[1.5rem] lg:text-[2rem] 2xl:text-[3rem] whitespace-nowrap"
           >
             {{ props.language ? "Hello I'm" : "Olá, eu sou" }}
           </span>
           <span
-            class="text-white font-poppins font-semibold md:text-[2.8rem] lg:text-[3.25rem] xl:text-[4rem]"
+            class="text-primaryColor font-poppins font-semibold md:text-[2.8rem] lg:text-[3.25rem] xl:text-[4rem] whitespace-nowrap"
           >
             Emanuel Marques
           </span>
-          <span class="text-white font-poppins font-medium md:text-[1.1rem]">
+          <span
+            class="text-[#c1c1c1] font-poppins font-medium md:text-[1.5rem] whitespace-nowrap"
+          >
             {{
               props.language
                 ? "Front-end Developer & Ui/Ux Designer"
