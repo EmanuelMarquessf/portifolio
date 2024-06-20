@@ -68,7 +68,7 @@ const props = defineProps({
               class="bg-transparent py-[12px] px-[24px] rounded-lg border-solid border-2 border-primaryColor text-zinc-50 flex items-center gap-[12px]"
             >
               <span
-                class="text-zinc-50 font-roboto font-medium text-[16px] whitespace-nowrap"
+                class="text-zinc-50 font-poppins font-medium text-[16px] whitespace-nowrap"
                 >{{ props.language ? "Projects" : "Projetos" }}</span
               ><box-icon
                 class="w-[20px]"
