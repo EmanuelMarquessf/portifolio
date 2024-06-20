@@ -11,30 +11,17 @@ const props = defineProps({
 
 <template>
   <div
-    class="flex flex-col bg-transparent justify-center items-center text-center border border-primaryColor rounded h-[10rem] w-[10rem] opacity-80 hover:opacity-100 hover:scale-105 transition-all duration-500"
+    class="flex flex-col gap-1 bg-cardColor rounded shadow justify-center items-center h-[8rem] w-[8rem] opacity-80 hover:opacity-100 hover:scale-110 hover:shadow-lg transition-transform transition-opacity duration-300 ease-in-out will-change-transform"
   >
     <img
-      v-if="props.icon === 'nextjs'"
-      src="/icons/next.svg"
-      class="w-[3.5rem] h-[3.5rem]"
-    />
-    <img
-      v-else-if="props.icon === 'nuxtjs'"
-      src="/icons/nuxt.svg"
-      class="w-[3.5rem] h-[3.5rem]"
-    />
-    <box-icon
-      v-else-if="props.icon"
+      :src="'/icons/' + props.icon + '.svg'"
       :type="props.type"
-      :name="props.icon"
-      class="w-[3.5rem] h-[3.5rem]"
-      color="#ffffff"
-    ></box-icon>
+      class="w-[3rem] h-[3rem]"
+    />
     <h3
-      class="text-zinc-50 font-poppins text-[1.5rem] font-semibold leading-10"
+      class="text-zinc-50 font-poppins text-[1rem] font-semibold transform-none"
     >
       {{ props.name }}
     </h3>
-    <!-- <p class="text-zinc-50 font-poppins  text-[1] font-medium leading-8 w-[18rem]">{{ props.text }}</p> -->
   </div>
 </template>

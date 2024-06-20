@@ -15,17 +15,17 @@ const props = defineProps({
         <div class="flex flex-col gap-5 md:gap-12">
           <div class="flex flex-col leading-[40px] md:leading-[64px]">
             <span
-              class="md:hidden xl:block text-zinc-50 font-poppins font-semibold text-[1.5rem] lg:text-[2rem] 2xl:text-[2.5rem] -zinc-50space-nowrap"
+              class="md:hidden xl:block text-zinc-50 font-poppins font-semibold text-[1.5rem] lg:text-[2rem] 2xl:text-[2.5rem] whitespace-nowrap"
             >
               {{ props.language ? "Hello I'm" : "Olá, eu sou" }}
             </span>
             <span
-              class="md:hidden xl:block text-primaryColor font-poppins font-semibold text-[32px] md:text-[40px] lg:text-[48px] xl:text-[64px] -zinc-50space-nowrap"
+              class="md:hidden xl:block text-primaryColor font-poppins font-semibold text-[32px] md:text-[40px] lg:text-[48px] xl:text-[64px] whitespace-nowrap"
             >
               Emanuel Marques
             </span>
             <span
-              class="md:hidden xl:block text-zinc-50 font-poppins font-medium text-[18px] md:text-[24px] -zinc-50space-nowrap"
+              class="md:hidden xl:block text-zinc-50 font-poppins font-medium text-[18px] md:text-[24px] whitespace-nowrap"
             >
               {{
                 props.language
@@ -49,7 +49,7 @@ const props = defineProps({
             </p>
           </div>
         </div>
-        <div class="flex flex-row gap-8 items-center">
+        <div class="flex flex-row justify-between md:justify-start md:gap-8 items-center">
           <a
             href="https://drive.usercontent.google.com/download?id=1MRk3ikyFikFkr8tosFzFOxMVRSumWRjc&export=download&authuser=0"
           >
@@ -57,7 +57,7 @@ const props = defineProps({
               class="bg-primaryColor py-[12px] px-[24px] rounded-lg text-zinc-50 flex items-center gap-[0.38rem] border-solid border-2 border-primaryColor"
             >
               <span
-                class="text-zinc-50 font-poppins font-medium text-[16px] -zinc-50space-nowrap"
+                class="text-zinc-50 font-poppins font-medium text-[16px] whitespace-nowrap"
               >
                 Download CV
               </span>
@@ -68,7 +68,7 @@ const props = defineProps({
               class="bg-transparent py-[12px] px-[24px] rounded-lg border-solid border-2 border-primaryColor text-zinc-50 flex items-center gap-[12px]"
             >
               <span
-                class="text-zinc-50 font-roboto font-medium text-[16px] -zinc-50space-nowrap"
+                class="text-zinc-50 font-roboto font-medium text-[16px] whitespace-nowrap"
                 >{{ props.language ? "Projects" : "Projetos" }}</span
               ><box-icon
                 class="w-[20px]"
@@ -90,17 +90,17 @@ const props = defineProps({
         </div>
         <div class="md:flex md:flex-col hidden xl:hidden">
           <span
-            class="text-zinc-50 font-poppins font-semibold md:text-[1.5rem] lg:text-[2rem] 2xl:text-[3rem] -zinc-50space-nowrap"
+            class="text-zinc-50 font-poppins font-semibold md:text-[1.5rem] lg:text-[2rem] 2xl:text-[3rem] whitespace-nowrap"
           >
             {{ props.language ? "Hello I'm" : "Olá, eu sou" }}
           </span>
           <span
-            class="text-primaryColor font-poppins font-semibold md:text-[2.8rem] lg:text-[3.25rem] xl:text-[4rem] -zinc-50space-nowrap"
+            class="text-primaryColor font-poppins font-semibold md:text-[2.8rem] lg:text-[3.25rem] xl:text-[4rem] whitespace-nowrap"
           >
             Emanuel Marques
           </span>
           <span
-            class="text-[#c1c1c1] font-poppins font-medium md:text-[1.5rem] -zinc-50space-nowrap"
+            class="text-[#c1c1c1] font-poppins font-medium md:text-[1.5rem] whitespace-nowrap"
           >
             {{
               props.language

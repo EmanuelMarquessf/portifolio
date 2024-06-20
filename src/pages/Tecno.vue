@@ -1,5 +1,5 @@
 <script setup>
-import tecnologieCard from "../components/tecnologieCard2.vue";
+import tecnologieCard from "../components/tecnologieCard.vue";
 
 import { defineProps } from "vue";
 
