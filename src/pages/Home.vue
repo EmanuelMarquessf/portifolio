@@ -7,9 +7,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <main
-    class="flex flex-col pt-[4rem]"
-  >
+  <main class="flex flex-col pt-[4rem]">
     <div
       class="flex flex-col xl:flex-row items-center mx-10 z-0 md:mx-12 lg:mx-14 xl:mx-40 2xl:mx-48 my-16 lg:my-24"
     >
@@ -17,17 +15,17 @@ const props = defineProps({
         <div class="flex flex-col gap-5 md:gap-12">
           <div class="flex flex-col leading-[40px] md:leading-[64px]">
             <span
-              class="md:hidden xl:block text-white font-poppins font-semibold text-[1.5rem] lg:text-[2rem] 2xl:text-[2.5rem] whitespace-nowrap"
+              class="md:hidden xl:block text-zinc-50 font-poppins font-semibold text-[1.5rem] lg:text-[2rem] 2xl:text-[2.5rem] -zinc-50space-nowrap"
             >
               {{ props.language ? "Hello I'm" : "Olá, eu sou" }}
             </span>
             <span
-              class="md:hidden xl:block text-primaryColor font-poppins font-semibold text-[32px] md:text-[40px] lg:text-[48px] xl:text-[64px] whitespace-nowrap"
+              class="md:hidden xl:block text-primaryColor font-poppins font-semibold text-[32px] md:text-[40px] lg:text-[48px] xl:text-[64px] -zinc-50space-nowrap"
             >
               Emanuel Marques
             </span>
             <span
-              class="md:hidden xl:block text-white font-poppins font-medium text-[18px] md:text-[24px] whitespace-nowrap"
+              class="md:hidden xl:block text-zinc-50 font-poppins font-medium text-[18px] md:text-[24px] -zinc-50space-nowrap"
             >
               {{
                 props.language
@@ -38,10 +36,10 @@ const props = defineProps({
           </div>
           <div class="flex flex-col gap-5">
             <div
-              class="w-[76px] border-[#999999] border-solid border-2"
+              class="w-[76px] border-lowPriority border-solid border-2"
             ></div>
             <p
-              class="w-full xl:w-[80%] text-[#c1c1c1] font-poppins font-normal text-[18px] lg:text-[24px] md:leading-8 xl:leading-10 text-justify lg:text-left "
+              class="w-full xl:w-[80%] text-lowPriority font-poppins font-normal text-[18px] lg:text-[24px] md:leading-8 xl:leading-10 text-justify lg:text-left"
             >
               {{
                 props.language
@@ -51,27 +49,27 @@ const props = defineProps({
             </p>
           </div>
         </div>
-        <div
-          class="flex flex-row gap-8 items-center"
-        >
+        <div class="flex flex-row gap-8 items-center">
           <a
             href="https://drive.usercontent.google.com/download?id=1MRk3ikyFikFkr8tosFzFOxMVRSumWRjc&export=download&authuser=0"
           >
             <button
-              class="bg-primaryColor py-[12px] px-[24px] rounded-lg text-white flex items-center gap-[0.38rem] border-solid border-2 border-primaryColor"
+              class="bg-primaryColor py-[12px] px-[24px] rounded-lg text-zinc-50 flex items-center gap-[0.38rem] border-solid border-2 border-primaryColor"
             >
-              <span class="text-white font-poppins font-medium text-[16px] whitespace-nowrap">
+              <span
+                class="text-zinc-50 font-poppins font-medium text-[16px] -zinc-50space-nowrap"
+              >
                 Download CV
               </span>
             </button>
           </a>
           <a href="#projects">
             <button
-              class="bg-transparent py-[12px] px-[24px] rounded-lg border-solid border-2 border-primaryColor text-white flex items-center gap-[12px]"
+              class="bg-transparent py-[12px] px-[24px] rounded-lg border-solid border-2 border-primaryColor text-zinc-50 flex items-center gap-[12px]"
             >
-              <span class="text-white font-roboto font-medium text-[16px] whitespace-nowrap">{{
-                props.language ? "Projects" : "Projetos"
-              }}</span
+              <span
+                class="text-zinc-50 font-roboto font-medium text-[16px] -zinc-50space-nowrap"
+                >{{ props.language ? "Projects" : "Projetos" }}</span
               ><box-icon
                 class="w-[20px]"
                 name="code-alt"
@@ -92,17 +90,17 @@ const props = defineProps({
         </div>
         <div class="md:flex md:flex-col hidden xl:hidden">
           <span
-            class="text-white font-poppins font-semibold md:text-[1.5rem] lg:text-[2rem] 2xl:text-[3rem] whitespace-nowrap"
+            class="text-zinc-50 font-poppins font-semibold md:text-[1.5rem] lg:text-[2rem] 2xl:text-[3rem] -zinc-50space-nowrap"
           >
             {{ props.language ? "Hello I'm" : "Olá, eu sou" }}
           </span>
           <span
-            class="text-primaryColor font-poppins font-semibold md:text-[2.8rem] lg:text-[3.25rem] xl:text-[4rem] whitespace-nowrap"
+            class="text-primaryColor font-poppins font-semibold md:text-[2.8rem] lg:text-[3.25rem] xl:text-[4rem] -zinc-50space-nowrap"
           >
             Emanuel Marques
           </span>
           <span
-            class="text-[#c1c1c1] font-poppins font-medium md:text-[1.5rem] whitespace-nowrap"
+            class="text-[#c1c1c1] font-poppins font-medium md:text-[1.5rem] -zinc-50space-nowrap"
           >
             {{
               props.language

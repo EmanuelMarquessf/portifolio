@@ -19,24 +19,26 @@ function langSelect() {
 </script>
 
 <template>
-  <nav id="header" class="border-gray-200 bg-[#121214] z-50 fixed w-full">
+  <nav id="header" class="border-gray-200 bg-darkColor z-50 fixed w-full">
     <div
       class="max-w-screen-3xl flex flex-wrap items-center justify-between md:mx-4 p-4"
     >
       <div class="flex flex-row items-center gap-2 md:gap-4">
-        <label class="mx-4 z-50 inline-flex items-center cursor-pointer opacity-50 hover:opacity-100 hover:scale-105 transition-all duration-500 ease-in-out">
+        <label
+          class="mx-4 z-50 inline-flex items-center cursor-pointer opacity-50 hover:opacity-100 hover:scale-105 transition-all duration-500 ease-in-out"
+        >
           <input
             type="checkbox"
             value=""
-            class="sr-only peer "
+            class="sr-only peer"
             v-model="languageRef"
             @click="langSelect"
           />
           <div
             :class="languageRef ? 'bg-image' : ''"
-            class="relative px-1 w-14 h-7 bg-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primaryColor dark:peer-focus:primaryColor rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[4px] after:bg-primaryColor after:border-primaryColor after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-primaryColor"
+            class="relative px-1 w-14 h-7 bg-zinc-50 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primaryColor dark:peer-focus:primaryColor rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-zinc-50 after:content-[''] after:absolute after:top-0.5 after:start-[4px] after:bg-primaryColor after:border-primaryColor after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-primaryColor"
           >
-            <span v-if="languageRef" class="text-white font-bold">EN</span>
+            <span v-if="languageRef" class="text-zinc-50 font-bold">EN</span>
             <span v-else class="text-primaryColor px-6 font-bold">PT</span>
           </div>
           <span
@@ -98,7 +100,7 @@ function langSelect() {
           </a>
         </div>
       </div>
-      <!-- <span class="self-center text-2xl whitespace-nowrap text-[#7562e0] font-[cherry] font-[700]">Em</span> -->
+      <!-- <span class="self-center text-2xl -zinc-50space-nowrap text-[#7562e0] font-[cherry] font-[700]">Em</span> -->
       <button
         data-collapse-toggle="navbar-solid-bg"
         type="button"

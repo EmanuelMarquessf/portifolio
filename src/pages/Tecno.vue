@@ -1,5 +1,5 @@
 <script setup>
-import tecnologieCard from "../components/tecnologieCard.vue";
+import tecnologieCard from "../components/tecnologieCard2.vue";
 
 import { defineProps } from "vue";
 
@@ -9,11 +9,11 @@ let props = defineProps({
 </script>
 
 <template>
-  <section class="flex flex-col gap-8">
+  <section class="flex flex-col gap-8 items-start">
     <h2 class="text-primaryColor font-poppins font-semibold text-[2rem]">
       {{ props.language ? "Technologies" : "Tecnologias" }}
     </h2>
-    <div class="flex flex-wrap gap-[1rem] justify-center">
+    <div class="flex flex-wrap gap-[1.5rem]">
       <tecnologieCard
         type="logo"
         icon="figma"

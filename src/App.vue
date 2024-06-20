@@ -18,12 +18,12 @@ function languageSelect(newValue){
 
 <template>
 
-  <div class="bg-secondaryColor ">
+  <div class="bg-[#131313]">
     <Header @languageSelect="languageSelect" :language="language"></Header>
     <Home id="home" class="z-10" :language="language"></Home>
 
       <div
-        class="flex flex-col py-20 gap-20 md:gap-24 mx-6 mb-20 md:mx-12 xl:mx-40 2xl:mx-48"
+        class="flex flex-col py-20 gap-20 md:gap-24 mx-6 md:mx-12 xl:mx-40 2xl:mx-48"
         :language="language"
       >
         <!-- <About id="about" :language="language"></About> -->

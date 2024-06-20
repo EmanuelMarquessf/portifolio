@@ -49,7 +49,7 @@ watchEffect(() => {
       institution: "Isasoft Softwares",
       image: "/isasoftLogo.png",
       description: props.language
-        ? ""
+        ? "I provided customer support, offered guidance and training, collaborated with the development team based on customer feedback, conducted detailed system testing, and managed databases to identify bugs. I contributed to improving product quality and the customer experience."
         : "Prestei suporte aos clientes, forneci orientação e treinamento, colaborei com a equipe de desenvolvimento com base no feedback dos clientes, realizei testes detalhados do sistema e gerenciei bancos de dados para identificar bugs. Contribuí para a melhoria da qualidade dos produtos e da experiência do cliente.",
       technologies: "html5, css3, javascript, postgresql",
       period: "(2021 - 2022)",
@@ -61,9 +61,9 @@ watchEffect(() => {
       institution: "Bitcode Soluções",
       image: "/bitcodeLogo.png",
       description: props.language
-        ? ""
+        ? "Web page development. Responsible for creating attractive and intuitive user interfaces using HTML, CSS, JavaScript, VueJs, and TailwindCss technologies. Additionally, actively participated in the conception and design of interfaces through Figma, ensuring a visually pleasing and functional experience for users."
         : "Desenvolvimento de páginas web. Responsável pela criação de interfaces atraentes e intuitivas para o usuário, utilizando das tecnologias HTML, CSS, JavaScript, VueJs e TailwindCss. Além disso, participação ativa na concepção e design das interfaces através do Figma, garantindo uma experiência visualmente agradável e funcional para os usuários.",
-      technologies: "html5, css3, javascript, vuejs, tailwind-css, figma",
+      technologies: "vuejs, tailwind-css, figma",
       period: "(2023 - atual)",
     },
   ];
