@@ -18,7 +18,7 @@ function languageSelect(newValue){
 
 <template>
 
-  <div class="bg-[#131313]">
+  <div class="bg-[#100E13]">
     <Header @languageSelect="languageSelect" :language="language"></Header>
     <Home id="home" class="z-10" :language="language"></Home>
 

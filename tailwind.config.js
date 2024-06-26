@@ -13,7 +13,7 @@ export default {
         darkColor: '#0c0b0d',
         secondaryColor: '#0f0f0f',
         
-        cardColor: '#1b1a37',
+        cardColor: '#24104D',
         primaryColor: '#7562E0',
         lowPriority: '#BDBDBD',
         secondaryText: '#708C88'
