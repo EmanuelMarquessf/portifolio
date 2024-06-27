@@ -9,14 +9,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        customPurple: '#7562E0',
+        customPurple: '#614cd9',
         darkColor: '#0c0b0d',
         secondaryColor: '#0f0f0f',
         
-        cardColor: '#24104D',
-        primaryColor: '#7562E0',
+        cardColor: '#1b1a37',
+        primaryColor: '#614cd9',
         lowPriority: '#BDBDBD',
-        secondaryText: '#708C88'
+        secondaryText: '#708C88',
+        cardTitle: '#7C7CED'
       },
       fontFamily: {
         'cherry': ['Sua Fonte Personalizada', 'sans-serif'],

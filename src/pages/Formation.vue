@@ -75,7 +75,7 @@ watchEffect(() => {
       <h2 class="text-primaryColor font-poppins font-semibold text-[2rem]">
         {{ props.language ? "Formation" : "Formação" }}
       </h2>
-      <div class="flex flex-row gap-6 flex-wrap md:flex-nowrap lg:flex-wrap">
+      <div class="flex flex-row gap-8 flex-wrap md:flex-nowrap lg:flex-wrap">
         <FormationCard
           v-for="formation in formationArray"
           :formation="formation"
@@ -86,7 +86,7 @@ watchEffect(() => {
       <h2 class="text-primaryColor font-poppins font-semibold text-[2rem]">
         {{ props.language ? "Experience" : "Experiências" }}
       </h2>
-      <div class="flex flex-row gap-6 flex-wrap md:flex-nowrap lg:flex-wrap">
+      <div class="flex flex-row gap-8 flex-wrap md:flex-nowrap lg:flex-wrap">
         <ExperienceCard
           v-for="experience in experienceArray"
           :experience="experience"

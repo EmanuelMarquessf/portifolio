@@ -8,7 +8,7 @@ const props = defineProps({
 
 <template>
   <div
-    class="w-full md:w-[672px] lg:w-[456px] xl:w-[362px] xl:flex-1 xl:basis-1/5 flex flex-col justify-between p-4 bg-[#1b1a37] rounded xl:grow gap-2 opacity-70 hover:scale-105 hover:opacity-100 transition-all duration-500 ease-in-out shadow-md"
+    class="w-full md:w-[672px] lg:w-[456px] xl:w-[362px] xl:flex-1 xl:basis-1/5 flex flex-col justify-between p-4 bg-cardColor rounded xl:grow gap-2 opacity-70 hover:scale-105 hover:opacity-100 transition-all duration-500 ease-in-out shadow-md"
   >
     <div
       class="bg-cover w-full h-[176px] flex flex-col justify-end items-end"
@@ -31,12 +31,12 @@ const props = defineProps({
     </div>
     <!-- <img class="rounded-sm" :src="props.project.cover" alt="" /> -->
     <div class="flex flex-row justify-between items-center">
-      <h3 class="text-primaryColor font-poppins text-[1.5rem] font-semibold">
+      <h3 class="text-cardTitle font-poppins text-[24px] font-semibold">
         {{ props.project.name }}
       </h3>
       <h3
         v-if="props.project.status != ''"
-        class="text-primaryColor font-poppins text-[0.9rem] font-semibold"
+        class="text-cardTitle font-poppins text-[0.9rem] font-semibold"
       >
         {{ props.project.status }}
       </h3>
@@ -62,7 +62,7 @@ const props = defineProps({
         v-if="props.project.url"
         :href="props.project.url"
         target="_blank"
-        class="bg-primaryColor py-[12px] rounded-lg flex items-center grow justify-center hover:bg-zinc-50 transition-colors duration-500 hover:text-primaryColor text-zinc-50 font-poppins font-semibold text-[1rem]"
+        class="bg-primaryColor py-[12px] rounded-lg flex items-center grow justify-center hover:bg-zinc-50 transition-colors duration-500 hover:text-primaryColor text-zinc-50 font-poppins font-medium text-[16px]"
       >
         <span>{{ props.language ? "View Live" : "Acessar" }}</span>
       </a>
@@ -83,7 +83,7 @@ const props = defineProps({
         target="_blank"
         class="bg-transparent hover:bg-secondaryColor py-[12px] rounded-lg border-solid border-2 border-primaryColor text-zinc-50 flex items-center grow justify-center transition-colors duration-500"
       >
-        <span class="text-zinc-50 font-poppins font-semibold text-[1rem]"
+        <span class="text-zinc-50 font-poppins font-medium text-[16px]"
           >GitHub Repo</span
         >
       </a>

@@ -38,8 +38,8 @@ function langSelect() {
             :class="languageRef ? 'bg-image' : ''"
             class="relative px-1 w-14 h-7 bg-zinc-50 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primaryColor dark:peer-focus:primaryColor rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-zinc-50 after:content-[''] after:absolute after:top-0.5 after:start-[4px] after:bg-primaryColor after:border-primaryColor after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-primaryColor"
           >
-            <span v-if="languageRef" class="text-zinc-50 font-bold">EN</span>
-            <span v-else class="text-primaryColor px-6 font-bold">PT</span>
+            <span v-if="languageRef" class="text-zinc-50 font-bold font-poppins">EN</span>
+            <span v-else class="text-primaryColor px-6 font-bold font-poppins">PT</span>
           </div>
           <span
             class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"
@@ -56,7 +56,7 @@ function langSelect() {
               class="w-8 h-8 opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-500 ease-in-out"
               name="whatsapp"
               type="logo"
-              color="#7562E0"
+              color="#614cd9"
             ></box-icon>
           </a>
           <a
@@ -69,7 +69,7 @@ function langSelect() {
               class="w-8 h-8 opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-500 ease-in-out"
               name="linkedin-square"
               type="logo"
-              color="#7562E0"
+              color="#614cd9"
             ></box-icon>
           </a>
           <a
@@ -82,7 +82,7 @@ function langSelect() {
               class="w-8 h-8 opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-500 ease-in-out"
               name="envelope"
               type="solid"
-              color="#7562E0"
+              color="#614cd9"
             ></box-icon>
           </a>
           <a
@@ -95,7 +95,7 @@ function langSelect() {
               class="w-8 h-8 opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-500 ease-in-out"
               name="github"
               type="logo"
-              color="#7562E0"
+              color="#614cd9"
             ></box-icon>
           </a>
         </div>

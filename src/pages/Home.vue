@@ -54,10 +54,10 @@ const props = defineProps({
             href="https://drive.usercontent.google.com/download?id=1MRk3ikyFikFkr8tosFzFOxMVRSumWRjc&export=download&authuser=0"
           >
             <button
-              class="bg-primaryColor py-[12px] px-[24px] rounded-lg text-zinc-50 flex items-center gap-[0.38rem] border-solid border-2 border-primaryColor"
+              class="bg-primaryColor py-[12px] px-[24px] rounded-lg  flex items-center gap-[0.38rem] border-solid border-2 border-primaryColor"
             >
               <span
-                class="text-zinc-50 font-poppins font-medium text-[16px] whitespace-nowrap"
+                class="text-[#eee5ff] font-poppins font-medium text-[16px] whitespace-nowrap"
               >
                 Download CV
               </span>
@@ -68,12 +68,12 @@ const props = defineProps({
               class="bg-transparent py-[12px] px-[24px] rounded-lg border-solid border-2 border-primaryColor text-zinc-50 flex items-center gap-[12px]"
             >
               <span
-                class="text-zinc-50 font-poppins font-medium text-[16px] whitespace-nowrap"
+                class="text-[#eee5ff] font-poppins font-medium text-[16px] whitespace-nowrap"
                 >{{ props.language ? "Projects" : "Projetos" }}</span
               ><box-icon
                 class="w-[20px]"
                 name="code-alt"
-                color="#ffffff"
+                color="#eee5ff"
               ></box-icon>
             </button>
           </a>
