@@ -38,8 +38,8 @@ function langSelect() {
             :class="languageRef ? 'bg-image' : ''"
             class="relative px-1 w-14 h-7 bg-zinc-50 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primaryColor dark:peer-focus:primaryColor rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-zinc-50 after:content-[''] after:absolute after:top-0.5 after:start-[4px] after:bg-primaryColor after:border-primaryColor after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-primaryColor"
           >
-            <span v-if="languageRef" class="text-zinc-50 font-bold font-poppins">EN</span>
-            <span v-else class="text-primaryColor px-6 font-bold font-poppins">PT</span>
+            <span v-if="languageRef" class="text-zinc-50 font-bold font-roboto text-[12px] px-1">EN</span>
+            <span v-else class="text-primaryColor px-7 font-bold font-roboto text-[12px]">PT</span>
           </div>
           <span
             class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"
@@ -127,7 +127,7 @@ function langSelect() {
       </button>
       <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
         <ul
-          class="flex flex-col font-medium mt-4 bg-[#18181b] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700"
+          class="flex flex-col font-medium font-roboto mt-4 bg-[#18181b] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700"
         >
           <li>
             <a

@@ -20,7 +20,8 @@ export default {
         cardTitle: '#7C7CED'
       },
       fontFamily: {
-        'cherry': ['Sua Fonte Personalizada', 'sans-serif'],
+        'poppins': 'poppins',
+        'roboto': 'roboto',
       },
     },
   },

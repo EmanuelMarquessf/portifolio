@@ -11,7 +11,7 @@ const props = defineProps({
 
 <template>
   <div
-    class="flex flex-col gap-1 bg-cardColor rounded  shadow justify-center items-center h-[8rem] w-[8rem] opacity-80 hover:opacity-100 hover:scale-110 hover:shadow-lg transition-transform transition-opacity duration-500 ease-in-out will-change-transform hover:border-primaryColor hover:border-b-[2px]"
+    class="flex flex-col gap-2 bg-cardColor rounded  shadow justify-center items-center w-[6rem] h-[6rem] md:w-[8rem] md:h-[8rem] opacity-80 hover:opacity-100 hover:scale-110 transition-transform transition-opacity duration-500 ease-in-out will-change-transform hover:border-primaryColor hover:border-b-[2px]"
   >
     <img
       :src="'/icons/' + props.icon + '.svg'"
@@ -19,7 +19,7 @@ const props = defineProps({
       class="w-[3rem] h-[3rem]"
     />
     <h3
-      class="text-zinc-50 font-poppins text-[1rem] font-semibold transform-none"
+      class="text-zinc-50 font-poppins text-[12px] md:text-[16px] font-semibold transform-none"
     >
       {{ props.name }}
     </h3>

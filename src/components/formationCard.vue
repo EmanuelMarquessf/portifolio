@@ -28,7 +28,7 @@ let viewCard = ref(false);
             {{ props.formation.courseType }}
           </p>
           <p
-            class="text-zinc-50 text-[1.4rem] md:text-[1.25rem] font-bold capitalize"
+            class="text-zinc-50 text-[20px] font-bold capitalize font-roboto"
           >
             {{ props.formation.courseName }}
           </p>
@@ -40,7 +40,7 @@ let viewCard = ref(false);
             {{ props.formation.institutionTitle }}
           </p>
           <p
-            class="text-zinc-50 font-poppins text-[1.5rem] font-bold capitalize"
+            class="text-zinc-50 font-roboto text-[20px] font-bold capitalize"
           >
             {{ props.formation.institution }}
           </p>
@@ -59,10 +59,10 @@ let viewCard = ref(false);
     ></div>
     <div class="flex flex-col gap-4 h-full justify-between">
       <div class="flex flex-row gap-4 items-center">
-        <img class="w-[1.5rem] h-[2rem]" :src="props.formation.image" alt="" />
+        <img class="h-[4rem]" :src="props.formation.image" alt="" />
         <div class="flex flex-col">
           <span
-            class="text-[#c1c1c1] font-poppins text-[10px] font-bold uppercase"
+            class="text-[#c1c1c1] font-roboto text-[12px] font-bold uppercase"
           >
             {{ props.formation.institution }}
           </span>
@@ -72,14 +72,14 @@ let viewCard = ref(false);
             {{ props.formation.courseName }}
           </span>
           <span
-            class="text-zinc-50 font-poppins text-[12px] font-light uppercase"
+            class="text-zinc-50 font-roboto text-[12px] font-light uppercase"
           >
             {{ props.formation.period }}
           </span>
         </div>
       </div>
       <div class="flex flex-col justify-between gap-4">
-        <span class="text-[#f2f2f2] text-[14px] text-justify">
+        <span class="text-[#f2f2f2] text-[14px] text-justify font-roboto">
           {{ props.formation.description }}
         </span>
       </div>

@@ -12,7 +12,7 @@ let viewCard = ref(false);
 
 <template>
   <div
-    class="bg-cardColor relative p-4 rounded-md w-full md:w-[340px] md:h-[150px] cursor-pointer items-center opacity-80 hover:opacity-100 hover:scale-105 focus:scale-105 hover:shadow-lg transition-transform  duration-500 ease-in-out will-change-transform hover:border-primaryColor hover:border-b-[2px]"
+    class="bg-cardColor relative p-4 rounded-md w-full md:w-[340px] md:h-[150px] cursor-pointer items-center opacity-80 hover:opacity-100 hover:scale-105 focus:scale-105 transition-transform  duration-500 ease-in-out will-change-transform hover:border-primaryColor hover:border-b-[2px]"
     v-if="!viewCard"
     @click="viewCard = !viewCard"
   >
@@ -24,24 +24,24 @@ let viewCard = ref(false);
       <div class="flex flex-col justify-between gap-2">
         <div>
           <p
-            class="text-[#c1c1c1] font-poppins text-[14px] font-bold uppercase"
+            class="text-[#c1c1c1] font-roboto text-[14px] font-bold uppercase"
           >
             {{ props.experience.expTitle }}
           </p>
           <p
-            class="text-zinc-50 text-[1.2rem] md:text-[1.25rem] font-bold capitalize"
+            class="text-zinc-50 text-[20px] font-bold capitalize"
           >
             {{ props.experience.expName }}
           </p>
         </div>
         <div>
           <p
-            class="text-[#c1c1c1] font-poppins text-[14px] font-bold uppercase"
+            class="text-[#c1c1c1] font-roboto text-[14px] font-bold uppercase"
           >
             {{ props.experience.instTitle }}
           </p>
           <p
-            class="text-zinc-50 font-poppins text-[1.4rem] md:text-[1.3rem] lg:text-[1.4rem] font-bold capitalize"
+            class="text-zinc-50 font-poppins text-[20px] font-bold capitalize"
           >
             {{ props.experience.institution }}
           </p>
@@ -51,7 +51,7 @@ let viewCard = ref(false);
   </div>
 
   <div
-    class="bg-cardColor relative p-4 rounded-md w-full md:max-w-none md:w-[340px] md:h-[340px] cursor-pointer items-center opacity-80 hover:opacity-100 hover:scale-105 focus:scale-105 hover:shadow-lg transition-transform duration-500 ease-in-out will-change-transform hover:border-primaryColor hover:border-b-[2px]"
+    class="bg-cardColor relative p-4 rounded-md w-full md:w-[340px] md:h-[340px] cursor-pointer"
     v-else
     @click="viewCard = !viewCard"
   >

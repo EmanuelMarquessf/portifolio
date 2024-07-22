@@ -89,7 +89,7 @@ watchEffect(() => {
 <template>
   <section class="flex flex-col gap-8">
     <h2 class="text-primaryColor font-poppins font-semibold text-[2rem]">
-      {{ props.language ? "Featured Projects" : "Projeto em Destaque" }}
+      {{ props.language ? "Featured Projects" : "Projetos em Destaque" }}
     </h2>
     <div class="flex flex-wrap gap-[1rem]">
       <ProjectCard

@@ -15,7 +15,7 @@ const props = defineProps({
         <div class="flex flex-col gap-5 md:gap-12">
           <div class="flex flex-col leading-[40px] md:leading-[64px]">
             <span
-              class="md:hidden xl:block text-zinc-50 font-poppins font-semibold text-[1.5rem] lg:text-[2rem] 2xl:text-[2.5rem] whitespace-nowrap"
+              class="md:hidden xl:block text-zinc-50 font-poppins font-medium text-[1.5rem] lg:text-[2rem] 2xl:text-[2.5rem] whitespace-nowrap"
             >
               {{ props.language ? "Hello I'm" : "Olá, eu sou" }}
             </span>
@@ -25,7 +25,7 @@ const props = defineProps({
               Emanuel Marques
             </span>
             <span
-              class="md:hidden xl:block text-zinc-50 font-poppins font-medium text-[18px] md:text-[24px] whitespace-nowrap"
+              class="md:hidden xl:block text-zinc-50 font-poppins font-medium text-[16px] md:text-[24px] whitespace-nowrap"
             >
               {{
                 props.language
@@ -39,12 +39,12 @@ const props = defineProps({
               class="w-[76px] border-lowPriority border-solid border-2"
             ></div>
             <p
-              class="w-full xl:w-[80%] text-lowPriority font-poppins font-normal text-[18px] lg:text-[24px] md:leading-8 xl:leading-10 text-justify lg:text-left"
+              class="w-full xl:w-[80%] text-lowPriority font-roboto text-[16px] lg:text-[24px] md:leading-8 xl:leading-10 text-left"
             >
               {{
                 props.language
-                  ? "Hello, I'm Emanuel, a graduate in Systems Analysis and Development from IFSP Campus Campos do Jordão. Currently, I am focused on deepening my knowledge in web development, with an emphasis on Frontend."
-                  : "Olá, sou o Emanuel, graduado em Análise e Desenvolvimento de Sistemas pelo IFSP Campus Campos do Jordão. Atualmente, estou focado em aprofundar meus conhecimentos em desenvolvimento web, com ênfase no Frontend."
+                  ? "Hello, I'm Emanuel, a graduate in Systems Analysis and Development from IFSP Campûs Campos do Jordão. Currently, I am focused on deepening my knowledge in web development, with an emphasis on Front-end."
+                  : "Olá, sou o Emanuel, graduado em Análise e Desenvolvimento de Sistemas pelo IFSP Campûs Campos do Jordão. Atualmente, estou focado em aprofundar meus conhecimentos em desenvolvimento web, com ênfase no Front-end."
               }}
             </p>
           </div>
@@ -54,10 +54,9 @@ const props = defineProps({
             href="https://drive.usercontent.google.com/download?id=1MRk3ikyFikFkr8tosFzFOxMVRSumWRjc&export=download&authuser=0"
           >
             <button
-              class="bg-primaryColor py-[12px] px-[24px] rounded-lg  flex items-center gap-[0.38rem] border-solid border-2 border-primaryColor"
+              class="bg-primaryColor px-[24px]  py-[12px] border-solid border-2 border-primaryColor rounded-lg flex items-center grow justify-center hover:bg-zinc-50 transition-colors duration-500 hover:text-primaryColor text-zinc-50 font-roboto font-medium text-[16px]"
             >
               <span
-                class="text-[#eee5ff] font-poppins font-medium text-[16px] whitespace-nowrap"
               >
                 Download CV
               </span>
@@ -65,12 +64,10 @@ const props = defineProps({
           </a>
           <a href="#projects">
             <button
-              class="bg-transparent py-[12px] px-[24px] rounded-lg border-solid border-2 border-primaryColor text-zinc-50 flex items-center gap-[12px]"
+              class="bg-transparent py-[12px] px-[24px] rounded-lg border-solid border-2 border-primaryColor text-zinc-50 flex items-center gap-[12px] font-roboto font-medium text-[16px]"
             >
-              <span
-                class="text-[#eee5ff] font-poppins font-medium text-[16px] whitespace-nowrap"
-                >{{ props.language ? "Projects" : "Projetos" }}</span
-              ><box-icon
+              <span>{{ props.language ? "Projects" : "Projetos" }}</span>
+              <box-icon
                 class="w-[20px]"
                 name="code-alt"
                 color="#eee5ff"
@@ -100,7 +97,7 @@ const props = defineProps({
             Emanuel Marques
           </span>
           <span
-            class="text-[#c1c1c1] font-poppins font-medium md:text-[1.5rem] whitespace-nowrap"
+            class="text-zinc-50 font-poppins font-medium md:text-[24px] whitespace-nowrap"
           >
             {{
               props.language

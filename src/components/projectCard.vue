@@ -8,7 +8,7 @@ const props = defineProps({
 
 <template>
   <div
-    class="w-full md:w-[672px] lg:w-[456px] xl:w-[362px] xl:flex-1 xl:basis-1/5 flex flex-col justify-between p-4 bg-cardColor rounded xl:grow gap-2 opacity-70 hover:scale-105 hover:opacity-100 transition-all duration-500 ease-in-out shadow-md"
+    class="w-full md:w-[672px] lg:w-[456px] xl:w-[362px] xl:flex-1 xl:basis-1/5 flex flex-col justify-between p-4 bg-cardColor rounded xl:grow gap-2 opacity-70 hover:scale-105 hover:opacity-100 transition-all duration-500 ease-in-out shadow-md cursor-pointer"
   >
     <div
       class="bg-cover w-full h-[176px] flex flex-col justify-end items-end"
@@ -42,7 +42,7 @@ const props = defineProps({
       </h3>
     </div>
     <p
-      class="text-lowPriority text-[1.125rem] font-poppins font-medium md:w-[20rem] xl:w-[20.5rem] md:h-[4.rem]"
+      class="text-lowPriority text-[1.125rem] font-roboto font-medium md:w-[20rem] xl:w-[20.5rem] md:h-[4.rem]"
     >
       {{ props.project.description }}
     </p>
@@ -62,7 +62,7 @@ const props = defineProps({
         v-if="props.project.url"
         :href="props.project.url"
         target="_blank"
-        class="bg-primaryColor py-[12px] rounded-lg flex items-center grow justify-center hover:bg-zinc-50 transition-colors duration-500 hover:text-primaryColor text-zinc-50 font-poppins font-medium text-[16px]"
+        class="bg-primaryColor  py-[12px] rounded-lg flex items-center grow justify-center hover:bg-zinc-50 transition-colors duration-500 hover:text-primaryColor text-zinc-50 font-roboto font-medium text-[16px]"
       >
         <span>{{ props.language ? "View Live" : "Acessar" }}</span>
       </a>
@@ -72,7 +72,7 @@ const props = defineProps({
         target="_blank"
         class="bg-primaryColor py-[12px] rounded-lg flex items-center grow justify-center pointer-events-none opacity-40"
       >
-        <span class="text-zinc-50 font-poppins font-semibold text-[1rem]">{{
+        <span class="text-zinc-50 font-roboto font-semibold text-[1rem]">{{
           props.language ? "View Live" : "Acessar"
         }}</span>
       </a>

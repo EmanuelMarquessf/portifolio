@@ -13,7 +13,7 @@ let props = defineProps({
     <h2 class="text-primaryColor font-poppins font-semibold text-[2rem]">
       {{ props.language ? "Technologies" : "Tecnologias" }}
     </h2>
-    <div class="flex flex-wrap gap-[1.5rem]">
+    <div class="flex flex-wrap gap-[1.5rem] justify-start">
       <tecnologieCard
         type="logo"
         icon="figma"
