@@ -19,6 +19,24 @@ watchEffect(() => {
       repositoryUrl: "",
       status: props.language ? "Finished" : "Finalizado",
     },
+        {
+      name: props.language ? "League Viewer" : "League Viewer",
+      description: props.language ? "League of Legends character/skin viewer" : "Visualizador de personagens/skins do jogo League of Legends",
+      tecs: [{type: 'logo', name:'figma', title:'Figma'}, {type: '', name:'landscape', title:'Nuxt', flip:'horizontal'}, {type: 'logo', name:'tailwind-css', title:'TailwindCss'}],
+      cover: "/LeagueViewer.png",
+      url: "https://lolchampionsviewer.netlify.app/",
+      repositoryUrl: "https://github.com/EmanuelMarquessf/lolSkinViewer",
+      status: props.language ? "Finished" : "Finalizado",
+    },
+    {
+      name: props.language ? "GamesView" : "GamesView",
+      description: props.language ? "Website for querying data about video games using Rawg API" : "Site para consulta de dados sobre jogos de video-game usando a API Rawg",
+      tecs: [{type: 'logo', name:'figma', title:'Figma'}, {type: 'logo', name:'react', title:'React', flip:'horizontal'}, {type: 'logo', name:'tailwind-css', title:'TailwindCss'}],
+      cover: "/gamesView.png",
+      url: "https://gamesview.netlify.app/",
+      repositoryUrl: "https://github.com/EmanuelMarquessf/Games-View",
+      status: props.language ? "Finished" : "Finalizado",
+    },
     {
       name: props.language ? "Pokedex" : "Pokedex",
       description: props.language ? "Pokedex consuming from the PokeApi API" : "Pokedex consumindo da API PokeApi",
@@ -28,15 +46,7 @@ watchEffect(() => {
       repositoryUrl: "https://github.com/EmanuelMarquessf/Pokedex-Project-Vue.git",
       status: props.language ? "In Progress" : "Em desenvolvimento",
     },
-    {
-      name: props.language ? "League Viewer" : "League Viewer",
-      description: props.language ? "League of Legends character/skin viewer" : "Visualizador de personagens/skins do jogo League of Legends",
-      tecs: [{type: 'logo', name:'figma', title:'Figma'}, {type: '', name:'landscape', title:'Nuxt', flip:'horizontal'}, {type: 'logo', name:'tailwind-css', title:'TailwindCss'}],
-      cover: "/LeagueViewer.png",
-      url: "https://lolchampionsviewer.netlify.app/",
-      repositoryUrl: "https://github.com/EmanuelMarquessf/lolSkinViewer",
-      status: props.language ? "Finished" : "Finalizado",
-    },
+
     {
       name: props.language ? "Cambio Converter" : "Cambio Converter",
       description: props.language ? "Global Currency Conversion using FreeCurrency API" : "Conversão de cambio globalmente utilizando da API FreeCurrency",
@@ -73,15 +83,7 @@ watchEffect(() => {
       repositoryUrl: "",
       status: props.language ? "" : "",
     },
-    {
-      name: props.language ? "It's Comming" : "Em breve",
-      description: props.language ? "Project still under development" : "Projeto em desenvolvimento",
-      tecs: '',
-      cover: "/projectImg.png",
-      url: "",
-      repositoryUrl: "",
-      status: props.language ? "" : "",
-    },
+
   ];
 });
 </script>
