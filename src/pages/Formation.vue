@@ -55,7 +55,7 @@ watchEffect(() => {
       period: "(2021 - 2022)",
     },
     {
-      expTitle: props.language ? "Freelance - current" : "Freelance - atual",
+      expTitle: props.language ? "Freelance" : "Freelance",
       expName: "Dev. Front-end Jr.",
       instTitle: props.language ? "company" : "empresa",
       institution: "Bitcode Soluções",
@@ -64,7 +64,7 @@ watchEffect(() => {
         ? "Web page development. Responsible for creating attractive and intuitive user interfaces using HTML, CSS, JavaScript, VueJs, and TailwindCss technologies. Additionally, actively participated in the conception and design of interfaces through Figma, ensuring a visually pleasing and functional experience for users."
         : "Desenvolvimento de páginas web. Responsável pela criação de interfaces atraentes e intuitivas para o usuário, utilizando das tecnologias HTML, CSS, JavaScript, VueJs e TailwindCss. Além disso, participação ativa na concepção e design das interfaces através do Figma, garantindo uma experiência visualmente agradável e funcional para os usuários.",
       technologies: "io-logo-vue, si-tailwindcss, co-figma",
-      period: "(2024 - 2024)",
+      period: "(2023 - 2024)",
     },
   ];
 });
