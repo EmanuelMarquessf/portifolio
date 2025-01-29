@@ -2,7 +2,7 @@
 import { defineProps, ref } from "vue";
 
 const props = defineProps({
-  formation: Array,
+  formation: Object,
 });
 
 let arrayTechnologies = (props.formation.technologies || "").split(", ");
@@ -90,12 +90,11 @@ let viewCard = ref(false);
           v-for="technologies in arrayTechnologies"
           :title="technologies.charAt(0).toUpperCase() + technologies.slice(1)"
         >
-          <box-icon
-            type="logo"
-            :name="technologies"
-            class="w-[2rem] h-[2rem]"
-            color="#7562e0"
-          ></box-icon>
+        <VIcon
+        :name="technologies"
+        class="w-[2rem] h-[2rem]"
+        color="#7562e0"
+      />
         </div>
       </div>
     </div>

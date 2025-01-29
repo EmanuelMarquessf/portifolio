@@ -40,6 +40,12 @@ let props = defineProps({
       />
       <tecnologieCard
         type="logo"
+        icon="typescript"
+        name="TypeScript"
+        text="I design beautiful web iterfaces with Figma and Adove XD"
+      />
+      <tecnologieCard
+        type="logo"
         icon="bootstrap"
         name="Bootstrap"
         text="I design beautiful web iterfaces with Figma and Adove XD"

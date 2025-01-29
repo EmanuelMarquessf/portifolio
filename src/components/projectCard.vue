@@ -2,7 +2,7 @@
 import { defineProps } from "vue";
 
 const props = defineProps({
-  project: Array,
+  project: Object,
 });
 </script>
 
@@ -18,18 +18,15 @@ const props = defineProps({
         v-if="props.project.tecs"
         class="flex flex-row justify-end bg-secondaryColor rounded-full m-1 p-1"
       >
-        <box-icon
+        <VIcon
           v-for="tec in props.project.tecs"
-          :type="tec.type"
           :name="tec.name"
           :title="tec.title"
-          :flip="tec.flip"
           class="w-[1.2rem] h-[1.2rem]"
           color="#7562e0"
-        ></box-icon>
+        />
       </div>
     </div>
-    <!-- <img class="rounded-sm" :src="props.project.cover" alt="" /> -->
     <div class="flex flex-row justify-between items-center">
       <h3 class="text-cardTitle font-poppins text-[24px] font-semibold">
         {{ props.project.name }}
@@ -46,23 +43,13 @@ const props = defineProps({
     >
       {{ props.project.description }}
     </p>
-    <!-- <div class="flex flex-row justify-end gap-4 w-full">
-      <box-icon
-        v-for="tec in props.project.tecs"
-        type="logo"
-        :name="tec"
-        :title="tec.charAt(0).toUpperCase() + tec.slice(1)"
-        class="w-[1.5rem] h-[1.5rem]"
-        color="#7562e0"
-      ></box-icon>
-      
-    </div> -->
+
     <div class="flex flex-row gap-4 mt-4">
       <a
         v-if="props.project.url"
         :href="props.project.url"
         target="_blank"
-        class="bg-primaryColor  py-[12px] rounded-lg flex items-center grow justify-center hover:bg-zinc-50 transition-colors duration-500 hover:text-primaryColor text-zinc-50 font-roboto font-medium text-[16px]"
+        class="bg-primaryColor py-[12px] rounded-lg flex items-center grow justify-center hover:bg-zinc-50 transition-colors duration-500 hover:text-primaryColor text-zinc-50 font-roboto font-medium text-[16px]"
       >
         <span>{{ props.language ? "View Live" : "Acessar" }}</span>
       </a>

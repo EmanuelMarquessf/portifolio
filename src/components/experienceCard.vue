@@ -2,7 +2,7 @@
 import { defineProps, ref } from "vue";
 
 const props = defineProps({
-  experience: Array,
+  experience: Object,
 });
 
 let arrayTechnologies = (props.experience.technologies || "").split(", ");
@@ -12,7 +12,7 @@ let viewCard = ref(false);
 
 <template>
   <div
-    class="bg-cardColor relative p-4 rounded-md w-full md:w-[340px] md:h-[150px] cursor-pointer items-center opacity-80 hover:opacity-100 hover:scale-105 focus:scale-105 transition-transform  duration-500 ease-in-out will-change-transform hover:border-primaryColor hover:border-b-[2px]"
+    class="bg-cardColor relative p-4 rounded-md w-full md:w-[340px] md:h-[150px] cursor-pointer items-center opacity-80 hover:opacity-100 hover:scale-105 focus:scale-105 transition-transform duration-500 ease-in-out will-change-transform hover:border-primaryColor hover:border-b-[2px]"
     v-if="!viewCard"
     @click="viewCard = !viewCard"
   >
@@ -23,26 +23,18 @@ let viewCard = ref(false);
       <img class="w-[6rem] h-[6rem]" :src="props.experience.image" alt="" />
       <div class="flex flex-col justify-between gap-2">
         <div>
-          <p
-            class="text-[#c1c1c1] font-roboto text-[14px] font-bold uppercase"
-          >
+          <p class="text-[#c1c1c1] font-roboto text-[14px] font-bold uppercase">
             {{ props.experience.expTitle }}
           </p>
-          <p
-            class="text-zinc-50 text-[20px] font-bold capitalize"
-          >
+          <p class="text-zinc-50 text-[20px] font-bold capitalize">
             {{ props.experience.expName }}
           </p>
         </div>
         <div>
-          <p
-            class="text-[#c1c1c1] font-roboto text-[14px] font-bold uppercase"
-          >
+          <p class="text-[#c1c1c1] font-roboto text-[14px] font-bold uppercase">
             {{ props.experience.instTitle }}
           </p>
-          <p
-            class="text-zinc-50 font-poppins text-[20px] font-bold capitalize"
-          >
+          <p class="text-zinc-50 font-poppins text-[20px] font-bold capitalize">
             {{ props.experience.institution }}
           </p>
         </div>
@@ -95,12 +87,11 @@ let viewCard = ref(false);
           v-for="technologies in arrayTechnologies"
           :title="technologies.charAt(0).toUpperCase() + technologies.slice(1)"
         >
-          <box-icon
-            type="logo"
+          <VIcon
             :name="technologies"
             class="w-[2rem] h-[2rem]"
             color="#7562e0"
-          ></box-icon>
+          />
         </div>
       </div>
     </div>

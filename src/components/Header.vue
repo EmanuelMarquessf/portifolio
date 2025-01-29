@@ -2,6 +2,8 @@
 import { ref, onMounted, defineProps, defineEmits } from "vue";
 import { initFlowbite } from "flowbite";
 
+import { BiGithub } from "oh-vue-icons/icons";
+
 const emit = defineEmits(["languageSelect"]);
 
 onMounted(() => {
@@ -38,8 +40,16 @@ function langSelect() {
             :class="languageRef ? 'bg-image' : ''"
             class="relative px-1 w-14 h-7 bg-zinc-50 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primaryColor dark:peer-focus:primaryColor rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-zinc-50 after:content-[''] after:absolute after:top-0.5 after:start-[4px] after:bg-primaryColor after:border-primaryColor after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-primaryColor"
           >
-            <span v-if="languageRef" class="text-zinc-50 font-bold font-roboto text-[12px] px-1">EN</span>
-            <span v-else class="text-primaryColor px-7 font-bold font-roboto text-[12px]">PT</span>
+            <span
+              v-if="languageRef"
+              class="text-zinc-50 font-bold font-roboto text-[12px] px-1"
+              >EN</span
+            >
+            <span
+              v-else
+              class="text-primaryColor px-7 font-bold font-roboto text-[12px]"
+              >PT</span
+            >
           </div>
           <span
             class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"
@@ -52,12 +62,11 @@ function langSelect() {
             target="_blank"
             title="+55 (12) 99636-0065"
           >
-            <box-icon
+            <VIcon
               class="w-8 h-8 opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-500 ease-in-out"
-              name="whatsapp"
-              type="logo"
               color="#614cd9"
-            ></box-icon>
+              name="co-whatsapp"
+            />
           </a>
           <a
             class="flex items-center"
@@ -65,12 +74,11 @@ function langSelect() {
             target="_blank"
             title="https://www.linkedin.com/in/emanuel-fonseca-dev/"
           >
-            <box-icon
+            <VIcon
               class="w-8 h-8 opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-500 ease-in-out"
-              name="linkedin-square"
-              type="logo"
               color="#614cd9"
-            ></box-icon>
+              name="co-linkedin-in"
+            />
           </a>
           <a
             class="flex items-center"
@@ -78,12 +86,11 @@ function langSelect() {
             target="_blank"
             title="emanuel.marquessf@gmail.com"
           >
-            <box-icon
+            <VIcon
               class="w-8 h-8 opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-500 ease-in-out"
-              name="envelope"
-              type="solid"
               color="#614cd9"
-            ></box-icon>
+              name="md-email-outlined"
+            />
           </a>
           <a
             class="flex items-center"
@@ -91,12 +98,11 @@ function langSelect() {
             target="_blank"
             title="@EmanuelMarquessf"
           >
-            <box-icon
+            <VIcon
               class="w-8 h-8 opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-500 ease-in-out"
-              name="github"
-              type="logo"
               color="#614cd9"
-            ></box-icon>
+              name="bi-github"
+            />
           </a>
         </div>
       </div>

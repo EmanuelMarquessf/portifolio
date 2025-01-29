@@ -49,29 +49,25 @@ const props = defineProps({
             </p>
           </div>
         </div>
-        <div class="flex flex-row justify-between md:justify-start md:gap-8 items-center">
+        <div
+          class="flex flex-row justify-between md:justify-start md:gap-8 items-center"
+        >
           <a
             href="https://drive.usercontent.google.com/download?id=1MRk3ikyFikFkr8tosFzFOxMVRSumWRjc&export=download&authuser=0"
           >
             <button
-              class="bg-primaryColor px-[24px]  py-[12px] border-solid border-2 border-primaryColor rounded-lg flex items-center grow justify-center hover:bg-zinc-50 transition-colors duration-500 hover:text-primaryColor text-zinc-50 font-roboto font-medium text-[16px]"
+              class="bg-primaryColor px-[24px] py-[12px] border-solid border-2 border-primaryColor rounded-lg flex items-center grow justify-center hover:bg-zinc-50 transition-all ease-in-out duration-500 hover:text-primaryColor hover:scale-105 text-zinc-50 font-roboto font-medium text-[16px] "
             >
-              <span
-              >
-                Download CV
-              </span>
+              <span> Download CV </span>
             </button>
           </a>
           <a href="#projects">
             <button
-              class="bg-transparent py-[12px] px-[24px] rounded-lg border-solid border-2 border-primaryColor text-zinc-50 flex items-center gap-[12px] font-roboto font-medium text-[16px]"
+              class="bg-transparent hover:bg-secondaryColor hover:scale-105 py-[12px] px-[24px] rounded-lg border-solid border-2 border-primaryColor text-zinc-50 flex items-center gap-[12px] font-roboto font-medium text-[16px] transition-all duration-500 ease-in-out"
             >
               <span>{{ props.language ? "Projects" : "Projetos" }}</span>
-              <box-icon
-                class="w-[20px]"
-                name="code-alt"
-                color="#eee5ff"
-              ></box-icon>
+              
+              <VIcon name="bi-code-slash" class="w-[20px]" color="#eee5ff" />
             </button>
           </a>
         </div>

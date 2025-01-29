@@ -8,29 +8,26 @@
         Gostou do meu trabalho? Porque não entrar em contato?
       </p>
       <div class="flex flex-row gap-2">
-        <a href=""
-          ><box-icon
+        <a href="">
+          <VIcon
             class="w-[35px] h-[35px]"
-            name="instagram"
-            type="logo"
+            name="bi-instagram"
             color="#7562E0"
-          ></box-icon
+          />
+        </a>
+        <a href=""
+          ><VIcon
+            class="w-[35px] h-[35px]"
+            name="co-linkedin-in"
+            color="#7562E0"
+          ></VIcon
         ></a>
         <a href=""
-          ><box-icon
+          ><VIcon
             class="w-[35px] h-[35px]"
-            name="linkedin-square"
-            type="logo"
+            name="md-email-outlined"
             color="#7562E0"
-          ></box-icon
-        ></a>
-        <a href=""
-          ><box-icon
-            class="w-[35px] h-[35px]"
-            name="envelope"
-            type="solid"
-            color="#7562E0"
-          ></box-icon
+          ></VIcon
         ></a>
       </div>
     </div>

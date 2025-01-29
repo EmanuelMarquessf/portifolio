@@ -6,12 +6,8 @@
       <span class="text-zinc-50 font-poppins font-semibold text-[1rem]"
         ><slot></slot
       ></span>
-      <box-icon
-        class="w-[1rem]"
-        color="#ffffff"
-        type="solid"
-        name="user"
-      ></box-icon>
+
+      <VIcon name="ri-user-3-fill" class="w-[1rem]" color="#ffffff" />
     </button>
   </div>
 </template>

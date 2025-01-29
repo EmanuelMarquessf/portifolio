@@ -1,11 +1,15 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
-import 'boxicons'
 import '../node_modules/flowbite-vue/dist/index.css'
+
+import { OhVueIcon, addIcons } from 'oh-vue-icons';
+import { CoWhatsapp, CoLinkedinIn, MdEmailOutlined, BiGithub, CoFigma, IoLogoVue, SiTailwindcss, SiNuxtdotjs, CoReact, CoSass, CoNextJs, RiUser3Fill, CoHtml5Shield, FaCss3Alt, CoJavascript, CoPostgresql, SiCsharp, BiCodeSlash, BiInstagram} from 'oh-vue-icons/icons';
+
+addIcons(CoWhatsapp, CoLinkedinIn, MdEmailOutlined, BiGithub, CoFigma, IoLogoVue, SiTailwindcss, SiNuxtdotjs, CoReact, CoSass, CoNextJs, RiUser3Fill, CoHtml5Shield, FaCss3Alt, CoJavascript, CoPostgresql, SiCsharp, BiCodeSlash, BiInstagram); 
 
 const app = createApp(App);
 
-app.config.globalProperties.language = 'pt-br'
+app.component('VIcon', OhVueIcon)
 
 app.mount("#app")
