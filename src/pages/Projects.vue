@@ -12,7 +12,7 @@ watchEffect(() => {
   projectsArray.value = [
     {
       name: "Bitcode Soluções",
-      description: props.language ? "The website of the software development company Bitcode Solutions." : "Site da empresa de desenvolviemnto de software Bitcode Soluções",
+      description: props.language ? "The website of the software development company Bitcode Solutions." : "Site da empresa de desenvolvimento de software Bitcode Soluções",
       tecs: [{name:'co-figma', title:'Figma'}, {name:'io-logo-vue', title:'VueJS'}, {name:'si-tailwindcss', title:'TailwindCss'}],
       cover: "/bitcodeSite.png",
       url: "https://bitcodesolucoes.com.br/",
