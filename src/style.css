@@ -3,5 +3,33 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+}
 
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
 
+::-webkit-scrollbar-thumb {
+  background-color: #0E0E12;
+  border: 1px solid #1e293b;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scrolling {
+  animation: scroll 5s linear infinite;
+}
+
+body {
+  scroll-behavior: smooth;
+}

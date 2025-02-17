@@ -39,7 +39,7 @@ const props = defineProps({
       </h3>
     </div>
     <p
-      class="text-lowPriority text-[1.125rem] font-roboto font-medium md:w-[20rem] xl:w-[20.5rem] md:h-[4.rem]"
+      class="text-lowPriority text-[16px] font-roboto   md:w-[20rem] xl:w-[20.5rem] md:h-[4.rem] leading-6"
     >
       {{ props.project.description }}
     </p>

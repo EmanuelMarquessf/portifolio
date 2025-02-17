@@ -39,7 +39,7 @@ const props = defineProps({
               class="w-[76px] border-lowPriority border-solid border-2"
             ></div>
             <p
-              class="w-full xl:w-[80%] text-lowPriority font-roboto text-[16px] lg:text-[24px] md:leading-8 xl:leading-10 text-left"
+              class="w-full xl:w-[80%] text-lowPriority font-roboto text-[16px] lg:text-[24px] md:leading-8 xl:leading-10 text-left font-medium"
             >
               {{
                 props.language

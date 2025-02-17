@@ -10,10 +10,10 @@ export default {
     extend: {
       colors: {
         customPurple: '#614cd9',
-        darkColor: '#0c0b0d',
-        secondaryColor: '#0f0f0f',
+        darkColor: '#03010D',
+        secondaryColor: '#060312',
         
-        cardColor: '#1b1a37',
+        cardColor: '#15192B',
         primaryColor: '#614cd9',
         lowPriority: '#BDBDBD',
         secondaryText: '#708C88',

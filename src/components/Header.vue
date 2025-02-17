@@ -21,7 +21,7 @@ function langSelect() {
 </script>
 
 <template>
-  <nav id="header" class="border-gray-200 bg-darkColor z-50 fixed w-full">
+  <nav id="header" class="border-gray-200 bg-darkColor z-50 fixed w-full scroll-smooth">
     <div
       class="max-w-screen-3xl flex flex-wrap items-center justify-between md:mx-4 p-4"
     >
@@ -133,12 +133,12 @@ function langSelect() {
       </button>
       <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
         <ul
-          class="flex flex-col font-medium font-roboto mt-4 bg-[#18181b] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700"
+          class="flex flex-col font-medium font-roboto mt-4 bg-[#18181b] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700 md:text-lg capitalize"
         >
           <li>
             <a
               href="#home"
-              class="block py-2 px-3 md:p-0 text-[#b2b2b2] rounded hover:text-[#fffff0] md:bg-transparent md:text-xl capitalize"
+              class="block py-2 px-3 md:p-0 text-[#989898] rounded hover:text-[#fffff0] md:bg-transparent transition-all ease-in-out duration-500"
               aria-current="page"
               >Home</a
             >
@@ -146,7 +146,7 @@ function langSelect() {
           <li>
             <a
               href="#experience"
-              class="block py-2 px-3 md:p-0 text-[#b2b2b2] rounded hover:text-[#fffff0] md:bg-transparent md:text-xl capitalize"
+              class="block py-2 px-3 md:p-0 text-[#989898] rounded hover:text-[#fffff0] md:bg-transparent transition-all ease-in-out duration-500"
               aria-current="page"
               >{{ languageRef ? "Experiences" : "Experiências" }}
             </a>
@@ -154,7 +154,7 @@ function langSelect() {
           <li>
             <a
               href="#tecnologie"
-              class="block py-2 px-3 md:p-0 text-[#b2b2b2] rounded hover:text-[#fffff0] md:bg-transparent md:text-xl capitalize"
+              class="block py-2 px-3 md:p-0 text-[#989898] rounded hover:text-[#fffff0] md:bg-transparent transition-all ease-in-out duration-500"
               aria-current="page"
               >{{ languageRef ? "Technologies" : "Tecnologias" }}</a
             >
@@ -162,7 +162,7 @@ function langSelect() {
           <li>
             <a
               href="#projects"
-              class="block py-2 px-3 md:p-0 text-[#b2b2b2] rounded hover:text-[#fffff0] md:bg-transparent md:text-xl capitalize"
+              class="block py-2 px-3 md:p-0 text-[#989898] rounded hover:text-[#fffff0] md:bg-transparent transition-all ease-in-out duration-500"
               aria-current="page"
               >{{ languageRef ? "Projects" : "Projetos" }}</a
             >
