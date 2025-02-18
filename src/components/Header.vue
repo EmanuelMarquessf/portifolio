@@ -53,7 +53,7 @@ function langSelect() {
           <div
             :class="[
               'transition-all ease-in-out md:duration-1000 relative flex-1',
-              menu ? 'hidden' : 'left-0',
+              menu ? '' : 'hidden',
             ]"
           >
             <ul
