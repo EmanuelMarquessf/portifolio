@@ -9,11 +9,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        customPurple: '#614cd9',
+        customPurple: '#923FFD',
         darkColor: '#0c0b0d',
         secondaryColor: '#0e0e10',
-        // darkColor: '#18181b',
-        // secondaryColor: '#0e0e10',
+
         cardColor: '#27272d',
         primaryColor: '#8325fd',
         lowPriority: '#BDBDBD',

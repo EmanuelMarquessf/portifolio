@@ -75,7 +75,7 @@ const props = defineProps({
       <div
         class="md:w-full flex flex-col md:flex-row md:items-center order-first xl:order-last gap-10"
       >
-        <div class="bg-[#923FFD] rounded-full">
+        <div class="bg-customPurple rounded-full">
           <img
             class="bg-transparent w-[15rem] md:w-[20rem] xl:w-[50rem] rounded-full"
             src="/foto2.png"

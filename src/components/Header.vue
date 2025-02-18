@@ -6,7 +6,7 @@ import { BiGithub } from "oh-vue-icons/icons";
 
 const emit = defineEmits(["languageSelect"]);
 
-const menu = ref(false);
+const menu = ref(true);
 
 onMounted(() => {
   initFlowbite();
@@ -53,7 +53,7 @@ function langSelect() {
           <div
             :class="[
               'transition-all ease-in-out md:duration-1000 relative flex-1',
-              menu ? '' : 'hidden',
+              menu ? 'hidden' : '',
             ]"
           >
             <ul
@@ -103,36 +103,8 @@ function langSelect() {
           </div>
         </div>
         <div class="flex flex-row w-full justify-evenly md:justify-end">
-          <label
-            class="mx-4 z-50 inline-flex items-center cursor-pointer opacity-50 hover:opacity-100 hover:scale-105 transition-all duration-500 ease-in-out"
-          >
-            <input
-              type="checkbox"
-              value=""
-              class="sr-only peer"
-              v-model="languageRef"
-              @click="langSelect"
-            />
-            <div
-              :class="languageRef ? 'bg-image' : ''"
-              class="relative px-1 w-14 h-7 bg-zinc-50 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primaryColor dark:peer-focus:primaryColor rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-zinc-50 after:content-[''] after:absolute after:top-0.5 after:start-[4px] after:bg-primaryColor after:border-primaryColor after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-primaryColor"
-            >
-              <span
-                v-if="languageRef"
-                class="text-zinc-50 font-bold font-roboto text-[12px] px-1"
-                >EN</span
-              >
-              <span
-                v-else
-                class="text-primaryColor px-7 font-bold font-roboto text-[12px]"
-                >PT</span
-              >
-            </div>
-            <span
-              class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"
-            ></span>
-          </label>
-          <div class="flex flex-row items-center gap-1">
+
+          <div class="flex flex-row items-center gap-1 text-customPurple">
             <a
               class="flex items-center"
               href="https://wa.me/5512996360065"
@@ -141,7 +113,6 @@ function langSelect() {
             >
               <VIcon
                 class="w-8 h-8 opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-500 ease-in-out"
-                color="#614cd9"
                 name="co-whatsapp"
               />
             </a>
@@ -153,7 +124,6 @@ function langSelect() {
             >
               <VIcon
                 class="w-8 h-8 opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-500 ease-in-out"
-                color="#614cd9"
                 name="co-linkedin-in"
               />
             </a>
@@ -165,7 +135,6 @@ function langSelect() {
             >
               <VIcon
                 class="w-8 h-8 opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-500 ease-in-out"
-                color="#614cd9"
                 name="md-email-outlined"
               />
             </a>
@@ -177,11 +146,39 @@ function langSelect() {
             >
               <VIcon
                 class="w-8 h-8 opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-500 ease-in-out"
-                color="#614cd9"
                 name="bi-github"
               />
             </a>
           </div>
+          <label
+          class="mx-4 z-50 inline-flex items-center cursor-pointer opacity-50 hover:opacity-100 hover:scale-105 transition-all duration-500 ease-in-out"
+        >
+          <input
+            type="checkbox"
+            value=""
+            class="sr-only peer"
+            v-model="languageRef"
+            @click="langSelect"
+          />
+          <div
+            :class="languageRef ? 'bg-image' : ''"
+            class="relative px-1 w-14 h-7 bg-zinc-50 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primaryColor dark:peer-focus:primaryColor rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-zinc-50 after:content-[''] after:absolute after:top-0.5 after:start-[4px] after:bg-primaryColor after:border-primaryColor after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-primaryColor"
+          >
+            <span
+              v-if="languageRef"
+              class="text-zinc-50 font-bold font-roboto text-[12px] px-1"
+              >EN</span
+            >
+            <span
+              v-else
+              class="text-primaryColor px-7 font-bold font-roboto text-[12px]"
+              >PT</span
+            >
+          </div>
+          <span
+            class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+          ></span>
+        </label>
         </div>
       </div>
     </div>
