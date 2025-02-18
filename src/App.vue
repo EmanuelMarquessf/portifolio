@@ -8,7 +8,7 @@ import Projects from "./pages/Projects.vue";
 
 import { ref } from "vue";
 
-const language = ref(false);
+const language = ref(true);
 
 function languageSelect(newValue){
   language.value = newValue;
