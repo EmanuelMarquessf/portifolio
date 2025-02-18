@@ -3,7 +3,7 @@ import Header from "./components/Header.vue";
 import Home from "./pages/Home.vue";
 // import About from './pages/About.vue';
 import Formation from "./pages/Formation.vue";
-import Tecno from "./pages/Tecno.vue";
+import Tech from "./pages/Tech.vue";
 import Projects from "./pages/Projects.vue";
 
 import { ref } from "vue";
@@ -28,7 +28,7 @@ function languageSelect(newValue){
       >
         <!-- <About id="about" :language="language"></About> -->
         <Formation id="experience" :language="language"></Formation>
-        <Tecno id="tecnologie" :language="language"></Tecno>
+        <Tech id="tecnologie" :language="language"></Tech>
         <Projects id="projects" :language="language"></Projects>
       </div>
       <!-- <Contact id="contact" :language="language"></Contact> -->
