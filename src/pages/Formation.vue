@@ -70,23 +70,23 @@ watchEffect(() => {
 });
 </script>
 <template>
-  <div class="flex flex-row gap-8 flex-wrap justify-between">
-    <div class="flex flex-col flex-wrap gap-8">
-      <h2 class="text-primaryColor font-poppins font-semibold text-[2rem]">
+  <div class="grid grid-cols-6  justify-between gap-12">
+    <div class="col-span-6">
+      <h2 class="text-primaryColor font-poppins font-semibold text-3xl pb-8">
         {{ props.language ? "Formation" : "Formação" }}
       </h2>
-      <div class="flex flex-row gap-8 flex-wrap md:flex-nowrap lg:flex-wrap">
+      <div class="grid grid-cols-6 col-span-6 md:col-span-8 gap-8 items-start">
         <FormationCard
           v-for="formation in formationArray"
           :formation="formation"
         />
       </div>
     </div>
-    <div id="experiencias" class="flex flex-col gap-8">
-      <h2 class="text-primaryColor font-poppins font-semibold text-[2rem]">
+    <div id="experiencias" class="col-span-6 md:grid-cols-12">
+      <h2 class="text-primaryColor font-poppins font-semibold text-3xl pb-8">
         {{ props.language ? "Experience" : "Experiências" }}
       </h2>
-      <div class="flex flex-row gap-8 flex-wrap md:flex-nowrap lg:flex-wrap">
+      <div class="grid grid-cols-6  gap-8 items-start">
         <ExperienceCard
           v-for="experience in experienceArray"
           :experience="experience"
