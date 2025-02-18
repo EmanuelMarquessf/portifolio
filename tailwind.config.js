@@ -10,14 +10,15 @@ export default {
     extend: {
       colors: {
         customPurple: '#614cd9',
-        darkColor: '#03010D',
-        secondaryColor: '#060312',
-        
-        cardColor: '#15192B',
-        primaryColor: '#614cd9',
+        darkColor: '#0c0b0d',
+        secondaryColor: '#0e0e10',
+        // darkColor: '#18181b',
+        // secondaryColor: '#0e0e10',
+        cardColor: '#27272d',
+        primaryColor: '#8325fd',
         lowPriority: '#BDBDBD',
         secondaryText: '#708C88',
-        cardTitle: '#7C7CED'
+        cardTitle: '#fdfdfd'
       },
       fontFamily: {
         'poppins': 'poppins',
