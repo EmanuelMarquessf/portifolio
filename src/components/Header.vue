@@ -40,13 +40,12 @@ function langSelect() {
           <button
             @click="() => (menu = !menu)"
             type="button"
-            class="focus:outline-none px-4 opacity-50 hover:opacity-100 hover:scale-110 text-left"
+            class="focus:outline-none px-4 text-left opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-500 ease-in-out"
             aria-controls="navbar-solid-bg"
             aria-expanded="false"
           >
             <VIcon
-              class="w-8 h-8  transition duration-200 ease-in-out"
-              color="#614cd9"
+              class="w-8 h-8 text-customPurple"
               :name="menu ? 'hi-solid-menu' : 'io-close-sharp'"
             />
           </button>
