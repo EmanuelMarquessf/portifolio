@@ -138,7 +138,8 @@ watchEffect(() => {
       {{ props.language ? "Featured Projects" : "Projetos em Destaque" }}
     </h2>
     <div class="grid grid-cols-12 gap-[1rem]">
-      <ProjectCard v-for="project in projectsArray" :project="project" />
+      <ProjectCard v-for="project in projectsArray" :project="project" 
+      :language="language"/>
     </div>
   </section>
 </template>

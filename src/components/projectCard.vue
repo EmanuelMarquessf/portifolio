@@ -1,15 +1,14 @@
 <script setup>
 import { defineProps } from "vue";
+import Button from "./Button.vue";
 
 const props = defineProps({
   project: Object,
+  language:Boolean
 });
 </script>
 
 <template>
-  <!-- <div
-    class="w-full md:w-[672px] lg:w-[456px] xl:w-[362px]  flex flex-col justify-between p-4 bg-cardColor rounded xl:grow gap-2 opacity-70 hover:scale-105 hover:opacity-100 transition-all duration-500 ease-in-out shadow-md cursor-pointer"
-  > -->
   <div
   class="w-full col-span-12 md:col-span-4 2xl:col-span-3 flex flex-col justify-between p-4 bg-cardColor rounded xl:grow gap-2 opacity-70 hover:scale-105 hover:opacity-100 transition-all duration-500 ease-in-out shadow-md cursor-pointer"
 >
@@ -48,45 +47,19 @@ const props = defineProps({
     </p>
 
     <div class="flex flex-row gap-4 mt-4">
-      <a
-        v-if="props.project.url"
+        <Button
         :href="props.project.url"
+        :text="props.language ? 'View Live' : 'Acessar'"
+        :type="true"
         target="_blank"
-        class="bg-primaryColor py-[12px] rounded-lg flex items-center grow justify-center hover:bg-zinc-50 transition-colors duration-500 hover:text-primaryColor text-zinc-50 font-roboto font-medium text-[16px]"
-      >
-        <span>{{ props.language ? "View Live" : "Acessar" }}</span>
-      </a>
-      <a
-        v-else
-        :href="props.url"
-        target="_blank"
-        class="bg-primaryColor py-[12px] rounded-lg flex items-center grow justify-center pointer-events-none opacity-40"
-      >
-        <span class="text-zinc-50 font-roboto font-semibold text-[1rem]">{{
-          props.language ? "View Live" : "Acessar"
-        }}</span>
-      </a>
+      />
+      <Button
+      :href="props.project.repositoryUrl"
+      text="GitHub Repo"
+      :type="false"
+      target="_blank"
+    />
 
-      <a
-        v-if="props.project.repositoryUrl"
-        :href="props.project.repositoryUrl"
-        target="_blank"
-        class="bg-transparent hover:bg-secondaryColor py-[12px] rounded-lg border-solid border-2 border-primaryColor text-zinc-50 flex items-center grow justify-center transition-colors duration-500"
-      >
-        <span class="text-zinc-50 font-poppins font-medium text-[16px]"
-          >GitHub Repo</span
-        >
-      </a>
-      <a
-        v-else
-        :href="props.repositoryUrl"
-        target="_blank"
-        class="bg-transparent py-[12px] rounded-lg border-solid border-2 border-primaryColor text-zinc-50 flex items-center grow justify-center pointer-events-none opacity-40"
-      >
-        <span class="text-zinc-50 font-poppins font-semibold text-[1rem]"
-          >GitHub Repo</span
-        >
-      </a>
     </div>
   </div>
 </template>

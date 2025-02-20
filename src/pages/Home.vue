@@ -1,5 +1,6 @@
 <script setup>
 import { defineProps } from "vue";
+import Button from "../components/Button.vue";
 
 const props = defineProps({
   language: Boolean,
@@ -52,24 +53,18 @@ const props = defineProps({
         <div
           class="flex flex-row justify-between md:justify-start md:gap-8 items-center"
         >
-          <a
+          <Button
             href="https://drive.usercontent.google.com/download?id=127eyHysmJYHGfehQVz2xItRdzjMEISXM&export=download&authuser=1&confirm=t&uuid=6a9d70e7-e23f-4025-9379-168069c62ebb&at=AIrpjvMvZQcRqJwPoA505xk73FwJ:1738247728251"
-          >
-            <button
-              class="bg-primaryColor px-[24px] py-[12px] border-solid border-2 border-primaryColor rounded-lg flex items-center grow justify-center hover:bg-zinc-50 transition-all ease-in-out duration-500 hover:text-primaryColor hover:scale-105 text-zinc-50 font-roboto font-medium text-[16px] "
-            >
-              <span> Download CV </span>
-            </button>
-          </a>
-          <a href="#projects">
-            <button
-              class="bg-transparent hover:bg-secondaryColor hover:scale-105 py-[12px] px-[24px] rounded-lg border-solid border-2 border-primaryColor text-zinc-50 flex items-center gap-[12px] font-roboto font-medium text-[16px] transition-all duration-500 ease-in-out"
-            >
-              <span>{{ props.language ? "Projects" : "Projetos" }}</span>
-              
-              <VIcon name="bi-code-slash" class="w-[20px]" color="#eee5ff" />
-            </button>
-          </a>
+            :text="props.language ? 'Download CV' : 'Download CV'"
+            :type="true"
+          />
+
+          <Button
+            href="#projects"
+            :text="props.language ? 'Projects' : 'Projetos'"
+            icon="bi-code-slash"
+            :type="false"
+          />
         </div>
       </div>
       <div

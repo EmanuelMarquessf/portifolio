@@ -88,7 +88,7 @@ watchEffect(() => {
 });
 </script>
 <template>
-  <div class="grid grid-cols-6  justify-between gap-12">
+  <div class="grid grid-cols-6  justify-between gap-20 md:gap-24">
     <div class="col-span-6">
       <h2 class="text-primaryColor font-poppins font-semibold text-3xl pb-8">
         {{ props.language ? "Academic Background" : "Formação Acadêmica" }}
