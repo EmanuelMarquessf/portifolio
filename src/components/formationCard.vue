@@ -10,7 +10,7 @@ let viewCard = ref(false);
 
 <template>
   <div
-    class="max-w-[500px] bg-cardColor relative p-4 rounded-md w-full  cursor-pointer items-center opacity-80 hover:opacity-100 hover:scale-105 focus:scale-105 hover:shadow-lg transition-transform  duration-500 ease-in-out will-change-transform hover:border-primaryColor hover:border-b-[2px]"
+    class="max-w-[500px] bg-cardColor relative p-4 rounded w-full  cursor-pointer items-center opacity-80 hover:opacity-100 hover:scale-105 focus:scale-105 hover:shadow-lg transition-transform  duration-500 ease-in-out will-change-transform hover:border-primaryColor hover:border-b-[2px]"
     v-if="!viewCard"  
     @click="viewCard = !viewCard"
   >

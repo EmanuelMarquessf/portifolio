@@ -90,14 +90,14 @@ function langSelect() {
                   >{{ languageRef ? "Projects" : "Projetos" }}</a
                 >
               </li>
-              <!-- <li>
+              <li>
                 <a
-                  href="#contato"
-                  class="block py-2 px-3 md:p-0 text-[#b2b2b2] rounded hover:text-[#fffff0] md:bg-transparent md:text-xl capitalize"
+                  href="#contact"
+                  class="block py-2 px-3 md:p-0 text-[#989898] rounded hover:text-[#fffff0] md:bg-transparent transition-all ease-in-out duration-500"
                   aria-current="page"
                   >{{ languageRef ? "Contact" : "Contato" }}</a
                 >
-              </li> -->
+              </li>
             </ul>
           </div>
         </div>

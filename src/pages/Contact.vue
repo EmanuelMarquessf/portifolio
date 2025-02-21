@@ -8,7 +8,7 @@ defineProps({
 
 </script>
 <template>
-  <section class="flex flex-col gap-20 md:gap-24">
+  <section id="contact" class="flex flex-col gap-20 md:gap-24">
     <div class="flex flex-col md:flex-row gap-4 md:gap-20 lg:gap-32 items-center">
       <div class=" bg-customPurple/70 rounded-full overflow-hidden md:w-[300px] lg:w-[410px] lg:h-[410px]">
         <img
@@ -38,7 +38,7 @@ defineProps({
 
     </div>
     <div
-      class="col-span-4 flex flex-row flex-wrap gap-8 justify-center text-primaryColor font-roboto font-medium text-base md:text-lg"
+      class="col-span-4 flex flex-row flex-wrap gap-8 justify-center text-primaryColor font-roboto font-medium text-base md:text-lg "
     >
       <Social
         text="+55 (12) 99636-0065"

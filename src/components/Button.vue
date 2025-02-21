@@ -24,10 +24,10 @@ defineProps({
   >
     <button
       :class="[
-        'hover:scale-105 py-[12px] px-[24px] rounded-lg border-solid border-2 border-primaryColor  flex items-center gap-[12px]  transition-all duration-500 ease-in-out justify-center',
+        'hover:scale-105 py-[12px] px-[24px] rounded-lg border-solid border-2 border-primaryColor  flex items-center gap-[12px]  transition-all duration-500 ease-in-out justify-center opacity-70 hover:text-cardTitle',
         layout === true
-          ? 'bg-primaryColor hover:bg-zinc-50 hover:text-primaryColor'
-          : 'bg-transparent hover:bg-secondaryColor ',
+          ? 'bg-primaryColor hover:opacity-100 '
+          : 'bg-transparent hover:bg-secondaryColor hover:opacity-100',
         target ? 'w-full' : '',
       ]"
     >
