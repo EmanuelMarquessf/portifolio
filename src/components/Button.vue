@@ -6,7 +6,7 @@ defineProps({
   href: String,
   text: String,
   icon: String,
-  type: Boolean,
+  layout: Boolean,
   active: Boolean,
   target: String,
 });
@@ -19,13 +19,13 @@ defineProps({
     :class="[
       'text-zinc-50 font-roboto font-medium text-[16px]',
       !href ? 'pointer-events-none opacity-40' : '',
-      !type ? 'grow' : '',
+      !layout ? 'grow' : '',
     ]"
   >
     <button
       :class="[
         'hover:scale-105 py-[12px] px-[24px] rounded-lg border-solid border-2 border-primaryColor  flex items-center gap-[12px]  transition-all duration-500 ease-in-out justify-center',
-        type === true
+        layout === true
           ? 'bg-primaryColor hover:bg-zinc-50 hover:text-primaryColor'
           : 'bg-transparent hover:bg-secondaryColor ',
         target ? 'w-full' : '',

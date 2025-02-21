@@ -51,12 +51,12 @@ const props = defineProps({
           </div>
         </div>
         <div
-          class="flex flex-row justify-between md:justify-start md:gap-8 items-center"
+          class="flex flex-row justify-between md:justify-start gap-8 items-center"
         >
           <Button
             href="https://drive.usercontent.google.com/download?id=127eyHysmJYHGfehQVz2xItRdzjMEISXM&export=download&authuser=1&confirm=t&uuid=6a9d70e7-e23f-4025-9379-168069c62ebb&at=AIrpjvMvZQcRqJwPoA505xk73FwJ:1738247728251"
             :text="props.language ? 'Download CV' : 'Download CV'"
-            :type="true"
+            :layout="true"
           />
 
           <Button

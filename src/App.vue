@@ -9,7 +9,7 @@ import Contact from "./pages/Contact.vue";
 
 import { ref } from "vue";
 
-const language = ref(true);
+const language = ref(false);
 
 function languageSelect(newValue) {
   language.value = newValue;
@@ -20,12 +20,10 @@ function languageSelect(newValue) {
   <div class="bg-secondaryColor">
     <Header @languageSelect="languageSelect" :language="language"></Header>
     <Home id="home" class="z-10" :language="language"></Home>
-
     <div
       class="flex flex-col py-20 gap-20 md:gap-24 mx-6 md:mx-12 xl:mx-40 2xl:mx-48"
       :language="language"
     >
-      <!-- <About id="about" :language="language"></About> -->
       <Formation id="experience" :language="language"></Formation>
       <Tech id="tecnologie" :language="language"></Tech>
       <Projects id="projects" :language="language"></Projects>

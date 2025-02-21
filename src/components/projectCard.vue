@@ -10,7 +10,7 @@ const props = defineProps({
 
 <template>
   <div
-  class="w-full col-span-12 md:col-span-4 2xl:col-span-3 flex flex-col justify-between p-4 bg-cardColor rounded xl:grow gap-2 opacity-70 hover:scale-105 hover:opacity-100 transition-all duration-500 ease-in-out shadow-md cursor-pointer"
+  class="w-full  flex flex-col justify-between p-4 bg-cardColor rounded xl:grow gap-2 opacity-70 hover:scale-105 hover:opacity-100 transition-all duration-500 ease-in-out shadow-md cursor-pointer"
 >
     <div
       class="bg-cover w-full h-[176px] flex flex-col justify-end items-end"
@@ -41,7 +41,7 @@ const props = defineProps({
       </h3>
     </div>
     <p
-      class="text-lowPriority text-[16px] font-roboto   md:w-[20rem] xl:w-[20.5rem] md:h-[4.rem] leading-6"
+      class="text-lowPriority text-[16px] font-roboto   md:w-[20rem] xl:w-[20.5rem] md:h-[4.rem] leading-6 break-words"
     >
       {{ props.project.description }}
     </p>
@@ -50,13 +50,13 @@ const props = defineProps({
         <Button
         :href="props.project.url"
         :text="props.language ? 'View Live' : 'Acessar'"
-        :type="true"
+        :layout="true"
         target="_blank"
       />
       <Button
       :href="props.project.repositoryUrl"
       text="GitHub Repo"
-      :type="false"
+      :layout="false"
       target="_blank"
     />
 

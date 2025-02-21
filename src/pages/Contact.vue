@@ -1,52 +1,69 @@
 <script setup>
-  import { defineProps } from 'vue';
+import Form from "../components/Form.vue";
+import Social from "../components/Social.vue";
 
-  defineProps({
-    language: Boolean
-  })
+defineProps({
+  language: Boolean,
+});
+
 </script>
 <template>
-  <section class="flex flex-row justify-between gap-4">
-    <div class="flex flex-col gap-4">
-      <h2 class="text-primaryColor font-poppins font-semibold text-[2.5rem]">
-        Fale comigo
-      </h2>
-      <p class="text-zinc-50 text-[1.3rem] font-poppins font-medium">
-        Gostou do meu trabalho? Porque não entrar em contato?
-      </p>
-      <div class="flex flex-row gap-2">
-        <a href="">
-          <VIcon
-            class="w-[35px] h-[35px]"
-            name="bi-instagram"
-            color="#7562E0"
-          />
-        </a>
-        <a href=""
-          ><VIcon
-            class="w-[35px] h-[35px]"
-            name="co-linkedin-in"
-            color="#7562E0"
-          ></VIcon
-        ></a>
-        <a href=""
-          ><VIcon
-            class="w-[35px] h-[35px]"
-            name="md-email-outlined"
-            color="#7562E0"
-          ></VIcon
-        ></a>
+  <section class="flex flex-col gap-20 md:gap-24">
+    <div class="flex flex-col md:flex-row gap-4 md:gap-20 lg:gap-32 items-center">
+      <div class=" bg-customPurple/70 rounded-full overflow-hidden md:w-[300px] lg:w-[410px] lg:h-[410px]">
+        <img
+          class="w-full h-full object-cover bg-transparent "
+          src="/cat.png"
+        />
       </div>
+      <div class="flex flex-col gap-4 md:gap-8 flex-1">
+        <div class="flex flex-col gap-2">
+          <h2 class="text-primaryColor font-poppins font-semibold text-3xl">
+            {{
+              language
+                ? "Let's Talk!"
+                : "Vamos conversar"
+            }}
+          </h2>
+          <p class="text-cardTitle font-roboto text-lg font-medium">
+            {{
+              language
+                ? "Did you like my work? Why not send me a message?"
+                : "Gostou do meu trabalho? Porque não me manda uma mensagem?"
+            }}
+          </p>
+        </div>
+        <Form class="flex-1" :language="language" />
+      </div>
+
     </div>
-    <form action="https://formsubmit.co/emanuel.marquessf@gmail.com" method="POST" class="w-[50%] flex flex-col gap-4">
-      <h3 class=" text-zinc-50 font-poppins font-semibold text-[23px]">Contact me, let’s make magic together</h3>
-      <input name="name" class="flex shrink-0 p-4 bg-[#31313f] rounded grow" type="text" placeholder="Nome:">
-      <input name="email" class="flex shrink-0 p-4 bg-[#31313f] rounded grow" type="text" placeholder="Email:">
-      <textarea name="message" class="flex shrink-0 p-4 bg-[#31313f] rounded grow" placeholder="Mensagem:" cols="30" rows="10"></textarea>
-      
-      <button type="submit" class="bg-primaryColor py-[12px] rounded-lg flex items-center grow justify-center">
-        <span class="text-zinc-50 font-poppins font-semibold text-[1rem]"><input type="submit"></span>
-      </button>
-    </form>
+    <div
+      class="col-span-4 flex flex-row flex-wrap gap-8 justify-center text-primaryColor font-roboto font-medium text-base md:text-lg"
+    >
+      <Social
+        text="+55 (12) 99636-0065"
+        icon="co-whatsapp"
+        :target="true"
+        href="https://wa.me/5512996360065"
+      />
+      <Social
+        text="/emanuel-fonseca-dev"
+        icon="co-linkedin-in"
+        :target="true"
+        href="https://www.linkedin.com/in/emanuel-fonseca-dev/"
+      />
+      <Social
+        text="emanuel.marquessf@gmail.com"
+        icon="md-email-outlined"
+        :target="true"
+        href="mailto:emanuel.marquessf@gmail.com"
+      />
+      <Social
+        text="/EmanuelMarquessf"
+        icon="bi-github"
+        :target="true"
+        href="https://github.com/EmanuelMarquessf"
+      />
+    </div>
   </section>
 </template>
