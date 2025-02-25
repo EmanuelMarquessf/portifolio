@@ -8,7 +8,7 @@ defineProps({
 
 </script>
 <template>
-  <section id="contact" class="flex flex-col gap-20 md:gap-24">
+  <section id="contact" class="flex flex-col gap-12 md:gap-24 mt-10">
     <div class="flex flex-col md:flex-row gap-4 md:gap-20 lg:gap-32 items-center">
       <div class=" bg-customPurple/70 rounded-full overflow-hidden md:w-[300px] lg:w-[410px] lg:h-[410px]">
         <img
@@ -16,16 +16,16 @@ defineProps({
           src="/cat.png"
         />
       </div>
-      <div class="flex flex-col gap-4 md:gap-8 flex-1">
+      <div class="flex flex-col gap-4 md:gap-4 flex-1">
         <div class="flex flex-col gap-2">
-          <h2 class="text-primaryColor font-poppins font-semibold text-3xl">
+          <h2 class="text-primaryColor font-poppins font-semibold text-3xl md:text-5xl">
             {{
               language
                 ? "Let's Talk!"
                 : "Vamos conversar"
             }}
           </h2>
-          <p class="text-cardTitle font-roboto text-lg font-medium">
+          <p class="text-cardTitle font-roboto md:text-xl font-medium">
             {{
               language
                 ? "Did you like my work? Why not send me a message?"

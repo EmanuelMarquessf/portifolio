@@ -20,8 +20,8 @@ const sendEmail = async () => {
     serviceID,
     templateID,
     {
-      name: form.value.name,
-      email: form.value.email,
+      from_name: form.value.name,
+      from_email: form.value.email,
       message: form.value.message,
     },
     apiKey
@@ -42,6 +42,7 @@ const sendEmail = async () => {
       <div class="flex flex-col md:flex-row gap-4 w-full">
         <input
           v-model="form.name"
+          name="from_name"
           class="flex-1 p-4 bg-cardColor rounded-lg grow border-0 focus:border-none focus:outline-none focus:ring-0 focus:shadow-none"
           type="text"
           :placeholder="language ? 'Name' : 'Nome'"
@@ -49,6 +50,7 @@ const sendEmail = async () => {
         />
         <input
           v-model="form.email"
+          name="from_email"
           class="flex-1 p-4 bg-cardColor rounded-lg grow border-0 focus:border-none focus:outline-none focus:ring-0 focus:shadow-none"
           type="email"
           placeholder="Email"
@@ -60,7 +62,8 @@ const sendEmail = async () => {
         class="flex-1 w-full p-4 bg-cardColor rounded-lg grow border-0 focus:border-none focus:outline-none focus:ring-0 focus:shadow-none resize-none"
         :placeholder="language ? 'Message' : 'Mensagem'"
         cols="30"
-        rows="6"
+        rows="8"
+        name="message"
         required
       ></textarea>
 
