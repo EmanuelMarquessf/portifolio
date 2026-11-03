@@ -1,0 +1,214 @@
+[
+  {
+    "name": "Bitcode Soluções",
+    "description": {
+      "pt": "Site da empresa de desenvolvimento de software Bitcode Soluções",
+      "en": "The website of the software development company Bitcode Solutions."
+    },
+    "tecs": [
+      {
+        "name": "figma",
+        "title": "Figma"
+      },
+      {
+        "name": "vue",
+        "title": "VueJS"
+      },
+      {
+        "name": "tailwind",
+        "title": "TailwindCss"
+      }
+    ],
+    "cover": "/bitcodeSite.png",
+    "url": "https://bitcodesolucoes.com.br/",
+    "repositoryUrl": "",
+    "status": {
+      "pt": "Finalizado",
+      "en": "Finished"
+    }
+  },
+  {
+    "name": "GamesView",
+    "description": {
+      "pt": "Site para consulta de dados e noticias sobre jogos de video-game usando a API Rawg",
+      "en": "Website for querying data and news about video games"
+    },
+    "tecs": [
+      {
+        "name": "figma",
+        "title": "Figma"
+      },
+      {
+        "name": "react",
+        "title": "React"
+      },
+      {
+        "name": "tailwind",
+        "title": "TailwindCss"
+      }
+    ],
+    "cover": "/gamesView.png",
+    "url": "https://gamesview.netlify.app/",
+    "repositoryUrl": "https://github.com/EmanuelMarquessf/Games-View",
+    "status": {
+      "pt": "Finalizado",
+      "en": "Finished"
+    }
+  },
+  {
+    "name": "League Viewer",
+    "description": {
+      "pt": "Visualizador de personagens/skins do jogo League of Legends",
+      "en": "League of Legends character/skin viewer"
+    },
+    "tecs": [
+      {
+        "name": "figma",
+        "title": "Figma"
+      },
+      {
+        "name": "nuxt",
+        "title": "Nuxt"
+      },
+      {
+        "name": "tailwind",
+        "title": "TailwindCss"
+      }
+    ],
+    "cover": "/LeagueViewer.png",
+    "url": "https://lolchampionsviewer.netlify.app/",
+    "repositoryUrl": "https://github.com/EmanuelMarquessf/lolSkinViewer",
+    "status": {
+      "pt": "Finalizado",
+      "en": "Finished"
+    }
+  },
+  {
+    "name": "The Noote",
+    "description": {
+      "pt": "Website para anotações com texto e upload de imagens, oferecendo uma experiência simples e organizada.",
+      "en": "Website for storing notes with text and image uploads, offering a simple and organized experience."
+    },
+    "tecs": [
+      {
+        "name": "figma",
+        "title": "Figma"
+      },
+      {
+        "name": "vue",
+        "title": "VueJS"
+      },
+      {
+        "name": "typescript",
+        "title": "TypeScript"
+      },
+      {
+        "name": "tailwind",
+        "title": "TailwindCss"
+      }
+    ],
+    "cover": "/noote.png",
+    "url": "https://thenoote.netlify.app/",
+    "repositoryUrl": "https://github.com/EmanuelMarquessf/Noote",
+    "status": {
+      "pt": "Finalizado",
+      "en": "Finished"
+    }
+  },
+  {
+    "name": "Cambio Converter",
+    "description": {
+      "pt": "Conversão de cambio globalmente utilizando da API FreeCurrency",
+      "en": "Global Currency Conversion using FreeCurrency API"
+    },
+    "tecs": [
+      {
+        "name": "vue",
+        "title": "VueJS"
+      },
+      {
+        "name": "sass",
+        "title": "SASS"
+      }
+    ],
+    "cover": "/cambioConverter.png",
+    "url": "https://cambioconverter.netlify.app/",
+    "repositoryUrl": "https://github.com/EmanuelMarquessf/CambioConverter",
+    "status": {
+      "pt": "Finalizado",
+      "en": "Finished"
+    }
+  },
+  {
+    "name": "WeatherNow",
+    "description": {
+      "pt": "Consulta de temperatura e clima de qualquer lugar do mundo",
+      "en": "Temperature and weather check for any place in the world"
+    },
+    "tecs": [
+      {
+        "name": "nuxt",
+        "title": "Nuxt"
+      },
+      {
+        "name": "sass",
+        "title": "SASS"
+      }
+    ],
+    "cover": "/weatherNow.png",
+    "url": "https://weeathernow.netlify.app",
+    "repositoryUrl": "https://github.com/EmanuelMarquessf/weatherNow",
+    "status": {
+      "pt": "Finalizado",
+      "en": "Finished"
+    }
+  },
+  {
+    "name": "PetFriend",
+    "description": {
+      "pt": "Um site intuitivo para adoção de gatos e cachorros, utilizando uma API para gerar perfis de pets de forma dinâmica.",
+      "en": "A user-friendly website for adopting cats and dogs, utilizing an API to dynamically generate pet profiles."
+    },
+    "tecs": [
+      {
+        "name": "next",
+        "title": "NextJS"
+      },
+      {
+        "name": "tailwind",
+        "title": "TailwindCss"
+      },
+      {
+        "name": "figma",
+        "title": "Figma"
+      }
+    ],
+    "cover": "/PetFriend.png",
+    "url": "https://petfriendd.netlify.app/",
+    "repositoryUrl": "https://github.com/EmanuelMarquessf/petFriendReact",
+    "status": {
+      "pt": "Em desenvolvimento",
+      "en": "In Progress"
+    }
+  },
+  {
+    "name": "Pokedex",
+    "description": {
+      "pt": "Pokedex consumindo da API PokeApi",
+      "en": "Pokedex consuming from the PokeApi API"
+    },
+    "tecs": [
+      {
+        "name": "vue",
+        "title": "VueJS"
+      }
+    ],
+    "cover": "/pokedex.png",
+    "url": "https://emanuelmarquessfpokedex.netlify.app/",
+    "repositoryUrl": "https://github.com/EmanuelMarquessf/Pokedex-Project-Vue.git",
+    "status": {
+      "pt": "Em desenvolvimento",
+      "en": "In Progress"
+    }
+  }
+]

@@ -7,9 +7,13 @@ import Tech from "./pages/Tech.vue";
 import Projects from "./pages/Projects.vue";
 import Contact from "./pages/Contact.vue";
 
-import { ref } from "vue";
+import { ref, watchEffect } from "vue";
 
-const language = ref(false);
+const language = ref("pt");
+
+watchEffect(() => {
+  document.documentElement.lang = language.value === "pt" ? "pt-BR" : "en";
+});
 
 function languageSelect(newValue) {
   language.value = newValue;
@@ -22,7 +26,6 @@ function languageSelect(newValue) {
     <Home id="home" class="z-10" :language="language"></Home>
     <div
       class="flex flex-col py-20 gap-20 md:gap-24 mx-6 md:mx-12 xl:mx-40 2xl:mx-48"
-      :language="language"
     >
       <Formation id="experience" :language="language"></Formation>
       <Tech id="tecnologie" :language="language"></Tech>

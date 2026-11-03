@@ -23,3 +23,34 @@ Para adicionar um icone, importe-o e inclua uma entrada no catalogo. O registro
 na biblioteca e automatico. Para adicionar um logo colorido, coloque o SVG em
 `public/icons` e informe `logo: 'icons/arquivo.svg'` nessa mesma entrada.
 Nas listas de tecnologias, use o mesmo nome simples no campo `icon`.
+
+## Idiomas
+
+O estado `language` em `App.vue` usa `"pt"` ou `"en"` e segue por props.
+Textos traduzidos ficam em objetos com as duas chaves:
+
+```js
+description: {
+  pt: "Site da empresa",
+  en: "Company website",
+}
+```
+
+Nos templates, use `project.description[language]`. Nomes e links iguais nos
+dois idiomas continuam como strings. Os textos da interface ficam em
+`src/locales/ui.js`; os dados das quatro secoes abaixo ficam em `src/data/`. Nos cards que aceitam strings ou objetos, use `translate(value, language)`.
+
+## Dados das secoes
+
+- `src/data/formation.json`: formacao academica.
+- `src/data/experiences.json`: experiencia profissional.
+- `src/data/projects.json`: projetos em destaque.
+- `src/data/technologies.json`: Tech Stack.
+
+As paginas importam os JSONs diretamente, por exemplo:
+
+```js
+import projectsArray from "../data/projects.json";
+```
+
+Os textos traduzidos dos dados mantem o formato `{ "pt": "...", "en": "..." }`.

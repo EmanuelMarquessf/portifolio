@@ -1,12 +1,13 @@
 <script setup>
+import { form as texts } from "../locales/ui";
 import { ref, defineProps } from "vue";
 
 import { apiKey, serviceID, templateID } from "../../config/config";
 
 import emailjs from "@emailjs/browser";
 
-defineProps({
-  language: Boolean,
+const props = defineProps({
+  language: { type: String, default: "pt" },
 });
 
 const form = ref({
@@ -26,7 +27,7 @@ const sendEmail = async () => {
     },
     apiKey
   );
-  alert("Email sent successfully!");
+  alert(texts.success[props.language]);
   form.value.name= "";
   form.value.email= "";
   form.value.message= "";
@@ -45,7 +46,7 @@ const sendEmail = async () => {
           name="from_name"
           class="flex-1 p-4 bg-cardColor rounded-lg grow border-0 focus:border-none focus:outline-none focus:ring-0 focus:shadow-none"
           type="text"
-          :placeholder="language ? 'Name' : 'Nome'"
+          :placeholder="texts.name[language]"
           required
         />
         <input
@@ -60,7 +61,7 @@ const sendEmail = async () => {
       <textarea
         v-model="form.message"
         class="flex-1 w-full p-4 bg-cardColor rounded-lg grow border-0 focus:border-none focus:outline-none focus:ring-0 focus:shadow-none resize-none"
-        :placeholder="language ? 'Message' : 'Mensagem'"
+        :placeholder="texts.message[language]"
         cols="30"
         rows="8"
         name="message"
@@ -74,7 +75,7 @@ const sendEmail = async () => {
     !(form.name && form.email && form.message) ? 'disabled opacity-70 cursor-context-menu' : ' hover:scale-105 opacity-90 hover:opacity-100 hover:text-cardTitle transition-all duration-500 ease-in-out'
   ]"
 >
-  {{ language ? 'Submit' : 'Enviar' }}
+  {{ texts.submit[language] }}
 </button>
     </form>
   </div>

@@ -1,10 +1,11 @@
 <script setup>
+import { projectCard as texts } from "../locales/ui";
 import { defineProps } from "vue";
 import Button from "./Button.vue";
 
 const props = defineProps({
   project: Object,
-  language:Boolean
+  language: { type: String, default: "pt" }
 });
 </script>
 
@@ -34,28 +35,28 @@ const props = defineProps({
         {{ props.project.name }}
       </h3>
       <h3
-        v-if="props.project.status != ''"
+        v-if="props.project.status[language]"
         class="text-cardTitle font-poppins text-[0.9rem] font-semibold"
       >
-        {{ props.project.status }}
+        {{ props.project.status[language] }}
       </h3>
     </div>
     <p
       class="text-lowPriority text-[16px] font-roboto   md:w-[20rem] xl:w-[20.5rem] md:h-[4.rem] leading-6 break-words"
     >
-      {{ props.project.description }}
+      {{ props.project.description[language] }}
     </p>
 
     <div class="flex flex-row gap-4 mt-4">
         <Button
         :href="props.project.url"
-        :text="props.language ? 'View Live' : 'Acessar'"
+        :text="texts.viewLive[language]"
         :layout="true"
         target="_blank"
       />
       <Button
       :href="props.project.repositoryUrl"
-      text="GitHub Repo"
+      :text="texts.repository[language]"
       :layout="false"
       target="_blank"
     />

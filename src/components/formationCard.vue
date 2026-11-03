@@ -1,8 +1,10 @@
 <script setup>
+import { translate } from "../locales/translate";
 import { defineProps, ref } from "vue";
 
 defineProps({
   formation: Object,
+  language: { type: String, default: "pt" },
 });
 
 let viewCard = ref(false);
@@ -24,17 +26,17 @@ let viewCard = ref(false);
           <p
             class="text-[#c1c1c1] font-poppins text-[14px] font-bold uppercase"
           >
-            {{  formation.courseType }}
+            {{ translate(formation.courseType, language) }}
           </p>
           <p class="text-zinc-50 text-[20px] font-bold capitalize font-roboto">
-            {{  formation.courseName }}
+            {{ translate(formation.courseName, language) }}
           </p>
         </div>
         <div>
           <p
             class="text-[#c1c1c1] font-poppins text-[14px] font-bold uppercase"
           >
-            {{  formation.institutionTitle }}
+            {{ translate(formation.institutionTitle, language) }}
           </p>
           <p class="text-zinc-50 font-roboto text-[20px] font-bold capitalize">
             {{  formation.institution }}
@@ -64,18 +66,18 @@ let viewCard = ref(false);
           <span
             class="text-zinc-50 font-poppins text-[16px] font-bold uppercase"
           >
-            {{  formation.courseName }}
+            {{ translate(formation.courseName, language) }}
           </span>
           <span
             class="text-zinc-50 font-roboto text-[12px] font-light uppercase"
           >
-            {{  formation.period }}
+            {{ translate(formation.period, language) }}
           </span>
         </div>
       </div>
       <div class="flex flex-col justify-between gap-4">
         <span class="text-[#f2f2f2] text-[14px] text-justify font-roboto">
-          {{  formation.description }}
+          {{ translate(formation.description, language) }}
         </span>
       </div>
       <div class="flex flex-row gap-4">

@@ -1,8 +1,10 @@
 <script setup>
+import { translate } from "../locales/translate";
 import { defineProps, ref } from "vue";
 
 defineProps({
   experience: Object,
+  language: { type: String, default: "pt" },
 });
 
 let viewCard = ref(false);
@@ -22,15 +24,15 @@ let viewCard = ref(false);
       <div class="flex flex-col justify-between gap-2">
         <div>
           <p class="text-[#c1c1c1] font-roboto text-[14px] font-bold uppercase">
-            {{ experience.expTitle }}
+            {{ translate(experience.expTitle, language) }}
           </p>
           <p class="text-zinc-50 text-[20px] font-bold capitalize">
-            {{ experience.expName }}
+            {{ translate(experience.expName, language) }}
           </p>
         </div>
         <div>
           <p class="text-[#c1c1c1] font-roboto text-[14px] font-bold uppercase">
-            {{ experience.instTitle }}
+            {{ translate(experience.instTitle, language) }}
           </p>
           <p class="text-zinc-50 font-poppins text-[20px] font-bold capitalize">
             {{ experience.institution }}
@@ -64,18 +66,18 @@ let viewCard = ref(false);
           <span
             class="text-zinc-50 font-poppins text-[16px] font-bold uppercase"
           >
-            {{ experience.expName }}
+            {{ translate(experience.expName, language) }}
           </span>
           <span
             class="text-zinc-50 font-poppins text-[12px] font-light uppercase"
           >
-            {{ experience.period }}
+            {{ translate(experience.period, language) }}
           </span>
         </div>
       </div>
       <div class="flex flex-col justify-between gap-4">
         <span class="text-[#f2f2f2] text-[14px] text-justify">
-          {{ experience.description }}
+          {{ translate(experience.description, language) }}
         </span>
       </div>
       <div class="flex flex-row justify-start gap-4">

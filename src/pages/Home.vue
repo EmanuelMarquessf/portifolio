@@ -1,9 +1,10 @@
 <script setup>
+import { home as texts } from "../locales/ui";
 import { defineProps } from "vue";
 import Button from "../components/Button.vue";
 
 const props = defineProps({
-  language: Boolean,
+  language: { type: String, default: "pt" },
 });
 </script>
 
@@ -18,7 +19,7 @@ const props = defineProps({
             <span
               class="md:hidden xl:block text-zinc-50 font-poppins font-medium text-[1.5rem] lg:text-[2rem] 2xl:text-[2.5rem] whitespace-nowrap"
             >
-              {{ props.language ? "Hello I'm" : "Olá, eu sou" }}
+              {{ texts.greeting[language] }}
             </span>
             <span
               class="md:hidden xl:block text-primaryColor font-poppins font-semibold text-[32px] md:text-[40px] lg:text-[48px] xl:text-[64px] whitespace-nowrap"
@@ -29,9 +30,7 @@ const props = defineProps({
               class="md:hidden xl:block text-zinc-50 font-poppins font-medium text-[16px] md:text-[24px] whitespace-nowrap"
             >
               {{
-                props.language
-                  ? "Front-end Developer & Ui/Ux Designer"
-                  : "Desenvolvedor Front-end & Designer Ui/Ux"
+                texts.role[language]
               }}
             </span>
           </div>
@@ -43,9 +42,7 @@ const props = defineProps({
               class="w-full xl:w-[80%] text-lowPriority font-roboto text-[16px] lg:text-[24px] md:leading-8 xl:leading-10 text-left font-medium"
             >
               {{
-                props.language
-                  ? "Hello, I'm Emanuel, a graduate in Systems Analysis and Development from IFSP Campûs Campos do Jordão. Currently, I am focused on deepening my knowledge in web development, with an emphasis on Front-end."
-                  : "Olá, sou o Emanuel, graduado em Análise e Desenvolvimento de Sistemas pelo IFSP Campûs Campos do Jordão. Atualmente, estou focado em aprofundar meus conhecimentos em desenvolvimento web, com ênfase no Front-end."
+                texts.introduction[language]
               }}
             </p>
           </div>
@@ -55,13 +52,13 @@ const props = defineProps({
         >
           <Button
             href="https://drive.usercontent.google.com/download?id=127eyHysmJYHGfehQVz2xItRdzjMEISXM&export=download&authuser=1&confirm=t&uuid=6a9d70e7-e23f-4025-9379-168069c62ebb&at=AIrpjvMvZQcRqJwPoA505xk73FwJ:1738247728251"
-            :text="props.language ? 'Download CV' : 'Download CV'"
+            :text="texts.downloadCv[language]"
             :layout="true"
           />
 
           <Button
             href="#projects"
-            :text="props.language ? 'Projects' : 'Projetos'"
+            :text="texts.projects[language]"
             icon="code"
             :type="false"
           />
@@ -80,7 +77,7 @@ const props = defineProps({
           <span
             class="text-zinc-50 font-poppins font-semibold md:text-[1.5rem] lg:text-[2rem] 2xl:text-[3rem] whitespace-nowrap"
           >
-            {{ props.language ? "Hello I'm" : "Olá, eu sou" }}
+            {{ texts.greeting[language] }}
           </span>
           <span
             class="text-primaryColor font-poppins font-semibold md:text-[2.8rem] lg:text-[3.25rem] xl:text-[4rem] whitespace-nowrap"
@@ -91,9 +88,7 @@ const props = defineProps({
             class="text-zinc-50 font-poppins font-medium md:text-[24px] whitespace-nowrap"
           >
             {{
-              props.language
-                ? "Front-end Developer & Ui/Ux Designer"
-                : "Desenvolvedor Front-end & Designer Ui/Ux"
+              texts.role[language]
             }}
           </span>
         </div>

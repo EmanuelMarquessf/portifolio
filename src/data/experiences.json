@@ -1,0 +1,102 @@
+[
+  {
+    "expTitle": {
+      "pt": "estagio - 1 ano",
+      "en": "internship - 1 year"
+    },
+    "expName": {
+      "pt": "ánalista de suporte",
+      "en": "support analyst"
+    },
+    "instTitle": {
+      "pt": "empresa",
+      "en": "company"
+    },
+    "institution": "Isasoft Softwares",
+    "image": "/isasoftLogo.png",
+    "description": {
+      "pt": "Prestei suporte aos clientes, forneci orientação e treinamento, colaborei com a equipe de desenvolvimento com base no feedback dos clientes, realizei testes detalhados do sistema e gerenciei bancos de dados para identificar bugs. Contribuí para a melhoria da qualidade dos produtos e da experiência do cliente.",
+      "en": "I provided customer support, offered guidance and training, collaborated with the development team based on customer feedback, conducted detailed system testing, and managed databases to identify bugs. I contributed to improving product quality and the customer experience."
+    },
+    "technologies": [
+      {
+        "name": "HTML",
+        "icon": "html"
+      },
+      {
+        "name": "CSS",
+        "icon": "css"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "javascript"
+      },
+      {
+        "name": "Postgree SQL",
+        "icon": "postgresql"
+      }
+    ],
+    "period": "(2021 - 2022)"
+  },
+  {
+    "expTitle": "Freelance",
+    "expName": "Dev. Front-end Jr.",
+    "instTitle": {
+      "pt": "empresa",
+      "en": "company"
+    },
+    "institution": "Bitcode Soluções",
+    "image": "/bitcodeLogo.png",
+    "description": {
+      "pt": "Desenvolvimento de páginas web. Responsável pela criação de interfaces atraentes e intuitivas para o usuário, utilizando das tecnologias HTML, CSS, JavaScript, VueJs e TailwindCss. Além disso, participação ativa na concepção e design das interfaces através do Figma, garantindo uma experiência visualmente agradável e funcional para os usuários.",
+      "en": "Web page development. Responsible for creating attractive and intuitive user interfaces using HTML, CSS, JavaScript, VueJs, and TailwindCss technologies. Additionally, actively participated in the conception and design of interfaces through Figma, ensuring a visually pleasing and functional experience for users."
+    },
+    "technologies": [
+      {
+        "name": "VueJS",
+        "icon": "vue"
+      },
+      {
+        "name": "Tailwind CSS",
+        "icon": "tailwind"
+      },
+      {
+        "name": "Figma",
+        "icon": "figma"
+      }
+    ],
+    "period": "(2023 - 2024)"
+  },
+  {
+    "expTitle": "Freelance",
+    "expName": "Dev. Front-end Jr.",
+    "instTitle": {
+      "pt": "empresa",
+      "en": "company"
+    },
+    "institution": "Memocash Soluções",
+    "image": "/memocashLogo.png",
+    "description": {
+      "pt": "Desenvolvimento de páginas web. Responsável pela criação de interfaces atraentes e intuitivas para o usuário, utilizando das tecnologias HTML, CSS, JavaScript, VueJs e TailwindCss. Além disso, participação ativa na concepção e design das interfaces através do Figma, garantindo uma experiência visualmente agradável e funcional para os usuários.",
+      "en": "Web page development. Responsible for creating attractive and intuitive user interfaces using HTML, CSS, JavaScript, VueJs, and TailwindCss technologies. Additionally, actively participated in the conception and design of interfaces through Figma, ensuring a visually pleasing and functional experience for users."
+    },
+    "technologies": [
+      {
+        "name": "VueJS",
+        "icon": "vue"
+      },
+      {
+        "name": "Bootstrap",
+        "icon": "bootstrap"
+      },
+      {
+        "name": "Figma",
+        "icon": "figma"
+      }
+    ],
+    "period": {
+      "pt": "(2025 - atual)",
+      "en": "(2025 - present)"
+    }
+  }
+]

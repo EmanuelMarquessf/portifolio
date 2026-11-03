@@ -1,0 +1,76 @@
+[
+  {
+    "courseType": {
+      "pt": "técnico",
+      "en": "technical"
+    },
+    "courseName": {
+      "pt": "Informática Integrado",
+      "en": "integrated technician"
+    },
+    "institutionTitle": {
+      "pt": "instituição",
+      "en": "institution"
+    },
+    "institution": "Instituto Federal",
+    "image": "/ifspLogo.png",
+    "description": {
+      "pt": "No Ensino Médio integrado ao Técnico em Informática, foi onde dei meus primeiros passos na programação. Como projeto final, desenvolvi uma plataforma de e-commerce para venda de jogos, integrada ao PagSeguro.",
+      "en": "I studied in the High School integrated with a Technical course in Informatics, where I took my first steps in programming. As a final project, I developed an e-commerce platform for selling games, integrated with PagSeguro. "
+    },
+    "technologies": [
+      {
+        "name": "HTML",
+        "icon": "html"
+      },
+      {
+        "name": "CSS",
+        "icon": "css"
+      },
+      {
+        "name": "Javascript",
+        "icon": "javascript"
+      }
+    ],
+    "period": "(2016 - 2019)"
+  },
+  {
+    "courseType": {
+      "pt": "técnologo",
+      "en": "technology"
+    },
+    "courseName": {
+      "pt": "Análise de Sistemas",
+      "en": "systems analysis"
+    },
+    "institutionTitle": {
+      "pt": "instituição",
+      "en": "institution"
+    },
+    "institution": "Instituto Federal",
+    "image": "/ifspLogo.png",
+    "description": {
+      "pt": "Consolidei meus estudos na computação, como projeto final, desenvolvi um sistema de gerenciamento para uma livraria com funções de venda, controle de estoque e emissão de relatórios.",
+      "en": "I consolidated my studies in computer science by developing a management system for a bookstore as my final project, featuring sales functions, inventory control, and report generation."
+    },
+    "technologies": [
+      {
+        "name": "C#",
+        "icon": "csharp"
+      },
+      {
+        "name": "HTML",
+        "icon": "html"
+      },
+      {
+        "name": "CSS",
+        "icon": "css"
+      },
+      {
+        "name": "Javascript",
+        "icon": "javascript"
+      }
+    ],
+    "period": "(2019 - 2023)"
+  }
+]

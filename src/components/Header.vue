@@ -1,4 +1,5 @@
 <script setup>
+import { header as texts } from "../locales/ui";
 import { ref, onMounted, defineProps, defineEmits } from "vue";
 import { initFlowbite } from "flowbite";
 
@@ -11,13 +12,12 @@ onMounted(() => {
   initFlowbite();
 });
 
-const props = defineProps(["language"]);
+const props = defineProps({
+  language: { type: String, default: "pt" },
+});
 
-const languageRef = ref(props.language);
-
-function langSelect() {
-  languageRef.value = !languageRef.value;
-  emit("languageSelect", languageRef.value);
+function langSelect(event) {
+  emit("languageSelect", event.target.checked ? "en" : "pt");
 }
 </script>
 
@@ -62,7 +62,7 @@ function langSelect() {
                   href="#home"
                   class="block py-2 w-full px-3 md:p-0 text-[#989898] rounded hover:text-[#fffff0] md:bg-transparent transition-all ease-in-out duration-500"
                   aria-current="page"
-                  >Home</a
+                  >{{ texts.home[language] }}</a
                 >
               </li>
               <li>
@@ -70,7 +70,7 @@ function langSelect() {
                   href="#experience"
                   class="block py-2 px-3 md:p-0 text-[#989898] rounded hover:text-[#fffff0] md:bg-transparent transition-all ease-in-out duration-500"
                   aria-current="page"
-                  >{{ languageRef ? "Experiences" : "Experiências" }}
+                  >{{ texts.experiences[language] }}
                 </a>
               </li>
               <li>
@@ -78,7 +78,7 @@ function langSelect() {
                   href="#tecnologie"
                   class="block py-2 px-3 md:p-0 text-[#989898] rounded hover:text-[#fffff0] md:bg-transparent transition-all ease-in-out duration-500"
                   aria-current="page"
-                  >{{ languageRef ? "Technologies" : "Tecnologias" }}</a
+                  >{{ texts.technologies[language] }}</a
                 >
               </li>
               <li>
@@ -86,7 +86,7 @@ function langSelect() {
                   href="#projects"
                   class="block py-2 px-3 md:p-0 text-[#989898] rounded hover:text-[#fffff0] md:bg-transparent transition-all ease-in-out duration-500"
                   aria-current="page"
-                  >{{ languageRef ? "Projects" : "Projetos" }}</a
+                  >{{ texts.projects[language] }}</a
                 >
               </li>
               <li>
@@ -94,7 +94,7 @@ function langSelect() {
                   href="#contact"
                   class="block py-2 px-3 md:p-0 text-[#989898] rounded hover:text-[#fffff0] md:bg-transparent transition-all ease-in-out duration-500"
                   aria-current="page"
-                  >{{ languageRef ? "Contact" : "Contato" }}</a
+                  >{{ texts.contact[language] }}</a
                 >
               </li>
             </ul>
@@ -155,15 +155,16 @@ function langSelect() {
             type="checkbox"
             value=""
             class="sr-only peer"
-            v-model="languageRef"
-            @click="langSelect"
+            :checked="language === 'en'"
+            @change="langSelect"
+            :aria-label="texts.languageLabel[language]"
           />
           <div
-            :class="languageRef ? 'bg-image' : ''"
+            :class="language === 'en' ? 'bg-image' : ''"
             class="relative px-1 w-14 h-7 bg-zinc-50 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primaryColor dark:peer-focus:primaryColor rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-zinc-50 after:content-[''] after:absolute after:top-0.5 after:start-[4px] after:bg-primaryColor after:border-primaryColor after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-primaryColor"
           >
             <span
-              v-if="languageRef"
+              v-if="language === 'en'"
               class="text-zinc-50 font-bold font-roboto text-[12px] px-1"
               >EN</span
             >

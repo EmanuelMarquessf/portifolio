@@ -1,0 +1,50 @@
+[
+  {
+    "icon": "figma",
+    "name": "Figma"
+  },
+  {
+    "icon": "html",
+    "name": "HTML5"
+  },
+  {
+    "icon": "css",
+    "name": "CSS3"
+  },
+  {
+    "icon": "javascript",
+    "name": "JavaScript"
+  },
+  {
+    "icon": "typescript",
+    "name": "TypeScript"
+  },
+  {
+    "icon": "bootstrap",
+    "name": "Bootstrap"
+  },
+  {
+    "icon": "vue",
+    "name": "VueJs"
+  },
+  {
+    "icon": "nuxt",
+    "name": "NuxtJs"
+  },
+  {
+    "icon": "react",
+    "name": "React"
+  },
+  {
+    "icon": "next",
+    "name": "NextJS"
+  },
+  {
+    "icon": "tailwind",
+    "name": "TailwindCss"
+  },
+  {
+    "icon": "sass",
+    "name": "Sass"
+  }
+]

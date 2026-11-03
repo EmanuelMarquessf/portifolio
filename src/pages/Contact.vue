@@ -1,9 +1,10 @@
 <script setup>
+import { contact as texts } from "../locales/ui";
 import Form from "../components/Form.vue";
 import Social from "../components/Social.vue";
 
-defineProps({
-  language: Boolean,
+const props = defineProps({
+  language: { type: String, default: "pt" },
 });
 
 </script>
@@ -20,16 +21,12 @@ defineProps({
         <div class="flex flex-col gap-2">
           <h2 class="text-primaryColor font-poppins font-semibold text-3xl md:text-5xl">
             {{
-              language
-                ? "Let's Talk!"
-                : "Vamos conversar"
+              texts.title[language]
             }}
           </h2>
           <p class="text-cardTitle font-roboto md:text-xl font-medium">
             {{
-              language
-                ? "Did you like my work? Why not send me a message?"
-                : "Gostou do meu trabalho? Porque não me manda uma mensagem?"
+              texts.description[language]
             }}
           </p>
         </div>
