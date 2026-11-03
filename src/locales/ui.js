@@ -111,7 +111,7 @@ export const projects = {
 
 export const tech = {
   "title": {
-    "pt": "Tech Stack",
+    "pt": "Técnologias",
     "en": "Tech Stack"
   }
 };
