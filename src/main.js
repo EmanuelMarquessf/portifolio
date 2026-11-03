@@ -3,13 +3,10 @@ import './style.css'
 import App from './App.vue'
 import '../node_modules/flowbite-vue/dist/index.css'
 
-import { OhVueIcon, addIcons } from 'oh-vue-icons';
-import { CoWhatsapp, CoLinkedinIn, MdEmailOutlined, BiGithub, CoFigma, IoLogoVue, SiTailwindcss, SiNuxtdotjs, CoReact, CoSass, CoNextJs, RiUser3Fill, CoHtml5Shield, FaCss3Alt, CoJavascript, CoPostgresql, SiCsharp, BiCodeSlash, BiInstagram, SiTypescript, HiSolidMenu, IoCloseSharp, MdBusinesscenter     } from 'oh-vue-icons/icons';
-
-addIcons(CoWhatsapp, CoLinkedinIn, MdEmailOutlined, BiGithub, CoFigma, IoLogoVue, SiTailwindcss, SiNuxtdotjs, CoReact, CoSass, CoNextJs, RiUser3Fill, CoHtml5Shield, FaCss3Alt, CoJavascript, CoPostgresql, SiCsharp, BiCodeSlash, BiInstagram, SiTypescript, HiSolidMenu, IoCloseSharp, MdBusinesscenter      ); 
+import AppIcon from './components/AppIcon.vue';
 
 const app = createApp(App);
 
-app.component('VIcon', OhVueIcon)
+app.component('AppIcon', AppIcon)
 
 app.mount("#app")

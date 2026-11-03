@@ -85,7 +85,7 @@ let viewCard = ref(false);
           v-for="tec in experience.technologies"
           :title="tec.name"
         >
-          <VIcon
+          <AppIcon
             :name="tec.icon"
             class="w-[1.5rem] h-[1.5rem]"
             color="#7562e0"

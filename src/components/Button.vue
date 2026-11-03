@@ -1,5 +1,4 @@
 <script setup>
-import { GiTargetArrows } from "oh-vue-icons/icons";
 import { defineProps } from "vue";
 
 defineProps({
@@ -33,7 +32,7 @@ defineProps({
     >
       <span>{{ text }}</span>
 
-      <VIcon v-if="icon" :name="icon" class="w-[20px]" color="#eee5ff" />
+      <AppIcon v-if="icon" :name="icon" class="w-[20px]" color="#eee5ff" />
     </button>
   </a>
 </template>

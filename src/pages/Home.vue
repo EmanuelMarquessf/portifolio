@@ -62,7 +62,7 @@ const props = defineProps({
           <Button
             href="#projects"
             :text="props.language ? 'Projects' : 'Projetos'"
-            icon="bi-code-slash"
+            icon="code"
             :type="false"
           />
         </div>

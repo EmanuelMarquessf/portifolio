@@ -16,9 +16,9 @@ watchEffect(() => {
         ? "The website of the software development company Bitcode Solutions."
         : "Site da empresa de desenvolvimento de software Bitcode Soluções",
       tecs: [
-        { name: "co-figma", title: "Figma" },
-        { name: "io-logo-vue", title: "VueJS" },
-        { name: "si-tailwindcss", title: "TailwindCss" },
+        { name: "figma", title: "Figma" },
+        { name: "vue", title: "VueJS" },
+        { name: "tailwind", title: "TailwindCss" },
       ],
       cover: "/bitcodeSite.png",
       url: "https://bitcodesolucoes.com.br/",
@@ -31,9 +31,9 @@ watchEffect(() => {
         ? "Website for querying data and news about video games"
         : "Site para consulta de dados e noticias sobre jogos de video-game usando a API Rawg",
       tecs: [
-        { name: "co-figma", title: "Figma" },
-        { name: "co-react", title: "React" },
-        { name: "si-tailwindcss", title: "TailwindCss" },
+        { name: "figma", title: "Figma" },
+        { name: "react", title: "React" },
+        { name: "tailwind", title: "TailwindCss" },
       ],
       cover: "/gamesView.png",
       url: "https://gamesview.netlify.app/",
@@ -46,9 +46,9 @@ watchEffect(() => {
         ? "League of Legends character/skin viewer"
         : "Visualizador de personagens/skins do jogo League of Legends",
       tecs: [
-        { name: "co-figma", title: "Figma" },
-        { name: "si-nuxtdotjs", title: "Nuxt" },
-        { name: "si-tailwindcss", title: "TailwindCss" },
+        { name: "figma", title: "Figma" },
+        { name: "nuxt", title: "Nuxt" },
+        { name: "tailwind", title: "TailwindCss" },
       ],
       cover: "/LeagueViewer.png",
       url: "https://lolchampionsviewer.netlify.app/",
@@ -62,10 +62,10 @@ watchEffect(() => {
         ? "Website for storing notes with text and image uploads, offering a simple and organized experience."
         : "Website para anotações com texto e upload de imagens, oferecendo uma experiência simples e organizada.",
       tecs: [
-        { name: "co-figma", title: "Figma" },
-        { name: "io-logo-vue", title: "VueJS" },
-        { name: "si-typescript", title: "TypeScript" },
-        { name: "si-tailwindcss", title: "TailwindCss" },
+        { name: "figma", title: "Figma" },
+        { name: "vue", title: "VueJS" },
+        { name: "typescript", title: "TypeScript" },
+        { name: "tailwind", title: "TailwindCss" },
       ],
       cover: "/noote.png",
       url: "https://thenoote.netlify.app/",
@@ -79,8 +79,8 @@ watchEffect(() => {
         ? "Global Currency Conversion using FreeCurrency API"
         : "Conversão de cambio globalmente utilizando da API FreeCurrency",
       tecs: [
-        { name: "io-logo-vue", title: "VueJS" },
-        { name: "co-sass", title: "SASS" },
+        { name: "vue", title: "VueJS" },
+        { name: "sass", title: "SASS" },
       ],
       cover: "/cambioConverter.png",
       url: "https://cambioconverter.netlify.app/",
@@ -93,8 +93,8 @@ watchEffect(() => {
         ? "Temperature and weather check for any place in the world"
         : "Consulta de temperatura e clima de qualquer lugar do mundo",
       tecs: [
-        { name: "si-nuxtdotjs", title: "Nuxt" },
-        { name: "co-sass", title: "SASS" },
+        { name: "nuxt", title: "Nuxt" },
+        { name: "sass", title: "SASS" },
       ],
       cover: "/weatherNow.png",
       url: "https://weeathernow.netlify.app",
@@ -107,9 +107,9 @@ watchEffect(() => {
         ? "A user-friendly website for adopting cats and dogs, utilizing an API to dynamically generate pet profiles."
         : "Um site intuitivo para adoção de gatos e cachorros, utilizando uma API para gerar perfis de pets de forma dinâmica.",
       tecs: [
-        { name: "co-next-js", title: "NextJS" },
-        { name: "si-tailwindcss", title: "TailwindCss" },
-        { name: "co-figma", title: "Figma" },
+        { name: "next", title: "NextJS" },
+        { name: "tailwind", title: "TailwindCss" },
+        { name: "figma", title: "Figma" },
       ],
       cover: "/PetFriend.png",
       url: "https://petfriendd.netlify.app/",
@@ -121,7 +121,7 @@ watchEffect(() => {
       description: props.language
         ? "Pokedex consuming from the PokeApi API"
         : "Pokedex consumindo da API PokeApi",
-      tecs: [{ name: "io-logo-vue", title: "VueJS" }],
+      tecs: [{ name: "vue", title: "VueJS" }],
       cover: "/pokedex.png",
       url: "https://emanuelmarquessfpokedex.netlify.app/",
       repositoryUrl:
@@ -138,7 +138,7 @@ watchEffect(() => {
       {{ props.language ? "Featured Projects" : "Projetos em Destaque" }}
     </h2>
     <div class="grid grid-cols-12 gap-6">
-      <ProjectCard class="col-span-12 md:col-span-6 lg:col-span-4 2xl:col-span-3" v-for="project in projectsArray" :project="project" 
+      <ProjectCard class="col-span-12 md:col-span-6 lg:col-span-4 2xl:col-span-3" v-for="project in projectsArray" :project="project"
       :language="language"/>
     </div>
   </section>

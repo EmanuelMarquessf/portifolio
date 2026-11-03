@@ -20,7 +20,7 @@ const props = defineProps({
         v-if="props.project.tecs"
         class="flex flex-row justify-end bg-secondaryColor rounded-full m-1 p-1"
       >
-        <VIcon
+        <AppIcon
           v-for="tec in props.project.tecs"
           :name="tec.name"
           :title="tec.title"

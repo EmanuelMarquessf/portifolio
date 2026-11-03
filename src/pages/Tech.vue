@@ -15,76 +15,52 @@ let props = defineProps({
     </h2>
     <div class="flex flex-wrap gap-6 justify-center md:justify-start">
       <techCard
-        type="logo"
         icon="figma"
         name="Figma"
-        text="I design beautiful web iterfaces with Figma and Adove XD"
       />
       <techCard
-        type="logo"
-        icon="html5"
+        icon="html"
         name="HTML5"
-        text="I design beautiful web iterfaces with Figma and Adove XD"
       />
       <techCard
-        type="logo"
-        icon="css3"
+        icon="css"
         name="CSS3"
-        text="I design beautiful web iterfaces with Figma and Adove XD"
       />
       <techCard
-        type="logo"
         icon="javascript"
         name="JavaScript"
-        text="I design beautiful web iterfaces with Figma and Adove XD"
       />
       <techCard
-        type="logo"
         icon="typescript"
         name="TypeScript"
-        text="I design beautiful web iterfaces with Figma and Adove XD"
       />
       <techCard
-        type="logo"
         icon="bootstrap"
         name="Bootstrap"
-        text="I design beautiful web iterfaces with Figma and Adove XD"
       />
       <techCard
-        type="logo"
-        icon="vuejs"
+        icon="vue"
         name="VueJs"
-        text="I design beautiful web iterfaces with Figma and Adove XD"
       />
       <techCard
-        type="landscape"
-        icon="nuxtjs"
+        icon="nuxt"
         name="NuxtJs"
-        text="I design beautiful web iterfaces with Figma and Adove XD"
       />
       <techCard
-        type="logo"
         icon="react"
         name="React"
-        text="I design beautiful web iterfaces with Figma and Adove XD"
       />
       <techCard
-        type="landscape"
-        icon="nextjs"
+        icon="next"
         name="NextJS"
-        text="I design beautiful web iterfaces with Figma and Adove XD"
       />
       <techCard
-        type="logo"
-        icon="tailwind-css"
+        icon="tailwind"
         name="TailwindCss"
-        text="I design beautiful web iterfaces with Figma and Adove XD"
       />
       <techCard
-        type="logo"
         icon="sass"
         name="Sass"
-        text="I design beautiful web iterfaces with Figma and Adove XD"
       />
     </div>
   </section>

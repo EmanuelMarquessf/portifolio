@@ -25,9 +25,9 @@ watchEffect(() => {
         ? "I studied in the High School integrated with a Technical course in Informatics, where I took my first steps in programming. As a final project, I developed an e-commerce platform for selling games, integrated with PagSeguro. "
         : "No Ensino Médio integrado ao Técnico em Informática, foi onde dei meus primeiros passos na programação. Como projeto final, desenvolvi uma plataforma de e-commerce para venda de jogos, integrada ao PagSeguro.",
       technologies: [
-        { name: "HTML", icon: "co-html5-shield" },
-        { name: "CSS", icon: "fa-css3-alt" },
-        { name: "Javascript", icon: "co-javascript" },
+        { name: "HTML", icon: "html" },
+        { name: "CSS", icon: "css" },
+        { name: "Javascript", icon: "javascript" },
       ],
       period: "(2016 - 2019)",
     },
@@ -41,10 +41,10 @@ watchEffect(() => {
         ? "I consolidated my studies in computer science by developing a management system for a bookstore as my final project, featuring sales functions, inventory control, and report generation."
         : "Consolidei meus estudos na computação, como projeto final, desenvolvi um sistema de gerenciamento para uma livraria com funções de venda, controle de estoque e emissão de relatórios.",
       technologies: [
-        { name: "C#", icon: "si-csharp" },
-        { name: "HTML", icon: "co-html5-shield" },
-        { name: "CSS", icon: "fa-css3-alt" },
-        { name: "Javascript", icon: "co-javascript" },
+        { name: "C#", icon: "csharp" },
+        { name: "HTML", icon: "html" },
+        { name: "CSS", icon: "css" },
+        { name: "Javascript", icon: "javascript" },
       ],
       period: "(2019 - 2023)",
     },
@@ -61,10 +61,10 @@ watchEffect(() => {
         ? "I provided customer support, offered guidance and training, collaborated with the development team based on customer feedback, conducted detailed system testing, and managed databases to identify bugs. I contributed to improving product quality and the customer experience."
         : "Prestei suporte aos clientes, forneci orientação e treinamento, colaborei com a equipe de desenvolvimento com base no feedback dos clientes, realizei testes detalhados do sistema e gerenciei bancos de dados para identificar bugs. Contribuí para a melhoria da qualidade dos produtos e da experiência do cliente.",
       technologies: [
-        { name: "HTML", icon: "co-html5-shield" },
-        { name: "CSS", icon: "fa-css3-alt" },
-        { name: "JavaScript", icon: "co-javascript" },
-        { name: "Postgree SQL", icon: "co-postgresql" },
+        { name: "HTML", icon: "html" },
+        { name: "CSS", icon: "css" },
+        { name: "JavaScript", icon: "javascript" },
+        { name: "Postgree SQL", icon: "postgresql" },
       ],
       period: "(2021 - 2022)",
     },
@@ -78,11 +78,27 @@ watchEffect(() => {
         ? "Web page development. Responsible for creating attractive and intuitive user interfaces using HTML, CSS, JavaScript, VueJs, and TailwindCss technologies. Additionally, actively participated in the conception and design of interfaces through Figma, ensuring a visually pleasing and functional experience for users."
         : "Desenvolvimento de páginas web. Responsável pela criação de interfaces atraentes e intuitivas para o usuário, utilizando das tecnologias HTML, CSS, JavaScript, VueJs e TailwindCss. Além disso, participação ativa na concepção e design das interfaces através do Figma, garantindo uma experiência visualmente agradável e funcional para os usuários.",
       technologies: [
-        { name: "VueJS", icon: "io-logo-vue" },
-        { name: "Tailwind CSS", icon: "si-tailwindcss" },
-        { name: "Figma", icon: "co-figma" },
+        { name: "VueJS", icon: "vue" },
+        { name: "Tailwind CSS", icon: "tailwind" },
+        { name: "Figma", icon: "figma" },
       ],
       period: "(2023 - 2024)",
+    },
+        {
+      expTitle: props.language ? "Freelance" : "Freelance",
+      expName: "Dev. Front-end Jr.",
+      instTitle: props.language ? "company" : "empresa",
+      institution: "Memocash Soluções",
+      image: "/memocashLogo.png",
+      description: props.language
+        ? "Web page development. Responsible for creating attractive and intuitive user interfaces using HTML, CSS, JavaScript, VueJs, and TailwindCss technologies. Additionally, actively participated in the conception and design of interfaces through Figma, ensuring a visually pleasing and functional experience for users."
+        : "Desenvolvimento de páginas web. Responsável pela criação de interfaces atraentes e intuitivas para o usuário, utilizando das tecnologias HTML, CSS, JavaScript, VueJs e TailwindCss. Além disso, participação ativa na concepção e design das interfaces através do Figma, garantindo uma experiência visualmente agradável e funcional para os usuários.",
+      technologies: [
+        { name: "VueJS", icon: "vue" },
+        { name: "Bootstrap", icon: "bootstrap" },
+        { name: "Figma", icon: "figma" },
+      ],
+      period: "(2025 - atual)",
     },
   ];
 });

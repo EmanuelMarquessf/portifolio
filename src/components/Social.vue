@@ -16,7 +16,7 @@ defineProps({
     :target="target ? '_blank' : ''"
     :title="text"
   >
-    <VIcon
+    <AppIcon
       class="w-9 h-9 "
       :name="icon"
     />

@@ -2,7 +2,6 @@
 import { ref, onMounted, defineProps, defineEmits } from "vue";
 import { initFlowbite } from "flowbite";
 
-import { BiGithub } from "oh-vue-icons/icons";
 
 const emit = defineEmits(["languageSelect"]);
 
@@ -44,9 +43,9 @@ function langSelect() {
             aria-controls="navbar-solid-bg"
             aria-expanded="false"
           >
-            <VIcon
+            <AppIcon
               class="w-8 h-8 text-customPurple"
-              :name="menu ? 'hi-solid-menu' : 'io-close-sharp'"
+              :name="menu ? 'menu' : 'close'"
             />
           </button>
           <div
@@ -110,9 +109,9 @@ function langSelect() {
               target="_blank"
               title="+55 (12) 99636-0065"
             >
-              <VIcon
+              <AppIcon
                 class="w-8 h-8 opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-500 ease-in-out"
-                name="co-whatsapp"
+                name="whatsapp"
               />
             </a>
             <a
@@ -121,9 +120,9 @@ function langSelect() {
               target="_blank"
               title="https://www.linkedin.com/in/emanuel-fonseca-dev/"
             >
-              <VIcon
+              <AppIcon
                 class="w-8 h-8 opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-500 ease-in-out"
-                name="co-linkedin-in"
+                name="linkedin"
               />
             </a>
             <a
@@ -132,9 +131,9 @@ function langSelect() {
               target="_blank"
               title="emanuel.marquessf@gmail.com"
             >
-              <VIcon
+              <AppIcon
                 class="w-8 h-8 opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-500 ease-in-out"
-                name="md-email-outlined"
+                name="email"
               />
             </a>
             <a
@@ -143,9 +142,9 @@ function langSelect() {
               target="_blank"
               title="@EmanuelMarquessf"
             >
-              <VIcon
+              <AppIcon
                 class="w-8 h-8 opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-500 ease-in-out"
-                name="bi-github"
+                name="github"
               />
             </a>
           </div>

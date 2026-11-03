@@ -42,25 +42,25 @@ defineProps({
     >
       <Social
         text="+55 (12) 99636-0065"
-        icon="co-whatsapp"
+        icon="whatsapp"
         :target="true"
         href="https://wa.me/5512996360065"
       />
       <Social
         text="/emanuel-fonseca-dev"
-        icon="co-linkedin-in"
+        icon="linkedin"
         :target="true"
         href="https://www.linkedin.com/in/emanuel-fonseca-dev/"
       />
       <Social
         text="emanuel.marquessf@gmail.com"
-        icon="md-email-outlined"
+        icon="email"
         :target="true"
         href="mailto:emanuel.marquessf@gmail.com"
       />
       <Social
         text="/EmanuelMarquessf"
-        icon="bi-github"
+        icon="github"
         :target="true"
         href="https://github.com/EmanuelMarquessf"
       />

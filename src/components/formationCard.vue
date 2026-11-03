@@ -11,7 +11,7 @@ let viewCard = ref(false);
 <template>
   <div
     class="max-w-[500px] bg-cardColor relative p-4 rounded w-full  cursor-pointer items-center opacity-80 hover:opacity-100 hover:scale-105 focus:scale-105 hover:shadow-lg transition-transform  duration-500 ease-in-out will-change-transform hover:border-primaryColor hover:border-b-[2px]"
-    v-if="!viewCard"  
+    v-if="!viewCard"
     @click="viewCard = !viewCard"
   >
     <div
@@ -85,7 +85,7 @@ let viewCard = ref(false);
           v-for="tec in  formation.technologies"
           :title="tec.name"
         >
-          <VIcon
+          <AppIcon
             :name="tec.icon"
             class="w-[1.5rem] h-[1.5rem]"
             color="#7562e0"
