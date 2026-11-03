@@ -44,7 +44,7 @@ function langSelect(event) {
             aria-expanded="false"
           >
             <AppIcon
-              class="w-8 h-8 text-customPurple"
+              class="w-8 h-8 text-primaryColor"
               :name="menu ? 'menu' : 'close'"
             />
           </button>
@@ -102,7 +102,7 @@ function langSelect(event) {
         </div>
         <div class="flex flex-row w-full justify-evenly md:justify-end">
 
-          <div class="flex flex-row items-center gap-1 text-customPurple">
+          <div class="flex flex-row items-center gap-1 text-primaryColor">
             <a
               class="flex items-center"
               href="https://wa.me/5512996360065"
@@ -170,7 +170,7 @@ function langSelect(event) {
             >
             <span
               v-else
-              class="text-primaryColor px-7 font-bold font-roboto text-[12px]"
+              class="text-darkColor px-7 font-bold font-roboto text-[12px]"
               >PT</span
             >
           </div>

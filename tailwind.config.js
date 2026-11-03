@@ -9,12 +9,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        customPurple: '#923FFD',
+        // Primary for text and buttons; primaryColorHover for hover; accent for image backgrounds.
+        accentColor: '#51416b',
         darkColor: '#0c0b0d',
         secondaryColor: '#0e0e10',
 
         cardColor: '#27272d',
-        primaryColor: '#8325fd',
+        primaryColor: '#8B5CF6',
+        primaryColorHover: '#A78BFA',
         lowPriority: '#BDBDBD',
         secondaryText: '#708C88',
         cardTitle: '#fdfdfd'

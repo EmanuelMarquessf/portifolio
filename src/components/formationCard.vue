@@ -89,8 +89,8 @@ let viewCard = ref(false);
         >
           <AppIcon
             :name="tec.icon"
-            class="w-[1.5rem] h-[1.5rem]"
-            color="#7562e0"
+            class="w-[1.5rem] h-[1.5rem] text-primaryColor"
+            color="currentColor"
           />
         </div>
       </div>

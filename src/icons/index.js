@@ -20,7 +20,11 @@ import {
   SiTypescript,
   HiSolidMenu,
   IoCloseSharp,
-  BiBootstrap
+  BiBootstrap,
+  SiNodedotjs,
+  SiMysql,
+  SiDocker,
+  SiPhp
 } from 'oh-vue-icons/icons';
 
 // Public names used by AppIcon. Library names and logo paths stay here.
@@ -41,6 +45,10 @@ export const icons = {
   javascript: { icon: CoJavascript, logo: 'icons/javascript.svg' },
   postgresql: { icon: CoPostgresql },
   csharp: { icon: SiCsharp },
+  nodejs: { icon: SiNodedotjs },
+  mysql: { icon: SiMysql },
+  docker: { icon: SiDocker },
+  php: { icon: SiPhp },
   code: { icon: BiCodeSlash },
   typescript: { icon: SiTypescript, logo: 'icons/typescript.svg' },
   menu: { icon: HiSolidMenu },

@@ -19,7 +19,7 @@
         "title": "TailwindCss"
       }
     ],
-    "cover": "/bitcodeSite.png",
+    "cover": "/images/projects/bitcodeSite.png",
     "url": "https://bitcodesolucoes.com.br/",
     "repositoryUrl": "",
     "status": {
@@ -47,7 +47,7 @@
         "title": "TailwindCss"
       }
     ],
-    "cover": "/gamesView.png",
+    "cover": "/images/projects/gamesView.png",
     "url": "https://gamesview.netlify.app/",
     "repositoryUrl": "https://github.com/EmanuelMarquessf/Games-View",
     "status": {
@@ -75,7 +75,7 @@
         "title": "TailwindCss"
       }
     ],
-    "cover": "/LeagueViewer.png",
+    "cover": "/images/projects/LeagueViewer.png",
     "url": "https://lolchampionsviewer.netlify.app/",
     "repositoryUrl": "https://github.com/EmanuelMarquessf/lolSkinViewer",
     "status": {
@@ -107,7 +107,7 @@
         "title": "TailwindCss"
       }
     ],
-    "cover": "/noote.png",
+    "cover": "/images/projects/noote.png",
     "url": "https://thenoote.netlify.app/",
     "repositoryUrl": "https://github.com/EmanuelMarquessf/Noote",
     "status": {
@@ -131,7 +131,7 @@
         "title": "SASS"
       }
     ],
-    "cover": "/cambioConverter.png",
+    "cover": "/images/projects/cambioConverter.png",
     "url": "https://cambioconverter.netlify.app/",
     "repositoryUrl": "https://github.com/EmanuelMarquessf/CambioConverter",
     "status": {
@@ -155,7 +155,7 @@
         "title": "SASS"
       }
     ],
-    "cover": "/weatherNow.png",
+    "cover": "/images/projects/weatherNow.png",
     "url": "https://weeathernow.netlify.app",
     "repositoryUrl": "https://github.com/EmanuelMarquessf/weatherNow",
     "status": {
@@ -183,7 +183,7 @@
         "title": "Figma"
       }
     ],
-    "cover": "/PetFriend.png",
+    "cover": "/images/projects/PetFriend.png",
     "url": "https://petfriendd.netlify.app/",
     "repositoryUrl": "https://github.com/EmanuelMarquessf/petFriendReact",
     "status": {
@@ -203,7 +203,7 @@
         "title": "VueJS"
       }
     ],
-    "cover": "/pokedex.png",
+    "cover": "/images/projects/pokedex.png",
     "url": "https://emanuelmarquessfpokedex.netlify.app/",
     "repositoryUrl": "https://github.com/EmanuelMarquessf/Pokedex-Project-Vue.git",
     "status": {

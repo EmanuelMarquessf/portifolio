@@ -36,7 +36,7 @@ const props = defineProps({
           </div>
           <div class="flex flex-col gap-5">
             <div
-              class="w-[76px] border-lowPriority border-solid border-2"
+              class="w-[76px] border-primaryColor border-solid border-2"
             ></div>
             <p
               class="w-full xl:w-[80%] text-lowPriority font-roboto text-[16px] lg:text-[24px] md:leading-8 xl:leading-10 text-left font-medium"
@@ -67,10 +67,10 @@ const props = defineProps({
       <div
         class="md:w-full flex flex-col md:flex-row md:items-center order-first xl:order-last gap-10"
       >
-        <div class="bg-customPurple rounded-full">
+        <div class="bg-accentColor rounded-full border-4 border-primaryColor">
           <img
             class="bg-transparent w-[15rem] md:w-[20rem] xl:w-[50rem] rounded-full"
-            src="/foto2.png"
+            src="/images/personal/image.png"
           />
         </div>
         <div class="md:flex md:flex-col hidden xl:hidden">

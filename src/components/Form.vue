@@ -69,14 +69,11 @@ const sendEmail = async () => {
       ></textarea>
 
       <button
-  type="submit"
-  :class="[
-    'bg-primaryColor py-[12px] px-24 rounded-lg flex items-center text-zinc-50 font-poppins font-semibold text-[1rem] w-full md:w-auto justify-center cursor-pointer ',
-    !(form.name && form.email && form.message) ? 'disabled opacity-70 cursor-context-menu' : ' hover:scale-105 opacity-90 hover:opacity-100 hover:text-cardTitle transition-all duration-500 ease-in-out'
-  ]"
->
-  {{ texts.submit[language] }}
-</button>
+        type="submit"
+        class="w-full md:w-auto flex items-center justify-center gap-3 px-6 py-3 rounded-lg border-2 border-solid border-primaryColor bg-primaryColor text-darkColor font-roboto font-medium text-base opacity-100 cursor-pointer hover:scale-105 hover:bg-primaryColorHover hover:border-primaryColorHover transition-all duration-500 ease-in-out"
+      >
+        {{ texts.submit[language] }}
+      </button>
     </form>
   </div>
 </template>

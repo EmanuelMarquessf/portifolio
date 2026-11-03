@@ -80,7 +80,7 @@ let viewCard = ref(false);
           {{ translate(experience.description, language) }}
         </span>
       </div>
-      <div class="flex flex-row justify-start gap-4">
+      <div class="flex flex-row flex-wrap justify-start gap-4">
         <div
           class="flex items-center bg-[#121214] rounded-full p-2"
           v-if="experience.technologies.length"
@@ -89,8 +89,8 @@ let viewCard = ref(false);
         >
           <AppIcon
             :name="tec.icon"
-            class="w-[1.5rem] h-[1.5rem]"
-            color="#7562e0"
+            class="w-[1.5rem] h-[1.5rem] text-primaryColor"
+            color="currentColor"
           />
         </div>
       </div>

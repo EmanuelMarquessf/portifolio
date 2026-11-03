@@ -74,12 +74,12 @@ export const home = {
     "en": "Hello I'm"
   },
   "role": {
-    "pt": "Desenvolvedor Front-end & Designer Ui/Ux",
-    "en": "Front-end Developer & Ui/Ux Designer"
+    "pt": "Desenvolvedor Full-Stack",
+    "en": "FullStack Developer"
   },
   "introduction": {
-    "pt": "Olá, sou o Emanuel, graduado em Análise e Desenvolvimento de Sistemas pelo IFSP Campûs Campos do Jordão. Atualmente, estou focado em aprofundar meus conhecimentos em desenvolvimento web, com ênfase no Front-end.",
-    "en": "Hello, I'm Emanuel, a graduate in Systems Analysis and Development from IFSP Campûs Campos do Jordão. Currently, I am focused on deepening my knowledge in web development, with an emphasis on Front-end."
+    "pt": "Formado em Análise e Desenvolvimento de Sistemas pelo IFSP, atuo no desenvolvimento de aplicações web, criando interfaces, implementando regras de negócio e integrando sistemas e bancos de dados.",
+    "en": "I hold a degree in Systems Analysis and Development from IFSP. I work on developing web applications, building user interfaces, implementing business logic, and integrating systems and databases."
   },
   "downloadCv": {
     "pt": "Baixar CV",

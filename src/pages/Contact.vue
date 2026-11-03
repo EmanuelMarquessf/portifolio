@@ -11,10 +11,10 @@ const props = defineProps({
 <template>
   <section id="contact" class="flex flex-col gap-12 md:gap-24 mt-10">
     <div class="flex flex-col md:flex-row gap-4 md:gap-20 lg:gap-32 items-center">
-      <div class=" bg-customPurple/70 rounded-full overflow-hidden md:w-[300px] lg:w-[410px] lg:h-[410px]">
+      <div class=" bg-accentColor/70 rounded-full overflow-hidden md:w-[300px] lg:w-[410px] lg:h-[410px]">
         <img
           class="w-full h-full object-cover bg-transparent "
-          src="/cat.png"
+          src="/images/personal/catWithBack.png"
         />
       </div>
       <div class="flex flex-col gap-4 md:gap-4 flex-1">

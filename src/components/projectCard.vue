@@ -25,8 +25,8 @@ const props = defineProps({
           v-for="tec in props.project.tecs"
           :name="tec.name"
           :title="tec.title"
-          class="w-[1.2rem] h-[1.2rem]"
-          color="#7562e0"
+          class="w-[1.2rem] h-[1.2rem] text-primaryColor"
+          color="currentColor"
         />
       </div>
     </div>
