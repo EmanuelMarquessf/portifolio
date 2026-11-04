@@ -115,3 +115,8 @@ export const tech = {
     "en": "Tech Stack"
   }
 };
+
+export const expandableCard = {
+  showDetails: { pt: "Ver detalhes", en: "View details" },
+  hideDetails: { pt: "Ocultar detalhes", en: "Hide details" },
+};

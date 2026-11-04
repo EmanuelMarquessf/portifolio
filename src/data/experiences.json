@@ -36,7 +36,7 @@
         "icon": "postgresql"
       }
     ],
-    "period": "(2021 - 2022)"
+    "period": "2021 - 2022"
   },
   {
     "expTitle": "Freelance",
@@ -65,7 +65,7 @@
         "icon": "figma"
       }
     ],
-    "period": "(2023 - 2024)"
+    "period": "2023 - 2024"
   },
   {
     "expTitle": "Freelance",
@@ -111,8 +111,8 @@
       }
     ],
     "period": {
-      "pt": "(2025 - atual)",
-      "en": "(2025 - present)"
+      "pt": "2025 - atual",
+      "en": "2025 - present"
     }
   }
 ]

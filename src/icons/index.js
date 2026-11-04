@@ -24,11 +24,25 @@ import {
   SiNodedotjs,
   SiMysql,
   SiDocker,
-  SiPhp
+  SiPhp,
+  HiAcademicCap,
+  HiOfficeBuilding,
+  HiCalendar,
+  HiExternalLink,
+  HiCheckCircle,
+  HiClock,
+  RiArrowRightUpLine
 } from 'oh-vue-icons/icons';
 
 // Public names used by AppIcon. Library names and logo paths stay here.
 export const icons = {
+  academic: { icon: HiAcademicCap },
+  company: { icon: HiOfficeBuilding },
+  calendar: { icon: HiCalendar },
+  check: { icon: HiCheckCircle },
+  clock: { icon: HiClock },
+  'external-link': { icon: HiExternalLink },
+  'arrow-up-right': { icon: RiArrowRightUpLine },
   whatsapp: { icon: CoWhatsapp },
   linkedin: { icon: CoLinkedinIn },
   email: { icon: MdEmailOutlined },

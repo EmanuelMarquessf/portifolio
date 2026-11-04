@@ -15,7 +15,7 @@ defineProps({
       <h2 class="text-primaryColor font-poppins font-semibold text-3xl">
         {{ texts.academicTitle[language] }}
       </h2>
-      <div class="flex flex-col md:flex-row  gap-8 items-start">
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:gap-8 items-start">
         <FormationCard
           v-for="formation in formationArray"
           :formation="formation"
@@ -30,7 +30,7 @@ defineProps({
           texts.experienceTitle[language]
         }}
       </h2>
-      <div class="flex flex-col md:flex-row grid-cols-6 gap-8 items-start">
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:gap-8 items-start">
         <ExperienceCard
           v-for="experience in experienceArray"
           :experience="experience"

@@ -51,15 +51,16 @@ const props = defineProps({
           class="flex flex-row justify-between md:justify-start gap-8 items-center"
         >
           <Button
+            class="grow-0 [&_button]:text-cardTitle"
             href="https://drive.usercontent.google.com/download?id=127eyHysmJYHGfehQVz2xItRdzjMEISXM&export=download&authuser=1&confirm=t&uuid=6a9d70e7-e23f-4025-9379-168069c62ebb&at=AIrpjvMvZQcRqJwPoA505xk73FwJ:1738247728251"
             :text="texts.downloadCv[language]"
             :layout="true"
           />
-
           <Button
+            class="grow-0"
             href="#projects"
             :text="texts.projects[language]"
-            icon="code"
+            iconRight="code"
             :type="false"
           />
         </div>
@@ -94,6 +95,6 @@ const props = defineProps({
         </div>
       </div>
     </div>
-    <div class="bg-darkColor h-[6.1rem] md:h-[9rem] w-full relative z-40"></div>
+    <div class="relative z-40 h-24 w-full bg-darkColor md:h-36"></div>
   </main>
 </template>

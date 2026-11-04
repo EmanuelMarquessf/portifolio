@@ -15,6 +15,8 @@ export default {
         secondaryColor: '#0e0e10',
 
         cardColor: '#27272d',
+        cardDark: '#17151D',
+        cardBorder: '#343039',
         primaryColor: '#8B5CF6',
         primaryColorHover: '#A78BFA',
         lowPriority: '#BDBDBD',

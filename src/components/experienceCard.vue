@@ -1,99 +1,99 @@
 <script setup>
+import { ref } from "vue";
 import { translate } from "../locales/translate";
-import { defineProps, ref } from "vue";
+import { expandableCard as texts } from "../locales/ui";
 
 defineProps({
-  experience: Object,
+  experience: { type: Object, required: true },
   language: { type: String, default: "pt" },
 });
 
-let viewCard = ref(false);
+const expanded = ref(false);
 </script>
 
 <template>
-  <div
-    class="max-w-[500px] col-span-6 md:col-span-3 bg-cardColor relative p-4 rounded w-full  cursor-pointer items-center opacity-80 hover:opacity-100 hover:scale-105 focus:scale-105 hover:shadow-lg transition-transform  duration-500 ease-in-out will-change-transform hover:border-primaryColor hover:border-b-[2px]"
-    v-if="!viewCard"
-    @click="viewCard = !viewCard"
-  >
-    <div
-      class="bg-primaryColor w-[10px] h-[50px] absolute left-[-5px] top-[15px]"
-    ></div>
-    <div class="flex flex-row items-center gap-4">
-      <img class="w-[6rem] h-[6rem] object-cover" :src="experience.image" alt="" />
-      <div class="flex flex-col justify-between gap-2">
-        <div>
-          <p class="text-[#c1c1c1] font-roboto text-[14px] font-bold uppercase">
-            {{ translate(experience.expTitle, language) }}
-          </p>
-          <p class="text-zinc-50 text-[20px] font-bold capitalize">
-            {{ translate(experience.expName, language) }}
-          </p>
-        </div>
-        <div>
-          <p class="text-[#c1c1c1] font-roboto text-[14px] font-bold uppercase">
-            {{ translate(experience.instTitle, language) }}
-          </p>
-          <p class="text-zinc-50 font-poppins text-[20px] font-bold capitalize">
-            {{ experience.institution }}
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <article class="relative w-full min-w-0 rounded-2xl border border-cardBorder/30 bg-gradient-to-br from-cardColor to-cardDark shadow-sm transition-all duration-300 hover:border-primaryColor/60 hover:shadow-lg hover:shadow-primaryColor/5">
+    <span aria-hidden="true" class="absolute -left-1 top-10 h-16 w-1 rounded-full bg-primaryColor"></span>
 
-  <div
-    class="max-w-[500px] md:h-[260px] bg-cardColor relative p-4 rounded-md col-span-6 md:col-span-3 cursor-pointer hover:opacity-100 hover:scale-105 focus:scale-105 hover:shadow-lg transition-transform  duration-500 ease-in-out will-change-transform hover:border-primaryColor hover:border-b-[2px]"
-    v-else
-    @click="viewCard = !viewCard"
-  >
-    <div
-      class="bg-primaryColor w-[10px] h-[50px] absolute left-[-5px] top-[15px]"
-    ></div>
-    <div class="flex flex-col gap-4 h-full justify-between">
-      <div class="flex flex-row gap-4 items-center">
-        <img
-          class="w-[2.5rem] h-[2.5rem] object-cover"
-          :src="experience.image"
-          alt=""
-        />
-        <div class="flex flex-col">
-          <span
-            class="text-[#c1c1c1] font-poppins text-[10px] font-bold uppercase"
-          >
-            {{ experience.institution }}
+    <button
+      type="button"
+      class="group flex w-full flex-col rounded-2xl p-4 text-left font-roboto focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primaryColor focus-visible:ring-offset-2 focus-visible:ring-offset-secondaryColor sm:p-5 xl:p-6"
+      :aria-expanded="expanded"
+      @click="expanded = !expanded"
+    >
+      <span class="flex w-full min-w-0 items-start gap-3 sm:items-center sm:gap-4">
+        <span class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-darkColor/70 p-3 sm:h-20 sm:w-20 sm:p-4 xl:h-24 xl:w-24 xl:p-5">
+          <img :src="experience.image" alt="" class="h-full w-full object-contain" />
+        </span>
+        <span class="flex min-w-0 flex-1 flex-col gap-1.5">
+          <span class="break-words text-xs font-semibold uppercase tracking-wide text-lowPriority sm:text-sm">
+            {{ translate(experience.expTitle, language) }}
           </span>
-          <span
-            class="text-zinc-50 font-poppins text-[16px] font-bold uppercase"
-          >
+          <span class="break-words font-poppins text-lg font-bold leading-snug text-cardTitle sm:text-2xl xl:text-[28px]">
             {{ translate(experience.expName, language) }}
           </span>
-          <span
-            class="text-zinc-50 font-poppins text-[12px] font-light uppercase"
-          >
-            {{ translate(experience.period, language) }}
+          <span class="flex min-w-0 items-start gap-2 text-sm text-lowPriority sm:text-base xl:text-lg">
+            <AppIcon name="company" class="h-5 w-5 shrink-0 sm:h-6 sm:w-6" color="currentColor" />
+            <span class="min-w-0 break-words">{{ experience.institution }}</span>
           </span>
-        </div>
-      </div>
-      <div class="flex flex-col justify-between gap-4">
-        <span class="text-[#f2f2f2] text-[14px] text-justify">
-          {{ translate(experience.description, language) }}
         </span>
-      </div>
-      <div class="flex flex-row flex-wrap justify-start gap-4">
-        <div
-          class="flex items-center bg-[#121214] rounded-full p-2"
-          v-if="experience.technologies.length"
-          v-for="tec in experience.technologies"
-          :title="tec.name"
-        >
-          <AppIcon
-            :name="tec.icon"
-            class="w-[1.5rem] h-[1.5rem] text-primaryColor"
-            color="currentColor"
-          />
+      </span>
+
+      <span class="mt-4 flex w-full flex-col items-start gap-3 min-[400px]:flex-row min-[400px]:flex-wrap min-[400px]:items-center min-[400px]:justify-between border-t border-cardBorder pt-4">
+        <span class="flex items-center gap-2 text-sm text-lowPriority sm:text-base">
+          <AppIcon name="calendar" class="h-5 w-5 shrink-0" color="currentColor" />
+          {{ translate(experience.period, language) }}
+        </span>
+        <span class="flex items-center gap-1.5 text-sm font-semibold text-primaryColor transition-colors group-hover:text-primaryColorHover sm:text-base">
+          {{ expanded ? texts.hideDetails[language] : texts.showDetails[language] }}
+          <AppIcon name="arrow-up-right" class="h-5 w-5 shrink-0 transition-transform duration-300 motion-reduce:transition-none" :class="expanded ? 'rotate-180' : ''" color="currentColor" />
+        </span>
+      </span>
+    </button>
+
+    <Transition name="details">
+      <div v-if="expanded" class="details-panel">
+        <div class="min-h-0 overflow-hidden">
+          <div class="flex flex-col gap-5 border-t border-primaryColor/20 px-4 pb-4 pt-4 sm:px-5 sm:pb-5 xl:px-6 xl:pb-6">
+            <p class="break-words font-roboto text-sm leading-7 text-cardTitle">
+              {{ translate(experience.description, language) }}
+            </p>
+            <ul v-if="experience.technologies?.length" class="flex flex-wrap gap-3">
+              <li v-for="technology in experience.technologies" :key="technology.icon" :title="technology.name" class="flex items-center justify-center rounded-full bg-secondaryColor p-2">
+                <AppIcon :name="technology.icon" class="h-6 w-6 text-primaryColor" color="currentColor" />
+                <span class="sr-only">{{ technology.name }}</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    </Transition>
+  </article>
 </template>
+
+<style scoped>
+.details-panel {
+  display: grid;
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.details-enter-active,
+.details-leave-active {
+  transition: grid-template-rows 300ms ease, opacity 300ms ease;
+}
+
+.details-enter-from,
+.details-leave-to {
+  grid-template-rows: 0fr;
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .details-enter-active,
+  .details-leave-active {
+    transition: none;
+  }
+}
+</style>

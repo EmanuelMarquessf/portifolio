@@ -27,7 +27,7 @@ function langSelect(event) {
     class="border-gray-200 bg-darkColor z-50 fixed w-full scroll-smooth"
   >
     <div
-      class="max-w-screen-3xl flex flex-col md:flex-row items-center justify-between md:mx-4 p-4"
+      class="flex flex-col md:flex-row items-center justify-between md:mx-4 p-4"
     >
       <div
         :class="[

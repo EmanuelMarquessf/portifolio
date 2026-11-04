@@ -4,7 +4,8 @@ import { defineProps } from "vue";
 defineProps({
   href: String,
   text: String,
-  icon: String,
+  iconRight: String,
+  iconLeft: String,
   layout: Boolean,
   active: Boolean,
   target: String,
@@ -30,9 +31,9 @@ defineProps({
         target ? 'w-full' : '',
       ]"
     >
-      <span>{{ text }}</span>
-
-      <AppIcon v-if="icon" :name="icon" class="w-[20px]" color="currentColor" />
+      <AppIcon v-if="iconLeft" :name="iconLeft" class="block h-5 w-5 shrink-0 self-center" color="currentColor" />
+      <span class="block min-w-0 text-center leading-5">{{ text }}</span>
+      <AppIcon v-if="iconRight" :name="iconRight" class="block h-5 w-5 shrink-0 self-center" color="currentColor" />
     </button>
   </a>
 </template>

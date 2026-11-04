@@ -13,8 +13,8 @@ defineProps({
     <h2 class="text-primaryColor font-poppins font-semibold text-3xl">
       {{ texts.title[language] }}
     </h2>
-    <div class="grid grid-cols-12 gap-6">
-      <ProjectCard class="col-span-12 md:col-span-6 lg:col-span-4 2xl:col-span-3" v-for="project in projectsArray" :key="project.name" :project="project"
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+      <ProjectCard v-for="project in projectsArray" :key="project.name" :project="project"
       :language="language"/>
     </div>
   </section>

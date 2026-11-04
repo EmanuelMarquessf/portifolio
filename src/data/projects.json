@@ -190,25 +190,5 @@
       "pt": "Em desenvolvimento",
       "en": "In Progress"
     }
-  },
-  {
-    "name": "Pokedex",
-    "description": {
-      "pt": "Pokedex consumindo da API PokeApi",
-      "en": "Pokedex consuming from the PokeApi API"
-    },
-    "tecs": [
-      {
-        "name": "vue",
-        "title": "VueJS"
-      }
-    ],
-    "cover": "/images/projects/pokedex.png",
-    "url": "https://emanuelmarquessfpokedex.netlify.app/",
-    "repositoryUrl": "https://github.com/EmanuelMarquessf/Pokedex-Project-Vue.git",
-    "status": {
-      "pt": "Em desenvolvimento",
-      "en": "In Progress"
-    }
   }
 ]
